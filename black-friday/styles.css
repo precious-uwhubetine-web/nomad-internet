@@ -1,0 +1,1319 @@
+.black-friday-hero {
+  height: 100vh;
+  max-height: calc(800px * var(--scale-factor));
+  position: relative;
+
+  --scale-factor: 0.85;
+}
+
+.black-friday-hero-content {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: calc(1234px * var(--scale-factor));
+  padding: 0 calc(20px * var(--scale-factor));
+  width: 100%;
+}
+
+.black-friday-hero-slide {
+  background-color: black;
+  left: -30%;
+  overflow-x: auto;
+  padding: calc(5px * var(--scale-factor));
+  position: absolute;
+  scrollbar-width: none;
+  top: 0;
+  transform: rotate(-45deg);
+  width: 100%;
+}
+
+.black-friday-hero-slide-content {
+  animation: slider 4s infinite;
+  align-items: center;
+  display: flex;
+  gap: calc(14px * var(--scale-factor));
+}
+
+.black-friday-hero-slide p {
+  align-items: center;
+  color: white;
+  display: flex;
+  font-size: calc(16px * var(--scale-factor));
+  gap: calc(14px * var(--scale-factor));
+}
+
+.black-friday-hero-slide p svg {
+  flex: 0 0 calc(16px * var(--scale-factor));
+}
+
+.black-friday-hero-main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(32px * var(--scale-factor));
+  position: relative;
+}
+
+.black-friday-hero-main-top {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  text-align: center;
+}
+
+.black-friday-hero-main-top-offer-expiry {
+  align-items: center;
+  display: flex;
+  gap: calc(18px * var(--scale-factor));
+  justify-content: center;
+}
+
+.black-friday-hero-main-top-offer-expiry svg {
+  height: calc(20px * var(--scale-factor));
+  width: calc(20px * var(--scale-factor));
+}
+
+.black-friday-hero-main-top-offer-expiry p {
+  color: #1e1e1e;
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 500;
+}
+
+.black-friday-hero-main-top-offer-expiry p span {
+  color: #e62e05;
+  font-weight: 700;
+}
+
+.black-friday-hero-main-top h1 {
+  font-size: calc(40px * var(--scale-factor));
+  font-weight: 800;
+  line-height: 115%;
+  max-width: calc(916px * var(--scale-factor));
+}
+
+.black-friday-hero-main-top p {
+  color: #424242;
+  font-size: calc(16px * var(--scale-factor));
+  line-height: 178%;
+  max-width: calc(816px * var(--scale-factor));
+}
+
+.black-friday-hero-main-top-buttons {
+  align-items: center;
+  display: flex;
+  gap: calc(16px * var(--scale-factor));
+  justify-content: center;
+}
+
+.black-friday-hero-main-top-buttons a {
+  text-decoration: none;
+}
+
+.black-friday-hero-main-top-buttons a:first-child button {
+  align-items: center;
+  background: radial-gradient(44.12% 99.48% at 49.8% 0.26%, #5AE7C5 0%, #008061 100%);
+  border: calc(1px * var(--scale-factor)) solid #4CD7B6;
+  border-radius: calc(10px * var(--scale-factor));
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-family: "Plus Jakarta Sans";
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 500;
+  gap: calc(7.19px * var(--scale-factor));
+  justify-content: center;
+  line-height: 150.907%;
+  padding: calc(14.37px * var(--scale-factor));
+  width: 100%;
+}
+
+.black-friday-hero-main-top-buttons a:first-child button:hover {
+  background: radial-gradient(44.12% 99.48% at 60% 5%, #5AE7C5 20%, #008061 100%);
+}
+
+.black-friday-hero-main-top-buttons a:last-child button {
+  align-items: center;
+  background: #fff;
+  border: calc(2px * var(--scale-factor)) solid #000;
+  border-radius: calc(10px * var(--scale-factor));
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  font-family: "Plus Jakarta Sans";
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 500;
+  gap: calc(7.19px * var(--scale-factor));
+  justify-content: center;
+  line-height: 150.907%;
+  padding: calc(14.37px * var(--scale-factor));
+  width: 100%;
+}
+
+.black-friday-hero-main-top-buttons a button svg {
+  height: calc(18.57px * var(--scale-factor));
+  width: calc(18.57px * var(--scale-factor));
+}
+
+.black-friday-hero-main-bottom {
+  align-items: center;
+  display: grid;
+  gap: calc(42px * var(--scale-factor));
+  grid-auto-flow: column;
+}
+
+.black-friday-hero-main-bottom li {
+  align-items: center;
+  display: flex;
+  gap: calc(12px * var(--scale-factor));
+  max-width: calc(200px * var(--scale-factor));
+}
+
+.black-friday-hero-main-bottom li:nth-child(2) {
+  max-width: calc(250px * var(--scale-factor));
+}
+
+.black-friday-hero-main-bottom li svg {
+  flex: 0 0 calc(16px * var(--scale-factor));
+}
+
+.black-friday-hero-main-bottom li p {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: calc(14px * var(--scale-factor));
+  font-weight: 500;
+}
+
+@media (max-width: 650px) {
+  .black-friday-hero {
+    max-height: max-content;
+  }
+
+  .black-friday-hero-content {
+    padding: calc(100px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  }
+
+  .black-friday-hero-slide {
+    left: -25%;
+    gap: calc(9.5px * var(--scale-factor));
+  }
+
+  .black-friday-hero-slide p {
+    font-size: calc(9.5px * var(--scale-factor));
+  }
+
+  .black-friday-hero-slide p svg {
+    flex: 0 0 calc(9.5px * var(--scale-factor));
+  }
+
+  .black-friday-hero-main-top-buttons {
+    flex-direction: column;
+  }
+
+  .black-friday-hero-main-top-buttons a {
+    width: 100%;
+  }
+
+  .black-friday-hero-main-bottom {
+    gap: calc(16px * var(--scale-factor));
+  }
+
+  .black-friday-hero-main-bottom li:nth-child(2) {
+    grid-column: 1 / 3;
+    grid-row: 2;
+    max-width: 100%;
+  }
+
+  .black-friday-hero-main-bottom li p {
+    font-size: calc(12px * var(--scale-factor));
+  }
+}
+
+@keyframes slider {
+  0% {
+    transform: translateX(-15%);
+  }
+
+  100% {
+    transform: translateX(-30%);
+  }
+}
+
+.black-friday-who-nomad-serves {
+  --scale-factor: 0.85;
+}
+
+.black-friday-who-nomad-serves-content {
+  align-content: center;
+  display:flex;
+  flex-direction: column;
+  gap: calc(48px * var(--scale-factor));
+  margin: 0 auto;
+  max-width: calc(1234px * var(--scale-factor));
+  padding: calc(60px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  width: 100%;
+}
+
+.black-friday-who-nomad-serves-content h2 {
+  font-size: calc(24px * var(--scale-factor));
+  text-align: center;
+}
+
+.black-friday-who-nomad-serves-content ul {
+  display: grid;
+  gap: calc(16px * var(--scale-factor));
+  grid-template-columns: repeat(auto-fit, minmax(calc(200px * var(--scale-factor)), 1fr));
+}
+
+.black-friday-who-nomad-serves-content ul li {
+  border-radius: calc(15px * var(--scale-factor));
+  height: calc(304px * var(--scale-factor));
+  overflow: hidden;
+  position: relative;
+}
+
+.black-friday-who-nomad-serves-content ul li img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.black-friday-who-nomad-serves-content ul li div {
+  background: linear-gradient(to bottom, transparent, #000);
+  bottom: 0;
+  left: 0;
+  padding: calc(12px * var(--scale-factor));
+  position: absolute;
+  z-index: 1;
+}
+
+.black-friday-who-nomad-serves-content ul li div h3 {
+  color: white;
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 800;
+  line-height: 115%;
+}
+
+@media (max-width: 650px) {
+  .black-friday-who-nomad-serves-content ul li {
+    height: calc(250px * var(--scale-factor));
+  }
+
+  .black-friday-who-nomad-serves-content ul li div h3 {
+    font-weight: 600;
+  }
+}
+
+.black-friday-what-you-get {
+  --scale-factor: 0.85;
+}
+
+.black-friday-what-you-get-content {
+  align-content: center;
+  display:flex;
+  flex-direction: column;
+  gap: calc(48px * var(--scale-factor));
+  margin: 0 auto;
+  max-width: calc(1234px * var(--scale-factor));
+  padding: calc(100px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  width: 100%;
+}
+
+.black-friday-what-you-get-content h2 {
+  font-size: calc(24px * var(--scale-factor));
+  text-align: center;
+}
+
+.black-friday-what-you-get-content ul {
+  display: grid;
+  gap: calc(16px * var(--scale-factor));
+  grid-template-columns: repeat(auto-fit, minmax(calc(150px * var(--scale-factor)), 1fr));
+  justify-items: center;
+}
+
+.black-friday-what-you-get-content ul li {
+  align-items: center;
+  border-radius: calc(15px * var(--scale-factor));
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  max-width: calc(214px * var(--scale-factor));
+  overflow: hidden;
+  position: relative;
+}
+
+.black-friday-what-you-get-content ul li svg {
+  height: calc(113px * var(--scale-factor));
+  width: calc(113px * var(--scale-factor));
+}
+
+.black-friday-what-you-get-content ul li h4 {
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 500;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .black-friday-what-you-get-content {
+    padding: calc(32px * var(--scale-factor)) calc(20px * var(--scale-factor));
+    gap: calc(64px * var(--scale-factor));
+  }
+
+  .black-friday-what-you-get-content ul {
+    row-gap: calc(48px * var(--scale-factor));
+  }
+
+  .black-friday-what-you-get-content ul li:nth-child(2) {
+    order: 3;
+  }
+
+  .black-friday-what-you-get-content ul li:nth-child(4) {
+    order: 4;
+  }
+}
+
+.black-friday-residential-plans {
+  font-family: "Plus Jakarta Sans";
+  padding: calc(60px * var(--scale-factor)) calc(20px * var(--scale-factor)) 0;
+
+  --scale-factor: 0.85;
+}
+
+.black-friday-residential-plans-content {
+  background: #f5f5f5;
+  border-radius: calc(15px * var(--scale-factor));
+  display: flex;
+  flex-direction: column;
+  gap: calc(48px * var(--scale-factor));
+  margin: 0 auto;
+  max-width: calc(1234px * var(--scale-factor));
+  padding: calc(48px * var(--scale-factor)) calc(24px * var(--scale-factor));
+  width: 100%;
+}
+
+.black-friday-residential-plans-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  text-align: center;
+}
+
+.black-friday-residential-plans-header-toggle {
+  background-color: #d4d4d4;
+  border-radius: 50rem;
+  display: flex;
+  padding: calc(4px * var(--scale-factor));
+  position: relative;
+}
+
+.black-friday-residential-plans-header-toggle button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Plus Jakarta Sans";
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 500;
+  padding: calc(12px * var(--scale-factor)) calc(16px * var(--scale-factor));
+  position: relative;
+  width: calc(140px * var(--scale-factor));
+}
+
+.black-friday-residential-plans-header-toggle div {
+  background-color: white;
+  border-radius: 50rem;
+  height: calc(100% - calc(8px * var(--scale-factor)));
+  left: calc(4px * var(--scale-factor));
+  position: absolute;
+  transition: left 0.25s;
+  width: calc(140px * var(--scale-factor));
+}
+
+.black-friday-residential-plans-header h2 {
+  font-family: "Plus Jakarta Sans";
+  font-size: calc(24px * var(--scale-factor));
+  font-weight: 800;
+  line-height: 113%;
+}
+
+.black-friday-residential-plans-header p {
+  color: #424242;
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+}
+
+.black-friday-residential-plans-user {
+  display: grid;
+  gap: calc(16px * var(--scale-factor));
+  grid-template-columns: repeat(auto-fit, minmax(calc(250px * var(--scale-factor)), 1fr));
+}
+
+.black-friday-residential-plans-user-item {
+  background: white;
+  border-radius: calc(15px * var(--scale-factor));
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+  padding: calc(24px * var(--scale-factor)) calc(16px * var(--scale-factor));
+  position: relative;
+}
+
+.black-friday-residential-plans-user-item-highlight {
+  align-items: center;
+  background-color: #ff4d00;
+  border-radius: 50rem;
+  display: flex;
+  gap: calc(8px * var(--scale-factor));
+  left: 50%;
+  padding: calc(4px * var(--scale-factor)) calc(16px * var(--scale-factor));
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+
+.black-friday-residential-plans-user-item-highlight svg {
+  width: calc(15px * var(--scale-factor));
+}
+
+.black-friday-residential-plans-user-item-highlight p {
+  color: white;
+  font-family: Graphie;
+  font-size: calc(14px * var(--scale-factor));
+  font-weight: 700;
+}
+
+.black-friday-residential-plans-user-item-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.black-friday-residential-plans-user-item-header > svg {
+  width: calc(66px * var(--scale-factor));
+}
+
+.black-friday-residential-plans-user-item-header-tag {
+  position: relative;
+}
+
+.black-friday-residential-plans-user-item-header-tag svg {
+  height: calc(38px * var(--scale-factor));
+  width: calc(123px * var(--scale-factor));
+}
+
+.black-friday-residential-plans-user-item-header-tag p {
+  color: white;
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 700;
+  position: absolute;
+  right: calc(12px * var(--scale-factor));
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.black-friday-residential-plans-user-item h3 {
+  font-family: "Plus Jakarta Sans";
+  font-size: calc(24px * var(--scale-factor));
+  font-weight: 700;
+  line-height: 112.5%;
+}
+
+.black-friday-residential-plans-user-item hr {
+  border-color: #d0d0d0;
+  margin: 0;
+}
+
+.black-friday-residential-plans-user-item-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: calc(8px * var(--scale-factor));
+}
+
+.black-friday-residential-plans-user-item-features-list li {
+  align-items: center;
+  color: #424242;
+  display: flex;
+  font-size: calc(16px * var(--scale-factor));
+  gap: calc(16px * var(--scale-factor));
+}
+
+.black-friday-residential-plans-user-item-features-list li div {
+  align-items: center;
+  background: radial-gradient(44.12% 99.48% at 49.8% 0.26%, #5AE7C5 0%, #008061 100%), #008061;
+  border-radius: 50%;
+  display: flex;
+  height: calc(24px * var(--scale-factor));
+  justify-content: center;
+  padding: calc(3px * var(--scale-factor));
+  width: calc(24px * var(--scale-factor));
+}
+
+.black-friday-residential-plans-user-item-features-list li div svg {
+  height: calc(18px * var(--scale-factor));
+  width: calc(18px * var(--scale-factor));
+}
+
+.black-friday-residential-plans-user-item-price {
+  align-items: baseline;
+  display: flex;
+  gap: calc(8px * var(--scale-factor));
+}
+
+.black-friday-residential-plans-user-item-price h2 {
+  font-family: "Plus Jakarta Sans";
+  font-size: calc(58px * var(--scale-factor));
+  font-weight: 600;
+  line-height: normal;
+}
+
+.black-friday-residential-plans-user-item-price p {
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 600;
+  text-decoration-line: line-through;
+}
+
+.black-friday-residential-plans-user-item-link {
+  text-decoration: none;
+}
+
+.black-friday-residential-plans-user-item-link-existing-user {
+  display: none;
+  text-decoration: none;
+}
+
+.black-friday-residential-plans-user-item button {
+  align-items: center;
+  background: radial-gradient(44.12% 99.48% at 49.8% 0.26%, #5AE7C5 0%, #008061 100%);
+  border: calc(1px * var(--scale-factor)) solid #4CD7B6;
+  border-radius: calc(10px * var(--scale-factor));
+  color: #fff;
+  cursor: pointer;
+  font-family: "Plus Jakarta Sans";
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 500;
+  gap: calc(7.19px * var(--scale-factor));
+  line-height: 150.907%;
+  padding: calc(14.37px * var(--scale-factor));
+  width: 100%;
+}
+
+.black-friday-residential-plans-user-item button:hover {
+  background: radial-gradient(44.12% 99.48% at 60% 5%, #5AE7C5 20%, #008061 100%);
+}
+
+.black-friday-residential-plans-user-item-footer-text {
+  color: #424242;
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+  line-height: 177%;
+  text-align: center;
+}
+
+.black-friday-residential-plans-footer {
+  color: #424242;
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .black-friday-residential-plans-user-item:last-child {
+    grid-row: 1;
+  }
+}
+
+.black-friday-travel-plans {
+  font-family: "Plus Jakarta Sans";
+  padding: calc(60px * var(--scale-factor)) calc(20px * var(--scale-factor)) 0;
+
+  --scale-factor: 0.85;
+}
+
+.black-friday-travel-plans-content {
+  background: #f5f5f5;
+  border-radius: calc(15px * var(--scale-factor));
+  display: flex;
+  flex-direction: column;
+  gap: calc(48px * var(--scale-factor));
+  margin: 0 auto;
+  max-width: calc(1234px * var(--scale-factor));
+  padding: calc(48px * var(--scale-factor)) calc(24px * var(--scale-factor));
+  width: 100%;
+}
+
+.black-friday-travel-plans-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  text-align: center;
+}
+
+.black-friday-travel-plans-header-toggle {
+  background-color: #d4d4d4;
+  border-radius: 50rem;
+  display: flex;
+  padding: calc(4px * var(--scale-factor));
+  position: relative;
+}
+
+.black-friday-travel-plans-header-toggle button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Plus Jakarta Sans";
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 500;
+  padding: calc(12px * var(--scale-factor)) calc(16px * var(--scale-factor));
+  position: relative;
+  width: calc(140px * var(--scale-factor));
+}
+
+.black-friday-travel-plans-header-toggle div {
+  background-color: white;
+  border-radius: 50rem;
+  height: calc(100% - calc(8px * var(--scale-factor)));
+  left: calc(4px * var(--scale-factor));
+  position: absolute;
+  transition: left 0.25s;
+  width: calc(140px * var(--scale-factor));
+}
+
+.black-friday-travel-plans-header h2 {
+  font-family: "Plus Jakarta Sans";
+  font-size: calc(24px * var(--scale-factor));
+  font-weight: 800;
+  line-height: 113%;
+}
+
+.black-friday-travel-plans-header p {
+  color: #424242;
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+}
+
+.black-friday-travel-plans-user {
+  display: grid;
+  gap: calc(16px * var(--scale-factor));
+  grid-template-columns: repeat(auto-fit, minmax(calc(250px * var(--scale-factor)), 1fr));
+}
+
+.black-friday-travel-plans-user-item {
+  background: white;
+  border-radius: calc(15px * var(--scale-factor));
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+  padding: calc(24px * var(--scale-factor)) calc(16px * var(--scale-factor));
+  position: relative;
+}
+
+.black-friday-travel-plans-user-item-highlight {
+  align-items: center;
+  background-color: #ff4d00;
+  border-radius: 50rem;
+  display: flex;
+  gap: calc(8px * var(--scale-factor));
+  left: 50%;
+  padding: calc(4px * var(--scale-factor)) calc(16px * var(--scale-factor));
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+
+.black-friday-travel-plans-user-item-highlight svg {
+  width: calc(15px * var(--scale-factor));
+}
+
+.black-friday-travel-plans-user-item-highlight p {
+  color: white;
+  font-family: Graphie;
+  font-size: calc(14px * var(--scale-factor));
+  font-weight: 700;
+}
+
+.black-friday-travel-plans-user-item-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.black-friday-travel-plans-user-item-header > svg {
+  width: calc(66px * var(--scale-factor));
+}
+
+.black-friday-travel-plans-user-item-header-tag {
+  position: relative;
+}
+
+.black-friday-travel-plans-user-item-header-tag svg {
+  height: calc(38px * var(--scale-factor));
+  width: calc(123px * var(--scale-factor));
+}
+
+.black-friday-travel-plans-user-item-header-tag p {
+  color: white;
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 700;
+  position: absolute;
+  right: calc(12px * var(--scale-factor));
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.black-friday-travel-plans-user-item h3 {
+  font-family: "Plus Jakarta Sans";
+  font-size: calc(24px * var(--scale-factor));
+  font-weight: 700;
+  line-height: 112.5%;
+}
+
+.black-friday-travel-plans-user-item hr {
+  border-color: #d0d0d0;
+  margin: 0;
+}
+
+.black-friday-travel-plans-user-item-features-list {
+  display: flex;
+  flex-direction: column;
+  gap: calc(8px * var(--scale-factor));
+}
+
+.black-friday-travel-plans-user-item-features-list li {
+  align-items: center;
+  color: #424242;
+  display: flex;
+  font-size: calc(16px * var(--scale-factor));
+  gap: calc(16px * var(--scale-factor));
+}
+
+.black-friday-travel-plans-user-item-features-list li div {
+  align-items: center;
+  background: radial-gradient(44.12% 99.48% at 49.8% 0.26%, #5AE7C5 0%, #008061 100%), #008061;
+  border-radius: 50%;
+  display: flex;
+  height: calc(24px * var(--scale-factor));
+  justify-content: center;
+  padding: calc(3px * var(--scale-factor));
+  width: calc(24px * var(--scale-factor));
+}
+
+.black-friday-travel-plans-user-item-features-list li div svg {
+  height: calc(18px * var(--scale-factor));
+  width: calc(18px * var(--scale-factor));
+}
+
+.black-friday-travel-plans-user-item-price {
+  align-items: baseline;
+  display: flex;
+  gap: calc(8px * var(--scale-factor));
+}
+
+.black-friday-travel-plans-user-item-price h2 {
+  font-family: "Plus Jakarta Sans";
+  font-size: calc(58px * var(--scale-factor));
+  font-weight: 600;
+  line-height: normal;
+}
+
+.black-friday-travel-plans-user-item-price p {
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 600;
+  text-decoration-line: line-through;
+}
+
+.black-friday-travel-plans-user-item-link {
+  text-decoration: none;
+}
+
+.black-friday-travel-plans-user-item-link-existing-user {
+  display: none;
+  text-decoration: none;
+}
+
+.black-friday-travel-plans-user-item button {
+  align-items: center;
+  background: radial-gradient(44.12% 99.48% at 49.8% 0.26%, #5AE7C5 0%, #008061 100%);
+  border: calc(1px * var(--scale-factor)) solid #4CD7B6;
+  border-radius: calc(10px * var(--scale-factor));
+  color: #fff;
+  cursor: pointer;
+  font-family: "Plus Jakarta Sans";
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 500;
+  gap: calc(7.19px * var(--scale-factor));
+  line-height: 150.907%;
+  padding: calc(14.37px * var(--scale-factor));
+  width: 100%;
+}
+
+.black-friday-travel-plans-user-item button:hover {
+  background: radial-gradient(44.12% 99.48% at 60% 5%, #5AE7C5 20%, #008061 100%);
+}
+
+.black-friday-travel-plans-user-item-footer-text {
+  color: #424242;
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+  line-height: 177%;
+  text-align: center;
+}
+
+.black-friday-travel-plans-footer {
+  color: #424242;
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .black-friday-travel-plans-user-item:last-child {
+    grid-row: 1;
+  }
+}
+
+.black-friday-comparison-table {
+  --scale-factor: 0.85;
+}
+
+.black-friday-comparison-table-content {
+  display: flex;
+  flex-direction: column;
+  gap: calc(48px * var(--scale-factor));
+  margin: 0 auto;
+  max-width: calc(1234px * var(--scale-factor));
+  padding: calc(100px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  width: 100%;
+}
+
+.black-friday-comparison-table-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  text-align: center;
+}
+
+.black-friday-comparison-table-header h2 {
+  font-size: calc(24px * var(--scale-factor));
+  font-weight: 800;
+}
+
+.black-friday-comparison-table-header-toggle {
+  background-color: #d4d4d4;
+  border-radius: 50rem;
+  display: flex;
+  padding: calc(4px * var(--scale-factor));
+  position: relative;
+}
+
+.black-friday-comparison-table-header-toggle button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Plus Jakarta Sans";
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 500;
+  padding: calc(12px * var(--scale-factor)) calc(16px * var(--scale-factor));
+  position: relative;
+  width: calc(180px * var(--scale-factor));
+}
+
+.black-friday-comparison-table-header-toggle div {
+  background-color: white;
+  border-radius: 50rem;
+  height: calc(100% - calc(8px * var(--scale-factor)));
+  left: calc(4px * var(--scale-factor));
+  position: absolute;
+  transition: left 0.25s;
+  width: calc(180px * var(--scale-factor));
+}
+
+.black-friday-comparison-table-table-container {
+  background: #f5f5f5;
+  border-radius: calc(15px * var(--scale-factor));
+  overflow-x: auto;
+  padding: calc(16px * var(--scale-factor));
+  scrollbar-width: none;
+}
+
+.black-friday-comparison-table-table-container table {
+  background: #fff;
+  border: calc(1px * var(--scale-factor)) solid #ebedf0;
+  border-collapse: collapse;
+  border-radius: calc(15px * var(--scale-factor));
+  font-family: 'Plus Jakarta Sans';
+  overflow: hidden;
+}
+
+.black-friday-comparison-table-table-travel-plan {
+  display: none;
+}
+
+.black-friday-comparison-table-table-container table th {
+  background: #f9fafb;
+  border: calc(1px * var(--scale-factor)) solid #ebedf0;
+  color: #344054;
+  font-size: calc(12px * var(--scale-factor));
+  font-weight: 500;
+  padding: calc(12px * var(--scale-factor)) calc(24px * var(--scale-factor));
+  text-align: left;
+}
+
+.black-friday-comparison-table-table-container table td {
+  border: calc(1px * var(--scale-factor)) solid #ebedf0;
+  color: #344054;
+  font-size: calc(14px * var(--scale-factor));
+  font-weight: 400;
+  min-width: calc(304px * var(--scale-factor));
+  padding: calc(16px * var(--scale-factor)) calc(24px * var(--scale-factor));
+}
+
+.black-friday-comparison-table-table-container table td:first-child {
+  background: #f9fafb;
+  color: #101928;
+  font-size: calc(14px * var(--scale-factor));
+  font-weight: 500;
+  min-width: calc(250px * var(--scale-factor));
+  padding: calc(16px * var(--scale-factor)) calc(24px * var(--scale-factor));
+}
+
+.black-friday-why-nomad {
+  --scale-factor: 0.85;
+}
+
+.black-friday-why-nomad-content {
+  margin: 0 auto;
+  max-width: calc(1234px * var(--scale-factor));
+  padding: calc(100px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  width: 100%;
+}
+
+.black-friday-why-nomad-content-main {
+  border-radius: calc(15px * var(--scale-factor));
+  display: flex;
+  overflow: hidden;
+}
+
+.black-friday-why-nomad-left {
+  background-color: black;
+  display: flex;
+  flex: 0 0 50%;
+  flex-direction: column;
+  gap: calc(48px * var(--scale-factor));
+  padding: calc(60px * var(--scale-factor));
+}
+
+.black-friday-why-nomad-left h3 {
+  color: white;
+  font-size: calc(24px * var(--scale-factor));
+}
+
+.black-friday-why-nomad-left ul {
+  display: flex;
+  flex-direction: column;
+  gap: calc(32px * var(--scale-factor));
+}
+
+.black-friday-why-nomad-left ul li {
+  align-items: flex-start;
+  color: white;
+  display: flex;
+  gap: calc(32px * var(--scale-factor));
+}
+
+.black-friday-why-nomad-left ul li svg {
+  flex: 0 0 calc(40px * var(--scale-factor));
+}
+
+.black-friday-why-nomad-left ul li div {
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+}
+
+.black-friday-why-nomad-left ul li h4 {
+  font-size: calc(24px * var(--scale-factor));
+  font-weight: 700;
+  line-height: 1;
+}
+
+.black-friday-why-nomad-left ul li p {
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+  line-height: 110%;
+}
+
+.black-friday-why-nomad-right {
+  flex: 0 0 50%;
+  position: relative;
+}
+
+.black-friday-why-nomad-right-image {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.black-friday-why-nomad-right-logo {
+  position: absolute;
+  right: calc(32px * var(--scale-factor));
+  top: calc(32px * var(--scale-factor));
+  width: calc(147px * var(--scale-factor));
+}
+
+@media (max-width: 768px) {
+  .black-friday-why-nomad-content {
+    padding: calc(60px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  }
+
+  .black-friday-why-nomad-content-main {
+    flex-direction: column;
+  }
+
+  .black-friday-why-nomad-left {
+    gap: calc(48px * var(--scale-factor));
+    padding: calc(24px * var(--scale-factor)) calc(16px * var(--scale-factor));
+  }
+
+  .black-friday-why-nomad-left ul li {
+    flex-direction: column;
+  }
+
+  .black-friday-why-nomad-right {
+    flex: 0 0 calc(353px * var(--scale-factor));
+  }
+}
+
+.black-friday-testimonials {
+  --scale-factor: 0.85;
+}
+
+.black-friday-testimonials-content {
+  display: flex;
+  flex-direction: column;
+  gap: calc(48px * var(--scale-factor));
+  margin: 0 auto;
+  max-width: calc(1234px * var(--scale-factor));
+  padding: calc(100px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  width: 100%;
+}
+
+.black-friday-testimonials h2 {
+  text-align: center;
+}
+
+.black-friday-testimonials ul {
+  display: flex;
+  gap: calc(24px * var(--scale-factor));
+}
+
+.black-friday-testimonials ul li {
+  align-items: center;
+  background: rgba(0, 128, 97, 0.05);
+  border: calc(1px * var(--scale-factor)) solid white;
+  border-radius: calc(20px * var(--scale-factor));
+  display: flex;
+  flex: 0 0 50%;
+  flex-direction: column;
+  gap: calc(39px * var(--scale-factor));
+  padding: calc(32px * var(--scale-factor)) calc(24px * var(--scale-factor));
+}
+
+.black-friday-testimonials ul li div {
+  border: calc(1px * var(--scale-factor)) solid black;
+  border-radius: 50rem;
+  display: flex;
+  padding: calc(8px * var(--scale-factor)) calc(16px * var(--scale-factor));
+}
+
+.black-friday-testimonials ul li p {
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .black-friday-testimonials-content {
+    padding: calc(60px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  }
+
+  .black-friday-testimonials ul {
+    flex-direction: column;
+  }
+}
+
+.black-friday-faq {
+  --scale-factor: 0.85;
+}
+
+.black-friday-faq-content {
+  display: flex;
+  flex-direction: column;
+  gap: calc(64px * var(--scale-factor));
+  margin: 0 auto;
+  max-width: calc(772px * var(--scale-factor));
+  padding: calc(60px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  width: 100%;
+}
+
+.black-friday-faq h2 {
+  font-size: calc(40px * var(--scale-factor));
+  font-weight: 700;
+  text-align: center;
+}
+
+.black-friday-faq ul li {
+  border-bottom: calc(1px * var(--scale-factor)) solid #a3a3a3;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: calc(20px * var(--scale-factor));
+  padding: calc(16px * var(--scale-factor));
+}
+
+.black-friday-faq ul li div {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.black-friday-faq ul li div h5 {
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 500;
+}
+
+.black-friday-faq ul li div svg {
+  height: calc(24px * var(--scale-factor));
+  width: calc(24px * var(--scale-factor));
+}
+
+.black-friday-faq ul li p {
+  display: none;
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 500;
+  transition: height 0.2s;
+}
+
+.black-friday-pricing-active {
+  padding: calc(100px * var(--scale-factor)) calc(20px * var(--scale-factor));
+
+  --scale-factor: 0.85;
+}
+
+.black-friday-pricing-active-content {
+  align-items: center;
+  background-color: black;
+  border-radius: calc(20px * var(--scale-factor));
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  height: calc(456px * var(--scale-factor));
+  justify-content: center;
+  margin: 0 auto;
+  max-width: calc(1234px * var(--scale-factor));
+  overflow: hidden;
+  padding: 0 calc(20px * var(--scale-factor));
+  position: relative;
+  width: 100%;
+}
+
+.black-friday-pricing-active-slide-1,
+.black-friday-pricing-active-slide-2,
+.black-friday-pricing-active-slide-3 {
+  background-color: white;
+  overflow-x: auto;
+  padding: calc(5px * var(--scale-factor));
+  position: absolute;
+  scrollbar-width: none;
+  width: 100%;
+}
+
+.black-friday-pricing-active-slide-1 {
+  left: 0;
+  top: calc(24px * var(--scale-factor));
+  transform: rotate(-3deg);
+}
+
+.black-friday-pricing-active-slide-2 {
+  bottom: calc(24px * var(--scale-factor));
+  left: 0;
+  transform: rotate(3deg);
+}
+
+.black-friday-pricing-active-slide-3 {
+  left: 50%;
+  bottom: 20%;
+  transform: rotate(-45deg);
+}
+
+.black-friday-pricing-active-slide-content {
+  align-items: center;
+  display: flex;
+  gap: calc(14px * var(--scale-factor));
+}
+
+.black-friday-pricing-active-slide-content p {
+  align-items: center;
+  color: black;
+  display: flex;
+  font-size: calc(16px * var(--scale-factor));
+  gap: calc(14px * var(--scale-factor));
+}
+
+.black-friday-pricing-active-slide-content p svg {
+  flex: 0 0 calc(16px * var(--scale-factor));
+}
+
+.black-friday-pricing-active-slide-1 .black-friday-pricing-active-slide-content {
+  animation: slider 3s infinite;
+  animation-delay: 0.5s;
+}
+
+.black-friday-pricing-active-slide-2 .black-friday-pricing-active-slide-content {
+  animation: slider 3.5s infinite;
+  animation-delay: 0.65s;
+}
+
+.black-friday-pricing-active-slide-3 .black-friday-pricing-active-slide-content {
+  animation: slider 4s infinite;
+  animation-delay: 0.75s;
+}
+
+.black-friday-pricing-active h1 {
+  color: white;
+  text-align: center;
+  line-height: 115%;
+}
+
+.black-friday-pricing-active button {
+  background: radial-gradient(44.12% 99.48% at 49.8% 0.26%, #5AE7C5 0%, #008061 100%);
+  border: calc(1px * var(--scale-factor)) solid #4CD7B6;
+  border-radius: calc(10px * var(--scale-factor));
+  color: #fff;
+  cursor: pointer;
+  font-family: "Plus Jakarta Sans";
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 500;
+  padding: calc(16px * var(--scale-factor));
+  width: 100%;
+}
+
+.black-friday-pricing-active button:hover {
+  background: radial-gradient(44.12% 99.48% at 60% 5%, #5AE7C5 20%, #008061 100%);
+}
+
+@media (max-width: 650px) {
+  .black-friday-pricing-active h1 {
+    font-size: calc(28px * var(--scale-factor));
+  }
+}

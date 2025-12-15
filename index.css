@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.black-friday-event {
+  align-items: center;
+  animation: 3s jump ease-in infinite;
+  background: linear-gradient(89deg, rgba(0, 128, 97, 0.90) 11.94%, rgba(6, 191, 59, 0.90) 69.15%, rgba(13, 255, 21, 0.90) 102.7%), #000;
+  border: 2px solid #F2F2F2;
+  bottom: 50vh;
+  color: white;
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  gap: 8px;
+  justify-content: center;
+  padding: 8px 20px;
+  position: fixed;
+  right: 0;
+  text-decoration: none;
+  transform: rotate(-90deg);
+  transform-origin: 100% 100%;
+  z-index: 1000;
+}
+
+.black-friday-event svg {
+  transform: rotate(90deg);
+}
+
+@keyframes jump {
+  0% {
+    bottom: 50vh;
+  }
+
+  50% {
+    bottom: 55vh;
+  }
+
+  75% {
+    bottom: 50vh;
+  }
+}
