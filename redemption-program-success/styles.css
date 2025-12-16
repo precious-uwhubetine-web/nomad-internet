@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.redemption-program-success {
+  --scale-factor: 0.9;
+
+  display: flex;
+  flex-direction: column;
+  gap: calc(48px * var(--scale-factor));
+  padding: calc(100px * var(--scale-factor)) calc(20px * var(--scale-factor));
+}
+
+.redemption-program-success button {
+  font-family: Inter;
+}
+
+.redemption-program-success p {
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+}
+
+.redemption-program-success h2 {
+  color: black;
+  font-size: calc(32px * var(--scale-factor));
+  font-weight: 700;
+  line-height: normal;
+}
+
+.redemption-program-success header {
+  display: flex;
+  justify-content: center;
+}
+
+.redemption-program-success header img {
+  height: calc(40px * var(--scale-factor));
+}
+
+.redemption-program-success-main {
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+  margin: 0 auto;
+  max-width: calc(400px * var(--scale-factor));
+  width: 100%;
+}
+
+.redemption-program-success-main-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  text-align: center;
+}
+
+.redemption-program-success-main-content img {
+  border: calc(5px * var(--scale-factor)) solid #e7e7e7;
+  border-radius: 50%;
+  height: calc(115px * var(--scale-factor));
+  width: auto;
+}
+
+.redemption-program-success-main-content p {
+  color: #666;
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+  line-height: normal;
+  max-width: calc(408px * var(--scale-factor));
+}
+
+.redemption-program-success-main-content button {
+  background-color: #008061;
+  border: none;
+  border-radius: calc(8px * var(--scale-factor));
+  color: white;
+  font-weight: 600;
+  padding: calc(12px * var(--scale-factor)) calc(24px * var(--scale-factor));
+  width: 100%;
+}
+
+.redemption-program-success-main-footer {
+  color: #202020;
+  font-size: calc(15px * var(--scale-factor));
+  font-weight: 500;
+  padding: calc(16px * var(--scale-factor));
+  text-align: center;
+}
+
+.redemption-program-success-main-footer a {
+  color: #008061;
+}

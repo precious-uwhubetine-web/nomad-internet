@@ -1,0 +1,814 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.redemption-program-check-eligibility {
+  --scale-factor: 0.9;
+
+  display: flex;
+  flex-direction: column;
+  gap: calc(48px * var(--scale-factor));
+  padding: calc(100px * var(--scale-factor)) calc(20px * var(--scale-factor));
+}
+
+.redemption-program-check-eligibility-loader {
+  animation: rotation 1s linear infinite;
+  border: calc(2px * var(--scale-factor)) solid #000;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  height: calc(16px * var(--scale-factor));
+  width: calc(16px * var(--scale-factor));
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.redemption-program-check-eligibility button,
+.redemption-program-check-eligibility input {
+  font-family: Inter;
+}
+
+.redemption-program-check-eligibility p {
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+}
+
+.redemption-program-check-eligibility h2 {
+  color: black;
+  font-size: calc(32px * var(--scale-factor));
+  font-weight: 700;
+  line-height: normal;
+}
+
+.redemption-program-check-eligibility h3 {
+  color: #1c1b1e;
+  font-size: calc(24px * var(--scale-factor));
+  font-weight: 600;
+  line-height: calc(32px * var(--scale-factor));
+}
+
+.redemption-program-check-eligibility h4 {
+  color: #1c1b1e;
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 600;
+  line-height: calc(28px * var(--scale-factor));
+}
+
+.redemption-program-check-eligibility h5 {
+  color: #252525;
+  font-size: calc(14px * var(--scale-factor));
+  font-weight: 500;
+  line-height: calc(20px * var(--scale-factor));
+}
+
+.redemption-program-check-eligibility header {
+  display: flex;
+  justify-content: center;
+}
+
+.redemption-program-check-eligibility header img {
+  height: calc(40px * var(--scale-factor));
+}
+
+.redemption-program-check-eligibility-main-already-redeemed-alert,
+.redemption-program-check-eligibility-main-not-found-alert {
+  align-items: center;
+  background-color: #fef6ee;
+  display: none;
+  justify-content: center;
+  padding: calc(8px * var(--scale-factor));
+  gap: calc(8px * var(--scale-factor));
+}
+
+.redemption-program-check-eligibility-main-not-found-alert svg {
+  width: calc(14px * var(--scale-factor));
+}
+
+.redemption-program-check-eligibility-main-already-redeemed-alert p,
+.redemption-program-check-eligibility-main-not-found-alert p {
+  color: #b93815;
+  font-size: calc(14px * var(--scale-factor));
+  font-weight: 500;
+}
+
+.redemption-program-check-eligibility-main {
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+  margin: 0 auto;
+  max-width: calc(646px * var(--scale-factor));
+  width: 100%;
+}
+
+.redemption-program-check-eligibility-main-title,
+.redemption-program-check-eligibility-main-title-already-redeemed,
+.redemption-program-check-eligibility-main-title-not-found {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  text-align: center;
+}
+
+.redemption-program-check-eligibility-main-title-already-redeemed,
+.redemption-program-check-eligibility-main-title-not-found {
+  display: none;
+}
+
+.redemption-program-check-eligibility-main-title p,
+.redemption-program-check-eligibility-main-title-already-redeemed p,
+.redemption-program-check-eligibility-main-title-not-found p {
+  color: #676767;
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+  line-height: normal;
+  max-width: calc(581px * var(--scale-factor));
+}
+
+.redemption-program-check-eligibility-main-title-already-redeemed p,
+.redemption-program-check-eligibility-main-title-not-found p {
+  max-width: calc(380px * var(--scale-factor));
+}
+
+.redemption-program-check-eligibility-main-title-already-redeemed p a,
+.redemption-program-check-eligibility-main-title-not-found p a {
+  color: #008061;
+  font-weight: 600;
+}
+
+.redemption-program-check-eligibility-main-title-countdown {
+  align-items: center;
+  display: flex;
+  gap: calc(8px * var(--scale-factor));
+  justify-content: center;
+  padding: calc(6px * var(--scale-factor)) calc(12px * var(--scale-factor));
+}
+
+.redemption-program-check-eligibility-main-title-countdown svg {
+  width: calc(14px * var(--scale-factor));
+}
+
+.redemption-program-check-eligibility-main-title-countdown p {
+  color: #1e1e1e;
+  font-size: calc(14px * var(--scale-factor));
+  font-weight: 500;
+}
+
+.redemption-program-check-eligibility-main-title-countdown p span {
+  color: #e62e05;
+  font-weight: 700;
+}
+
+.redemption-program-check-eligibility-main-form-header {
+  display: flex;
+  flex-direction: column;
+  gap: calc(12px * var(--scale-factor));
+}
+
+.redemption-program-check-eligibility-main-form-header p {
+  color: #6e6d76;
+}
+
+.redemption-program-check-eligibility-main-form {
+  border-radius: calc(8px * var(--scale-factor));
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.10), 0 8px 10px -6px rgba(0, 0, 0, 0.10);
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+  padding: calc(32px * var(--scale-factor));
+}
+
+.redemption-program-check-eligibility-main-form-form {
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+}
+
+.redemption-program-check-eligibility-main-form-form label {
+  color: #535259;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(14px * var(--scale-factor));
+  gap: calc(8px * var(--scale-factor));
+}
+
+.redemption-program-check-eligibility-main-form-form label div {
+  position: relative;
+}
+
+.redemption-program-check-eligibility-main-form-form input {
+  border: calc(1px * var(--scale-factor)) solid #b9b8bf;
+  border-radius: calc(8px * var(--scale-factor));
+  font-size: calc(16px * var(--scale-factor));
+  padding: calc(15px * var(--scale-factor)) calc(17px * var(--scale-factor));
+  width: 100%;
+}
+
+.redemption-program-check-eligibility-main-form-form input::placeholder {
+  color: #8a8894;
+}
+
+.redemption-program-check-eligibility-main-form-form label svg {
+  position: absolute;
+  right: calc(16px * var(--scale-factor));
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(20px * var(--scale-factor));
+  z-index: 1;
+}
+
+.redemption-program-check-eligibility-main-form-form .redemption-program-check-eligibility-form-email-validation-text {
+  color: red;
+  display: none;
+  font-size: calc(14px * var(--scale-factor));
+  text-align: left;
+  width: 100%;
+}
+
+.redemption-program-check-eligibility-main-form-form button {
+  background-color: #008061;
+  border: none;
+  border-radius: calc(8px * var(--scale-factor));
+  color: white;
+  font-weight: 600;
+  padding: calc(12px * var(--scale-factor)) calc(24px * var(--scale-factor));
+}
+
+.redemption-program-check-eligibility-main-form-form button:disabled {
+  background-color: #f6f6f6;
+  color: #252525;
+}
+
+.redemption-program-check-eligibility-main-form-form p {
+  color: #8a8894;
+  font-size: calc(12px * var(--scale-factor));
+  text-align: center;
+}
+
+.redemption-program-check-eligibility-main-how-it-works {
+  border-radius: calc(8px * var(--scale-factor));
+  background: rgba(255, 255, 255, 0.80);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  padding: calc(16px * var(--scale-factor)) 0;
+  text-align: center;
+}
+
+.redemption-program-check-eligibility-main-how-it-works ul {
+  align-items: center;
+  display: flex;
+  gap: calc(16px * var(--scale-factor))
+}
+
+@media (max-width: 480px) {
+  .redemption-program-check-eligibility-main-how-it-works ul {
+    flex-direction: column;
+  }
+}
+
+.redemption-program-check-eligibility-main-how-it-works ul li {
+  align-items: center;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: calc(8px * var(--scale-factor));
+}
+
+.redemption-program-check-eligibility-main-how-it-works ul li div {
+  align-items: center;
+  background-color: #008061;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  font-size: calc(15px * var(--scale-factor));
+  font-weight: 800;
+  height: calc(32px * var(--scale-factor));
+  justify-content: center;
+  width: calc(32px * var(--scale-factor));
+}
+
+.redemption-program-check-eligibility-main-how-it-works ul li p {
+  color: #676767;
+  font-size: calc(14px * var(--scale-factor));
+  max-width: calc(140px * var(--scale-factor));
+}
+
+.redemption-program-check-eligibility-main-footer {
+  align-items: center;
+  background-color: #f8f8f8;
+  border-radius: calc(8px * var(--scale-factor));
+  display: flex;
+  flex-direction: column;
+  gap: calc(12px * var(--scale-factor));
+  justify-content: center;
+  padding: calc(16px * var(--scale-factor));
+  text-align: center;
+}
+
+.redemption-program-check-eligibility-main-footer p {
+  font-size: calc(12px * var(--scale-factor));
+}
+
+.redemption-program-check-eligibility-main-footer-top {
+  align-items: center;
+  display: flex;
+  gap: calc(8px * var(--scale-factor));
+}
+
+.redemption-program-check-eligibility-main-footer-top svg {
+  width: calc(20px * var(--scale-factor));
+}
+
+.redemption-program-check-eligibility-main-footer-middle {
+  color: #676767;
+  max-width: calc(406px * var(--scale-factor));
+}
+
+.redemption-program-check-eligibility-main-footer-bottom {
+  color: #888;
+}
+
+.redemption-program-check-eligibility-main-footer-bottom a {
+  color: #008061;
+  font-weight: 600;
+}
+
+.redemption-program-eligible {
+  --scale-factor: 0.9;
+
+  display: none;
+  flex-direction: column;
+  gap: calc(48px * var(--scale-factor));
+  padding: calc(100px * var(--scale-factor)) calc(20px * var(--scale-factor));
+}
+
+.redemption-program-eligible-toast {
+  align-items: center;
+  background: white;
+  border: calc(1px * var(--scale-factor)) solid #e6e6e6;
+  border-radius: calc(12px * var(--scale-factor));
+  box-shadow: 0 113px 32px 0 rgba(135, 135, 135, 0.00), 0 73px 29px 0 rgba(135, 135, 135, 0.01), 0 41px 24px 0 rgba(135, 135, 135, 0.05), 0 18px 18px 0 rgba(135, 135, 135, 0.09), 0 5px 10px 0 rgba(135, 135, 135, 0.10);
+  display: flex;
+  gap: calc(8px * var(--scale-factor));
+  padding: calc(8px * var(--scale-factor));
+  position: fixed;
+  max-width: 90vw;
+  right: calc(32px * var(--scale-factor));
+  top: calc(32px * var(--scale-factor));
+  width: calc(415px * var(--scale-factor));
+  z-index: 2;
+}
+
+.redemption-program-eligible-toast-icon {
+  align-items: center;
+  border-radius: calc(6px * var(--scale-factor));
+  background-color: #fff6e6;
+  display: flex;
+  height: calc(72px * var(--scale-factor));
+  justify-content: center;
+  width: calc(72px * var(--scale-factor));
+}
+
+.redemption-program-eligible-toast-icon img {
+  height: calc(32px * var(--scale-factor));
+}
+
+.redemption-program-eligible-toast-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.redemption-program-eligible-toast-text h4 {
+  font-size: calc(14px * var(--scale-factor));
+  letter-spacing: calc(-0.3px * var(--scale-factor));
+}
+
+.redemption-program-eligible-toast-text p {
+  color: #666;
+  font-size: calc(14px * var(--scale-factor));
+  letter-spacing: calc(-0.3px * var(--scale-factor));
+}
+
+.redemption-program-eligible-toast-controls {
+  align-self: start;
+}
+
+.redemption-program-eligible-toast-controls button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.redemption-program-eligible-toast-controls button svg {
+  height: calc(20px * var(--scale-factor));
+  width: calc(20px * var(--scale-factor));
+}
+
+.redemption-program-eligible button,
+.redemption-program-eligible input {
+  font-family: Inter;
+}
+
+.redemption-program-eligible p {
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+}
+
+.redemption-program-eligible h2 {
+  color: black;
+  font-size: calc(32px * var(--scale-factor));
+  font-weight: 700;
+  line-height: normal;
+}
+
+.redemption-program-eligible h3 {
+  color: #1c1b1e;
+  font-size: calc(24px * var(--scale-factor));
+  font-weight: 600;
+  line-height: calc(32px * var(--scale-factor));
+}
+
+.redemption-program-eligible h4 {
+  color: #1c1b1e;
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 600;
+  line-height: calc(28px * var(--scale-factor));
+}
+
+.redemption-program-eligible h5 {
+  color: #252525;
+  font-size: calc(14px * var(--scale-factor));
+  font-weight: 500;
+  line-height: calc(20px * var(--scale-factor));
+}
+
+.redemption-program-eligible header {
+  display: flex;
+  justify-content: center;
+}
+
+.redemption-program-eligible header img {
+  height: calc(40px * var(--scale-factor));
+}
+
+.redemption-program-eligible-main {
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+  margin: 0 auto;
+  max-width: calc(500px * var(--scale-factor));
+  width: 100%;
+}
+
+.redemption-program-eligible-main-title {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  text-align: center;
+}
+
+.redemption-program-eligible-main-title p {
+  color: #666;
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+  line-height: normal;
+  max-width: calc(408px * var(--scale-factor));
+}
+
+.redemption-program-eligible-main-found-alert {
+  align-items: center;
+  background-color: #f8f8f8;
+  border-radius: calc(8px * var(--scale-factor));
+  display: flex;
+  gap: calc(8px * var(--scale-factor));
+  justify-content: center;
+  padding: calc(8px * var(--scale-factor));
+}
+
+.redemption-program-eligible-main-found-alert svg {
+  width: calc(14px * var(--scale-factor));
+}
+
+.redemption-program-eligible-main-found-alert p {
+  color: #1e1e1e;
+  font-size: calc(14px * var(--scale-factor));
+}
+
+.redemption-program-eligible-main-pay-today {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+}
+
+.redemption-program-eligible-main-pay-today-price {
+  align-items: center;
+  background-color: #f8f8f8;
+  border-radius: calc(12px * var(--scale-factor));
+  display: flex;
+  flex-direction: column;
+  gap: calc(14px * var(--scale-factor));
+  justify-content: center;
+  max-width: calc(406px * var(--scale-factor));
+  padding: calc(16px * var(--scale-factor));
+  width: 100%;
+}
+
+.redemption-program-eligible-main-pay-today-price h5:first-of-type {
+  color: #bababa;
+  font-size: calc(14px * var(--scale-factor));
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+.redemption-program-eligible-main-pay-today-price h1 {
+  color: black;
+  font-size: calc(32px * var(--scale-factor));
+  font-weight: 600;
+}
+
+.redemption-program-eligible-main-pay-today-price h5:last-of-type {
+  color: #e62e05;
+  font-size: calc(14px * var(--scale-factor));
+  font-weight: 500;
+}
+
+.redemption-program-eligible-main-pay-today ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 100%;
+}
+
+.redemption-program-eligible-main-pay-today ul li {
+  align-items: center;
+  border-top: calc(1px * var(--scale-factor)) solid #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  padding: calc(12px * var(--scale-factor)) 0;
+}
+
+.redemption-program-eligible-main-pay-today ul li:last-of-type {
+  border-bottom: calc(1px * var(--scale-factor)) solid #f2f2f2;
+}
+
+.redemption-program-eligible-main-pay-today ul li p {
+  color: #636363;
+  font-size: calc(14px * var(--scale-factor));
+}
+
+.redemption-program-eligible-main-pay-today ul li div {
+  color: #202020;
+  font-size: calc(15px * var(--scale-factor));
+  font-weight: 500;
+}
+
+.redemption-program-eligible-main-offer-submit-expiry {
+  display: flex;
+  flex-direction: column;
+  gap: calc(12px * var(--scale-factor));
+}
+
+.redemption-program-eligible-main-offer-submit-expiry button {
+  background-color: #008061;
+  border: none;
+  border-radius: calc(8px * var(--scale-factor));
+  color: white;
+  font-weight: 600;
+  padding: calc(12px * var(--scale-factor)) calc(24px * var(--scale-factor));
+  width: 100%;
+}
+
+.redemption-program-eligible-main-offer-expiry {
+  align-items: center;
+  display: flex;
+  gap: calc(8px * var(--scale-factor));
+  justify-content: center;
+  padding: calc(6px * var(--scale-factor)) calc(12px * var(--scale-factor));
+}
+
+.redemption-program-eligible-main-offer-expiry svg {
+  width: calc(14px * var(--scale-factor));
+}
+
+.redemption-program-eligible-main-offer-expiry p {
+  color: #1e1e1e;
+  font-size: calc(14px * var(--scale-factor));
+  font-weight: 500;
+}
+
+.redemption-program-eligible-main-offer-expiry p span {
+  color: #e62e05;
+  font-weight: 700;
+}
+
+.redemption-program-eligible-main-footer {
+  display: flex;
+  flex-direction: column;
+  gap: calc(10px * var(--scale-factor));
+  padding: calc(16px * var(--scale-factor));
+}
+
+.redemption-program-eligible-main-footer h5 {
+  color: #090909;
+  font-size: calc(15px * var(--scale-factor));
+  font-weight: 700;
+}
+
+.redemption-program-eligible-main-footer p {
+  color: #202020;
+  font-size: calc(15px * var(--scale-factor));
+  font-weight: 500;
+}
+
+.redemption-program-eligible-main-footer p a {
+  color: #008061;
+  font-weight: 700;
+}
+
+.redemption-program-account-good {
+  --scale-factor: 0.9;
+
+  display: none;
+  flex-direction: column;
+  gap: calc(48px * var(--scale-factor));
+  padding: calc(100px * var(--scale-factor)) calc(20px * var(--scale-factor));
+}
+
+.redemption-program-account-good button {
+  font-family: Inter;
+}
+
+.redemption-program-account-good p {
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+}
+
+.redemption-program-account-good h2 {
+  color: black;
+  font-size: calc(32px * var(--scale-factor));
+  font-weight: 700;
+  line-height: normal;
+}
+
+.redemption-program-account-good h3 {
+  color: #1c1b1e;
+  font-size: calc(24px * var(--scale-factor));
+  font-weight: 600;
+  line-height: calc(32px * var(--scale-factor));
+}
+
+.redemption-program-account-good h4 {
+  color: #1c1b1e;
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 600;
+  line-height: calc(28px * var(--scale-factor));
+}
+
+.redemption-program-account-good h5 {
+  color: #252525;
+  font-size: calc(14px * var(--scale-factor));
+  font-weight: 500;
+  line-height: calc(20px * var(--scale-factor));
+}
+
+.redemption-program-account-good header {
+  display: flex;
+  justify-content: center;
+}
+
+.redemption-program-account-good header img {
+  height: calc(40px * var(--scale-factor));
+}
+
+.redemption-program-account-good-main {
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+  margin: 0 auto;
+  max-width: calc(500px * var(--scale-factor));
+  width: 100%;
+}
+
+.redemption-program-account-good-main-title {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  text-align: center;
+}
+
+.redemption-program-account-good-main-title p {
+  color: #666;
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+  line-height: normal;
+  max-width: calc(408px * var(--scale-factor));
+}
+
+.redemption-program-account-good-main-found-alert {
+  align-items: center;
+  background-color: #f8f8f8;
+  border-radius: calc(8px * var(--scale-factor));
+  display: flex;
+  gap: calc(8px * var(--scale-factor));
+  justify-content: center;
+  padding: calc(8px * var(--scale-factor));
+}
+
+.redemption-program-account-good-main-found-alert svg {
+  width: calc(14px * var(--scale-factor));
+}
+
+.redemption-program-account-good-main-found-alert p {
+  color: #1e1e1e;
+  font-size: calc(14px * var(--scale-factor));
+}
+
+.redemption-program-account-good-main-customer-info ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 100%;
+}
+
+.redemption-program-account-good-main-customer-info ul li {
+  align-items: center;
+  border-top: calc(1px * var(--scale-factor)) solid #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  padding: calc(12px * var(--scale-factor)) 0;
+}
+
+.redemption-program-account-good-main-customer-info ul li:last-of-type {
+  border-bottom: calc(1px * var(--scale-factor)) solid #f2f2f2;
+}
+
+.redemption-program-account-good-main-customer-info ul li p {
+  color: #636363;
+  font-size: calc(14px * var(--scale-factor));
+}
+
+.redemption-program-account-good-main-customer-info ul li div {
+  color: #202020;
+  font-size: calc(15px * var(--scale-factor));
+  font-weight: 500;
+}
+
+.redemption-program-account-good-main-customer-info-payment-status div {
+  align-items: center;
+  display: flex;
+  gap: calc(8px * var(--scale-factor));
+}
+
+.redemption-program-account-good-main-customer-info-payment-status span {
+  background: #17b26a;
+  border-radius: calc(6px * var(--scale-factor));
+  color: white;
+  height: max-content;
+  line-height: calc(18px * var(--scale-factor));
+  padding: calc(2px * var(--scale-factor)) calc(6px * var(--scale-factor));
+}
+
+.redemption-program-account-good-main-customer-info button {
+  background-color: #008061;
+  border: none;
+  border-radius: calc(8px * var(--scale-factor));
+  color: white;
+  font-weight: 600;
+  padding: calc(12px * var(--scale-factor)) calc(24px * var(--scale-factor));
+  width: 100%;
+}
+
+.redemption-program-account-good-main-footer {
+  display: flex;
+  flex-direction: column;
+  gap: calc(10px * var(--scale-factor));
+  padding: calc(16px * var(--scale-factor));
+}
+
+.redemption-program-account-good-main-footer h5 {
+  color: #090909;
+  font-size: calc(15px * var(--scale-factor));
+  font-weight: 700;
+}
+
+.redemption-program-account-good-main-footer p {
+  color: #202020;
+  font-size: calc(15px * var(--scale-factor));
+  font-weight: 500;
+}
+
+.redemption-program-account-good-main-footer p a {
+  color: #008061;
+  font-weight: 700;
+}
