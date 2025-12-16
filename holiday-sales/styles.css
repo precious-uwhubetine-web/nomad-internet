@@ -1,3 +1,41 @@
+.top-banner {
+  align-items: center;
+  background: #bd0101;
+  display: flex;
+  gap: calc(8px * var(--scale-factor));
+  justify-content: center;
+  padding: calc(8px * var(--scale-factor));
+  position: relative;
+  text-decoration: none !important;
+  width: 100%;
+  z-index: 1000;
+
+  --scale-factor: 0.85;
+}
+
+.top-banner svg {
+  flex: 0 0 calc(24px * var(--scale-factor));
+}
+
+.top-banner p {
+  color: white;
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 600;
+  line-height: calc(20px * var(--scale-factor));
+}
+
+.top-banner span {
+  color: white;
+  font-size: calc(18px * var(--scale-factor));
+  text-decoration: underline;
+}
+
+@media (max-width: 650px) {
+  .top-banner {
+    padding: calc(8px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  }
+}
+
 .homepage-hero {
   height: 100vh;
   max-height: calc(800px * var(--scale-factor));
