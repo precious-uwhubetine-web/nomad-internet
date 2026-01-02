@@ -1,5 +1,5 @@
 addEventListener("DOMContentLoaded", () => {
-  const countdownDisplay = document.querySelector('.homepage-hero-main-offer-expiry-countdown');
+  const countdownDisplay = document.querySelector('.black-friday-homepage-hero-main-offer-expiry-countdown');
 
   let countDownDate = new Date();
   countDownDate.setDate(countDownDate.getDate() + (8 - countDownDate.getDay()) % 7);

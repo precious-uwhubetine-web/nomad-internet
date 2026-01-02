@@ -1,4 +1,4 @@
-.homepage-hero {
+.black-friday-homepage-hero {
   height: 100vh;
   max-height: calc(800px * var(--scale-factor));
   overflow: hidden;
@@ -7,7 +7,7 @@
   --scale-factor: 0.85;
 }
 
-.homepage-hero-content {
+.black-friday-homepage-hero-content {
   align-items: center;
   display: flex;
   height: 100%;
@@ -18,7 +18,7 @@
   width: 100%;
 }
 
-.homepage-hero-main {
+.black-friday-homepage-hero-main {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -26,7 +26,7 @@
   text-align: center;
 }
 
-.homepage-hero-main-badge {
+.black-friday-homepage-hero-main-badge {
   align-items: center;
   background-color: black;
   border-radius: 50rem;
@@ -37,32 +37,32 @@
   padding: calc(8px * var(--scale-factor)) calc(20px * var(--scale-factor));
 }
 
-.homepage-hero-main-badge svg {
+.black-friday-homepage-hero-main-badge svg {
   height: calc(14px * var(--scale-factor));
   width: calc(14px * var(--scale-factor));
 }
 
-.homepage-hero-main-badge h5 {
+.black-friday-homepage-hero-main-badge h5 {
   color: white;
   font-size: calc(14px * var(--scale-factor));
   font-weight: 700;
 }
 
-.homepage-hero-main-header {
+.black-friday-homepage-hero-main-header {
   align-items: center;
   display: flex;
   flex-direction: column;
   gap: calc(16px * var(--scale-factor));
 }
 
-.homepage-hero-main-header h1 {
+.black-friday-homepage-hero-main-header h1 {
   font-size: calc(48px * var(--scale-factor));
   font-weight: 800;
   line-height: 115%;
   max-width: calc(882px * var(--scale-factor));
 }
 
-.homepage-hero-main-header p {
+.black-friday-homepage-hero-main-header p {
   color: #424242;
   font-size: calc(16px * var(--scale-factor));
   font-weight: 400;
@@ -70,7 +70,7 @@
   text-align: center;
 }
 
-.homepage-hero-plans {
+.black-friday-homepage-hero-plans {
   background: #f5f5f5;
   border-radius: calc(20px * var(--scale-factor));
   box-shadow: 70px 229px 67px 0 rgba(0, 0, 0, 0.00), 45px 147px 61px 0 rgba(0, 0, 0, 0.01), 25px 82px 52px 0 rgba(0, 0, 0, 0.05), 11px 37px 38px 0 rgba(0, 0, 0, 0.09), 3px 9px 21px 0 rgba(0, 0, 0, 0.10);
@@ -79,23 +79,23 @@
   text-align: left;
 }
 
-.homepage-hero-plans-plan {
+.black-friday-homepage-hero-plans-plan {
   display: flex;
   flex-direction: column;
   height: calc(124px * var(--scale-factor));
   justify-content: space-between;
 }
 
-.homepage-hero-plans-plan:first-child {
+.black-friday-homepage-hero-plans-plan:first-child {
   border-right: calc(1px * var(--scale-factor)) solid #dadada;
   padding-right: calc(32px * var(--scale-factor));
 }
 
-.homepage-hero-plans-plan:last-child {
+.black-friday-homepage-hero-plans-plan:last-child {
   padding-left: calc(32px * var(--scale-factor));
 }
 
-.homepage-hero-plans-plan h4 {
+.black-friday-homepage-hero-plans-plan h4 {
   color: #101828;
   font-size: calc(16px * var(--scale-factor));
   font-weight: 400;
@@ -103,7 +103,7 @@
   line-height: 150%;
 }
 
-.homepage-hero-plans-plan-price h2 {
+.black-friday-homepage-hero-plans-plan-price h2 {
   color: #008060;
   font-size: calc(48px * var(--scale-factor));
   font-weight: 400;
@@ -111,14 +111,14 @@
   line-height: 125%;
 }
 
-.homepage-hero-plans-plan-price h2 span {
+.black-friday-homepage-hero-plans-plan-price h2 span {
   color: #4a5565;
   font-size: calc(30px * var(--scale-factor));
   letter-spacing: calc(0.396px * var(--scale-factor));
   line-height: 120%;
 }
 
-.homepage-hero-plans-plan-price p {
+.black-friday-homepage-hero-plans-plan-price p {
   color: #6a7282;
   letter-spacing: calc(-0.312px * var(--scale-factor));
   line-height: 150%;
@@ -127,16 +127,16 @@
   text-decoration-line: line-through;
 }
 
-.homepage-hero-buttons {
+.black-friday-homepage-hero-buttons {
   display: flex;
   gap: calc(16px * var(--scale-factor));
 }
 
-.homepage-hero-buttons a {
+.black-friday-homepage-hero-buttons a {
   text-decoration: none;
 }
 
-.homepage-hero-buttons a:first-child button {
+.black-friday-homepage-hero-buttons a:first-child button {
   align-items: center;
   background: radial-gradient(44.12% 99.48% at 49.8% 0.26%, #5AE7C5 0%, #008061 100%);
   border: calc(1px * var(--scale-factor)) solid #4CD7B6;
@@ -155,11 +155,11 @@
   width: 100%;
 }
 
-.homepage-hero-main a:first-child button:hover {
+.black-friday-homepage-hero-main a:first-child button:hover {
   background: radial-gradient(44.12% 99.48% at 60% 5%, #5AE7C5 20%, #008061 100%);
 }
 
-.homepage-hero-main a:last-child button {
+.black-friday-homepage-hero-main a:last-child button {
   align-items: center;
   background: #fff;
   border: calc(2px * var(--scale-factor)) solid #000;
@@ -177,90 +177,115 @@
   width: 100%;
 }
 
-.homepage-hero-buttons a button svg {
+.black-friday-homepage-hero-buttons a button svg {
   width: calc(24px * var(--scale-factor));
 }
 
-.homepage-hero-main-offer-expiry {
+.black-friday-homepage-hero-main-offer-expiry {
   align-items: center;
   display: flex;
   gap: calc(18px * var(--scale-factor));
   justify-content: center;
 }
 
-.homepage-hero-main-offer-expiry svg {
+.black-friday-homepage-hero-main-offer-expiry svg {
   height: calc(20px * var(--scale-factor));
   width: calc(20px * var(--scale-factor));
 }
 
-.homepage-hero-main-offer-expiry p {
+.black-friday-homepage-hero-main-offer-expiry p {
   color: #1e1e1e;
   font-size: calc(20px * var(--scale-factor));
   font-weight: 500;
 }
 
-.homepage-hero-main-offer-expiry p span {
+.black-friday-homepage-hero-main-offer-expiry p span {
   color: #e62e05;
   font-weight: 700;
 }
 
+.black-friday-homepage-event-banner {
+  align-items: center;
+  animation: 3s jump ease-in infinite;
+  background: linear-gradient(89deg, rgba(0, 128, 97, 0.90) 11.94%, rgba(6, 191, 59, 0.90) 69.15%, rgba(13, 255, 21, 0.90) 102.7%), #000;
+  border: 2px solid #F2F2F2;
+  bottom: 50vh;
+  color: white;
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  gap: 8px;
+  justify-content: center;
+  padding: 8px 20px;
+  position: fixed;
+  right: 0;
+  text-decoration: none;
+  transform: rotate(-90deg);
+  transform-origin: 100% 100%;
+  z-index: 1000;
+}
+
+.black-friday-homepage-event-banner svg {
+  transform: rotate(90deg);
+}
+
 @media (max-width: 650px) {
-  .homepage-hero {
+  .black-friday-homepage-hero {
     height: max-content;
     max-height: unset;
   }
 
-  .homepage-hero-main {
+  .black-friday-homepage-hero-main {
     align-items: stretch;
   }
 
-  .homepage-hero-main-header h1 {
+  .black-friday-homepage-hero-main-header h1 {
     font-size: calc(28px * var(--scale-factor));
   }
 
-  .homepage-hero-content {
+  .black-friday-homepage-hero-content {
     padding: calc(32px * var(--scale-factor)) calc(20px * var(--scale-factor));
   }
 
-  .homepage-hero-main-badge h5 {
+  .black-friday-homepage-hero-main-badge h5 {
     font-size: calc(12px * var(--scale-factor));
   }
 
-  .homepage-hero-plans {
+  .black-friday-homepage-hero-plans {
     flex-direction: column;
     text-align: center;
   }
 
-  .homepage-hero-plans-plan {
+  .black-friday-homepage-hero-plans-plan {
     gap: calc(16px * var(--scale-factor));
     height: max-content;
   }
 
-  .homepage-hero-plans-plan h4 {
+  .black-friday-homepage-hero-plans-plan h4 {
     font-size: calc(14px * var(--scale-factor));
   }
 
-  .homepage-hero-plans-plan:first-child {
+  .black-friday-homepage-hero-plans-plan:first-child {
     border-right: none;
     border-bottom: calc(1px * var(--scale-factor)) solid #dadada;
     padding-bottom: calc(16px * var(--scale-factor));
     padding-right: 0;
   }
 
-  .homepage-hero-plans-plan:last-child {
+  .black-friday-homepage-hero-plans-plan:last-child {
     padding-top: calc(16px * var(--scale-factor));
     padding-left: 0;
   }
 
-  .homepage-hero-plans-plan-price h2 {
+  .black-friday-homepage-hero-plans-plan-price h2 {
     font-size: calc(32px * var(--scale-factor));
   }
 
-  .homepage-hero-plans-plan-price h2 span {
+  .black-friday-homepage-hero-plans-plan-price h2 span {
     font-size: calc(24px * var(--scale-factor));
   }
 
-  .homepage-hero-buttons {
+  .black-friday-homepage-hero-buttons {
     flex-direction: column;
   }
 }

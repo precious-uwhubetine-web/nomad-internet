@@ -14,29 +14,24 @@ body {
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-.black-friday-event {
-  align-items: center;
-  animation: 3s jump ease-in infinite;
-  background: linear-gradient(89deg, rgba(0, 128, 97, 0.90) 11.94%, rgba(6, 191, 59, 0.90) 69.15%, rgba(13, 255, 21, 0.90) 102.7%), #000;
-  border: 2px solid #F2F2F2;
-  bottom: 50vh;
-  color: white;
+.Index {
   display: flex;
-  font-size: 14px;
-  font-weight: 700;
-  gap: 8px;
-  justify-content: center;
-  padding: 8px 20px;
-  position: fixed;
-  right: 0;
-  text-decoration: none;
-  transform: rotate(-90deg);
-  transform-origin: 100% 100%;
-  z-index: 1000;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
 }
 
-.black-friday-event svg {
-  transform: rotate(90deg);
+.Index ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+}
+
+.Index ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 @keyframes jump {
@@ -51,29 +46,4 @@ body {
   75% {
     bottom: 50vh;
   }
-}
-
-.holiday-sales {
-  align-items: center;
-  animation: 3s jump infinite;
-  background: #c1121f;
-  box-shadow: 25px 67px 20px 0 rgba(0, 0, 0, 0.00), 16px 43px 18px 0 rgba(0, 0, 0, 0.01), 9px 24px 15px 0 rgba(0, 0, 0, 0.05), 4px 11px 11px 0 rgba(0, 0, 0, 0.09), 1px 3px 6px 0 rgba(0, 0, 0, 0.10);
-  bottom: 60vh;
-  color: white;
-  display: flex;
-  font-size: 14px;
-  font-weight: 700;
-  gap: 8px;
-  justify-content: center;
-  padding: 8px 20px;
-  position: fixed;
-  right: 0;
-  text-decoration: none !important;
-  transform: rotate(-90deg);
-  transform-origin: 100% 100%;
-  z-index: 1000;
-}
-
-.holiday-sales svg {
-  transform: rotate(90deg);
 }
