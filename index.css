@@ -14,6 +14,16 @@ body {
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
+@font-face {
+  font-family: "Forma DJR Banner";
+  src: url(assets/forma-djr-banner-regular.woff2);
+}
+
+@font-face {
+  font-family: "Forma DJR Banner Thin";
+  src: url(assets/forma-djr-banner-thin.woff2);
+}
+
 .Index {
   display: flex;
   flex-direction: column;

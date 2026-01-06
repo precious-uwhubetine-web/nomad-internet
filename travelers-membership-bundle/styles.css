@@ -1,0 +1,546 @@
+.travelers-membership-bundle {
+  --scale-factor: 0.9;
+
+  position: relative;
+}
+
+.travelers-membership-bundle h1 {
+  font-family: "Forma DJR Banner";
+  font-size: calc(60px * var(--scale-factor));
+  font-weight: 400;
+  line-height: calc(60px * var(--scale-factor));
+}
+
+.travelers-membership-bundle h2 {
+  font-family: "Forma DJR Banner";
+  font-size: calc(42px * var(--scale-factor));
+  font-weight: 400;
+  line-height: calc(60px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-header {
+  background: rgba(16, 16, 16, 0.30);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.travelers-membership-bundle-header-content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: calc(1400px * var(--scale-factor));
+  padding: calc(12px * var(--scale-factor)) calc(20px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-header-content-logo img {
+  height: calc(42px * var(--scale-factor));
+  width: auto;
+}
+
+.travelers-membership-bundle-header-content nav ul {
+  align-items: center;
+  display: flex;
+  gap: calc(24px * var(--scale-factor));
+  list-style: none;
+}
+
+.travelers-membership-bundle-header-content nav ul li a {
+  color: white;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.travelers-membership-bundle-header-content-menu-button {
+  display: none;
+}
+
+.travelers-membership-bundle-header-mobile-menu {
+  display: none;
+}
+
+.travelers-membership-bundle-hero-section {
+  height: 100vh;
+  max-height: calc(750px * var(--scale-factor));
+  position: relative;
+}
+
+.travelers-membership-bundle-hero-section-bg {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  object-position: center 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.travelers-membership-bundle-hero-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+  height: 100%;
+  justify-content: end;
+  margin: 0 auto;
+  max-width: calc(1400px * var(--scale-factor));
+  padding: calc(0px * var(--scale-factor)) calc(20px * var(--scale-factor)) calc(60px * var(--scale-factor));
+  position: relative;
+  z-index: 1;
+}
+
+.travelers-membership-bundle-hero-section-content h1 {
+  color: white;
+}
+
+.travelers-membership-bundle-hero-section-content p {
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  color: white;
+}
+
+.travelers-membership-bundle-hero-section-content-actions {
+  display: flex;
+  gap: calc(16px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-hero-section-content-actions a {
+  align-items: center;
+  border-radius: 50rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: calc(18px * var(--scale-factor));
+  padding: calc(14px * var(--scale-factor)) calc(24px * var(--scale-factor));
+  text-decoration: none;
+  width: calc(200px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-hero-section-content-actions a:first-child {
+  background-color: #008061;
+  font-weight: 700;
+  font-family: "Graphie";
+}
+
+.travelers-membership-bundle-hero-section-content-actions a:last-child {
+  background: transparent;
+  border: calc(2px * var(--scale-factor)) solid white;
+  font-family: "Forma DJR Banner";
+}
+
+.travelers-membership-bundle-whats-included-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: calc(60px * var(--scale-factor));
+  margin: 0 auto;
+  max-width: calc(1400px * var(--scale-factor));
+  padding: calc(120px * var(--scale-factor)) calc(20px * var(--scale-factor)) calc(120px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-whats-included-section-content-header {
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-whats-included-section-content-header p {
+  max-width: calc(489px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-whats-included-section-content ul {
+  display: grid;
+  gap: calc(34px * var(--scale-factor));
+  grid-auto-flow: column;
+  list-style: none;
+}
+
+.travelers-membership-bundle-whats-included-section-content ul li {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(34px * var(--scale-factor));
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.travelers-membership-bundle-whats-included-section-content ul li:first-child img {
+  height: calc(151px * var(--scale-factor));
+  object-fit: contain;
+  object-position: 50% 100%;
+  width: calc(180px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-whats-included-section-content ul li:nth-child(2) img {
+  height: calc(144px * var(--scale-factor));
+  object-fit: contain;
+  object-position: 0% 100%;
+  width: calc(180px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-whats-included-section-content ul li:nth-child(3) img {
+  height: calc(120px * var(--scale-factor));
+  object-fit: contain;
+  object-position: 50% 100%;
+  width: calc(220px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-whats-included-section-content ul li:nth-child(4) img {
+  height: calc(120px * var(--scale-factor));
+  object-fit: contain;
+  object-position: 50% 100%;
+  width: calc(150px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-whats-included-section-content ul li:nth-child(5) img {
+  height: calc(120px * var(--scale-factor));
+  object-fit: contain;
+  object-position: 50% 100%;
+  width: calc(200px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-perfect-for-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: calc(59px * var(--scale-factor));
+  margin: 0 auto;
+  max-width: calc(1400px * var(--scale-factor));
+  padding: calc(120px * var(--scale-factor)) calc(20px * var(--scale-factor)) calc(120px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-perfect-for-section-content ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(calc(280px * var(--scale-factor)), 1fr));
+  gap: calc(16px * var(--scale-factor));
+  list-style: none;
+}
+
+.travelers-membership-bundle-perfect-for-section-content ul li {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-perfect-for-section-content ul li p {
+  font-family: "Forma DJR Banner";
+  font-size: calc(24px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-perfect-for-section-content ul li img {
+  border-radius: calc(15px * var(--scale-factor));
+  height: calc(400px * var(--scale-factor));
+  object-fit: cover;
+}
+
+.travelers-membership-bundle-membership-pricing-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: calc(62px * var(--scale-factor));
+  padding: calc(120px * var(--scale-factor)) calc(20px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-membership-pricing-section-header {
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+  text-align: center;
+}
+
+.travelers-membership-bundle-membership-pricing-section-plans {
+  display: flex;
+  gap: calc(48px * var(--scale-factor));
+  justify-content: center;
+  list-style: none;
+  width: 100%;
+}
+
+.travelers-membership-bundle-membership-pricing-section-plans-plan {
+  background-color: #f5f5f5;
+  border: calc(10px * var(--scale-factor)) solid #e9e9e9;
+  border-radius: calc(30px * var(--scale-factor));
+  display: flex;
+  flex: 0 1 calc(522px * var(--scale-factor));
+  flex-direction: column;
+  gap: calc(48px * var(--scale-factor));
+  justify-content: flex-end;
+  padding: calc(24px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-membership-pricing-section-plans-plan-header {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-membership-pricing-section-plans-plan-header-badge {
+  align-items: center;
+  background-color: #ecfdf3;
+  border: calc(1px * var(--scale-factor)) solid #abefc6;
+  border-radius: 50rem;
+  display: flex;
+  gap: calc(6px * var(--scale-factor));
+  padding: calc(2px * var(--scale-factor)) calc(10px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-membership-pricing-section-plans-plan-header-badge svg {
+  height: calc(6px * var(--scale-factor));
+  width: calc(6px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-membership-pricing-section-plans-plan-header-badge p {
+  color: #067647;
+  font-size: calc(14px * var(--scale-factor));
+  font-weight: 500;
+  line-height: calc(20px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-membership-pricing-section-plans-plan-header-text {
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-membership-pricing-section-plans-plan-header-text h3 {
+  font-size: calc(32px * var(--scale-factor));
+  font-family: "Forma DJR Banner";
+  font-weight: 400;
+}
+
+.travelers-membership-bundle-membership-pricing-section-plans-plan-header-text h4 {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: calc(20px * var(--scale-factor));
+  font-family: "Forma DJR Banner";
+  font-weight: 400;
+}
+
+.travelers-membership-bundle-membership-pricing-section-plans-plan-header-text p {
+  align-items: center;
+  color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  font-family: "Forma DJR Banner";
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+  gap: calc(8px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-membership-pricing-section-plans-plan-header-text p span:first-child {
+  text-decoration: line-through;
+}
+
+.travelers-membership-bundle-membership-pricing-section-plans-plan-header-text h5 {
+  align-items: baseline;
+  display: flex;
+  font-family: "Forma DJR Banner";
+  font-size: calc(32px * var(--scale-factor));
+  font-weight: 400;
+  gap: calc(8px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-membership-pricing-section-plans-plan-header-text h5 span {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: calc(20px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-membership-pricing-section-plans-plan-features {
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-membership-pricing-section-plans-plan-features ul {
+  background-color: white;
+  border-radius: calc(30px * var(--scale-factor));
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  list-style: none;
+  padding: calc(16px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-membership-pricing-section-plans-plan-features ul li {
+  align-items: center;
+  color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  gap: calc(12px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-membership-pricing-section-plans-plan-features ul li span {
+  align-items: center;
+  background-color: rgb(74, 124, 158, 0.2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  height: calc(20px * var(--scale-factor));
+  width: calc(20px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-membership-pricing-section-plans-plan-features ul li span svg {
+  height: calc(14px * var(--scale-factor));
+  width: calc(14px * var(--scale-factor));
+}
+
+.travelers-membership-bundle-membership-pricing-section-plans-plan-features a {
+  align-items: center;
+  background: #008061;
+  border-radius: 50rem;
+  color: white;
+  display: flex;
+  font-family: 'Graphie';
+  height: calc(56px * var(--scale-factor));
+  justify-content: center;
+  font-family: 'Graphie';
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.travelers-membership-bundle-membership-pricing-section-plans-plan:last-child .travelers-membership-bundle-membership-pricing-section-plans-plan-features a {
+  background: transparent;
+  border: calc(1px * var(--scale-factor)) solid black;
+  color: black;
+}
+
+@media (max-width: 1000px) {
+  .travelers-membership-bundle-whats-included-section-content ul {
+    grid-auto-flow: row;
+  }
+
+  .travelers-membership-bundle-whats-included-section-content ul li:first-child {
+    grid-column: span 2;
+  }
+
+  .travelers-membership-bundle-whats-included-section-content ul li:nth-child(2) {
+    grid-row: 2;
+  }
+
+  .travelers-membership-bundle-whats-included-section-content ul li:nth-child(3) {
+    grid-row: 2;
+  }
+
+  .travelers-membership-bundle-whats-included-section-content ul li:nth-child(4) {
+    grid-row: 3;
+  }
+
+  .travelers-membership-bundle-whats-included-section-content ul li:nth-child(5) {
+    grid-row: 3;
+  }
+
+  .travelers-membership-bundle-perfect-for-section-content ul {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .travelers-membership-bundle-perfect-for-section-content ul li:first-child {
+    grid-column: span 2;
+  }
+
+  .travelers-membership-bundle-perfect-for-section-content ul li img {
+    object-position: center 0%;
+    width: 100%;
+  }
+
+  .travelers-membership-bundle-perfect-for-section-content ul li:first-child img {
+    object-position: center 20%;
+  }
+
+  .travelers-membership-bundle-membership-pricing-section-plans {
+    gap: calc(16px * var(--scale-factor));
+  }
+}
+
+@media (max-width: 768px) {
+  .travelers-membership-bundle-membership-pricing-section-plans {
+    flex-direction: column;
+    gap: calc(48px * var(--scale-factor));
+  }
+
+  .travelers-membership-bundle-header-content nav {
+    display: none;
+  }
+
+  .travelers-membership-bundle-header-content-menu-button {
+    background: transparent;
+    border: none;
+    display: block;
+  }
+
+  .travelers-membership-bundle-header-content-menu-button svg {
+    height: calc(18px * var(--scale-factor));
+    width: calc(18px * var(--scale-factor));
+  }
+
+  .travelers-membership-bundle-header-content-menu-button-close-icon {
+    display: none;
+  }
+
+  .travelers-membership-bundle-header-mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+    z-index: 20;
+  }
+
+  .travelers-membership-bundle-header-mobile-menu ul li a {
+    color: white;
+    display: block;
+    font-family: "Forma DJR Banner";
+    font-size: calc(20px * var(--scale-factor));
+    font-weight: 400;
+    padding: calc(16px * var(--scale-factor)) calc(20px * var(--scale-factor));
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 468px) {
+  .travelers-membership-bundle-hero-section-content-actions {
+    flex-direction: column;
+  }
+
+  .travelers-membership-bundle-hero-section-content-actions a {
+    width: 100%;
+  }
+
+  .travelers-membership-bundle-whats-included-section-content ul {
+    gap: calc(48px * var(--scale-factor));
+  }
+
+  .travelers-membership-bundle-whats-included-section-content ul li:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .travelers-membership-bundle-whats-included-section-content ul li:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .travelers-membership-bundle-whats-included-section-content ul li:nth-child(3) {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .travelers-membership-bundle-whats-included-section-content ul li:nth-child(4) {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .travelers-membership-bundle-whats-included-section-content ul li:nth-child(5) {
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  .travelers-membership-bundle-perfect-for-section-content ul {
+    grid-template-columns: 1fr;
+  }
+
+  .travelers-membership-bundle-perfect-for-section-content ul li:nth-child(1) {
+    grid-column: 1;
+  }
+}
