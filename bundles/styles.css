@@ -1,0 +1,416 @@
+.bundles {
+  --scale-factor: 0.9;
+
+  position: relative;
+}
+
+.bundles h1 {
+  font-family: "Forma DJR Banner";
+  font-size: calc(60px * var(--scale-factor));
+  font-weight: 400;
+  line-height: calc(60px * var(--scale-factor));
+}
+
+.bundles h2 {
+  font-family: "Forma DJR Banner";
+  font-size: calc(42px * var(--scale-factor));
+  font-weight: 400;
+  line-height: calc(60px * var(--scale-factor));
+}
+
+.bundles-header {
+  background: rgba(16, 16, 16, 0.30);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.bundles-header-content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: calc(1400px * var(--scale-factor));
+  padding: calc(12px * var(--scale-factor)) calc(20px * var(--scale-factor));
+}
+
+.bundles-header-content-logo img {
+  height: calc(42px * var(--scale-factor));
+  width: auto;
+}
+
+.bundles-header-content nav ul {
+  align-items: center;
+  display: flex;
+  gap: calc(24px * var(--scale-factor));
+  list-style: none;
+}
+
+.bundles-header-content nav ul li a {
+  color: white;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.bundles-header-content-menu-button {
+  display: none;
+}
+
+.bundles-header-mobile-menu {
+  display: none;
+}
+
+.bundles-hero-section {
+  height: 100vh;
+  max-height: calc(750px * var(--scale-factor));
+  position: relative;
+}
+
+.bundles-hero-section-bg {
+  filter: brightness(0.7);
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  object-position: center 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.bundles-hero-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+  height: 100%;
+  justify-content: end;
+  margin: 0 auto;
+  max-width: calc(1400px * var(--scale-factor));
+  padding: calc(0px * var(--scale-factor)) calc(20px * var(--scale-factor)) calc(60px * var(--scale-factor));
+  position: relative;
+  z-index: 1;
+}
+
+.bundles-hero-section-content h1 {
+  color: white;
+  max-width: calc(800px * var(--scale-factor));
+}
+
+.bundles-hero-section-content p {
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  color: white;
+}
+
+.bundles-hero-section-content-actions {
+  display: flex;
+  gap: calc(16px * var(--scale-factor));
+}
+.bundles-hero-section-content-actions a {
+  align-items: center;
+  border-radius: 50rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: calc(18px * var(--scale-factor));
+  font-family: "Forma DJR Banner";
+  padding: calc(14px * var(--scale-factor)) calc(24px * var(--scale-factor));
+  text-decoration: none;
+  width: calc(250px * var(--scale-factor));
+}
+
+.bundles-hero-section-content-actions a:first-child {
+  background-color: #008061;
+  font-weight: 700;
+}
+
+.bundles-hero-section-content-actions a:last-child {
+  background: transparent;
+  border: calc(2px * var(--scale-factor)) solid white;
+  font-family: "Forma DJR Banner";
+}
+
+.bundles-choose-membership-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: calc(60px * var(--scale-factor));
+  margin: 0 auto;
+  max-width: calc(1400px * var(--scale-factor));
+  padding: calc(100px * var(--scale-factor)) calc(20px * var(--scale-factor)) calc(120px * var(--scale-factor));
+}
+
+.bundles-choose-membership-section-content-header {
+  display: flex;
+  flex-direction: column;
+  gap: calc(8px * var(--scale-factor));
+}
+
+.bundles-choose-membership-section-content-header p {
+  max-width: calc(489px * var(--scale-factor));
+}
+
+.bundles-choose-membership-section-content ul {
+  display: flex;
+  gap: calc(24px * var(--scale-factor));
+  list-style: none;
+}
+
+.bundles-choose-membership-section-content ul li {
+  background-color: #f5f5f5;
+  border-radius: calc(30px * var(--scale-factor));
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  justify-content: space-between;
+  padding: calc(24px * var(--scale-factor));
+}
+
+.bundles-choose-membership-section-content ul li img {
+  border-radius: calc(20px * var(--scale-factor));
+  height: calc(240px * var(--scale-factor));
+  object-fit: cover;
+  object-position: 50% 30%;
+  width: 100%;
+}
+
+.bundles-choose-membership-section-content ul li div {
+  display: flex;
+  flex-direction: column;
+  gap: calc(8px * var(--scale-factor));
+}
+
+.bundles-choose-membership-section-content ul li div h3 {
+  font-family: "Forma DJR Banner";
+  font-size: calc(32px * var(--scale-factor));
+  font-weight: 400;
+}
+
+.bundles-choose-membership-section-content ul li div p {
+  color: rgba(0, 0, 0, 0.70);
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  letter-spacing: calc(-0.312px * var(--scale-factor));
+}
+
+.bundles-choose-membership-section-content h2 {
+  font-size: calc(50px * var(--scale-factor));
+}
+
+.bundles-choose-membership-section-content h2 span {
+  color: rgba(0, 0, 0, 0.70);
+  font-size: calc(20px * var(--scale-factor));
+}
+
+.bundles-choose-membership-section-content a {
+  align-items: center;
+  background-color: #008061;
+  border-radius: 50rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: "Graphie";
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 700;
+  padding: calc(14px * var(--scale-factor)) calc(24px * var(--scale-factor));
+  text-decoration: none;
+}
+
+.bundle-stay-connected-section-content,
+.bundle-reliable-connectivity-section-content,
+.bundle-designed-for-movement-section-content {
+  display: flex;
+  background-color: #f5f5f5;
+  gap: calc(24px * var(--scale-factor));
+  justify-content: flex-end;
+}
+
+.bundle-reliable-connectivity-section-content {
+  justify-content: flex-start;
+}
+
+.bundle-stay-connected-section-content div,
+.bundle-reliable-connectivity-section-content div,
+.bundle-designed-for-movement-section-content div {
+  align-items: center;
+  display: flex;
+  max-width: calc(676px * var(--scale-factor));
+  padding: calc(20px * var(--scale-factor));
+  width: 50%;
+}
+
+.bundle-stay-connected-section-content img,
+.bundle-reliable-connectivity-section-content img,
+.bundle-designed-for-movement-section-content img {
+  height: calc(560px * var(--scale-factor));
+  object-fit: cover;
+  object-position: center 0%;
+  width: 50%;
+}
+
+.bundles-choose-how-you-stay-connected-section {
+  padding: calc(100px * var(--scale-factor)) calc(20px * var(--scale-factor)) calc(120px * var(--scale-factor));
+}
+
+.bundles-choose-how-you-stay-connected-section-content {
+  align-items: center;
+  background-color: #1d1d1d;
+  background-image: url(https://cdn.shopify.com/s/files/1/0103/2847/3658/files/bundles-choose-how-you-stay-connected-section-card-bg.png);
+  border-radius: calc(30px * var(--scale-factor));
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+  padding: calc(100px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  margin: 0 auto;
+  max-width: calc(1400px * var(--scale-factor));
+  text-align: center;
+}
+
+.bundles-choose-how-you-stay-connected-section-content h2 {
+  color: white;
+  font-size: calc(60px * var(--scale-factor));
+}
+
+.bundles-choose-how-you-stay-connected-section-content p {
+  color: white;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+}
+
+.bundles-choose-how-you-stay-connected-section-content-actions {
+  display: flex;
+  gap: calc(16px * var(--scale-factor));
+}
+
+.bundles-choose-how-you-stay-connected-section-content-actions a {
+  align-items: center;
+  border-radius: 50rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: "Forma DJR Banner";
+  font-size: calc(18px * var(--scale-factor));
+  padding: calc(14px * var(--scale-factor)) calc(24px * var(--scale-factor));
+  text-decoration: none;
+  width: calc(220px * var(--scale-factor));
+}
+
+.bundles-choose-how-you-stay-connected-section-content-actions a:first-child {
+  background-color: #008061;
+  font-weight: 700;
+}
+
+.bundles-choose-how-you-stay-connected-section-content-actions a:last-child {
+  background: transparent;
+  border: calc(2px * var(--scale-factor)) solid white;
+}
+
+@media (max-width: 1000px) {
+  .bundles-choose-membership-section-content ul {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .bundles-header-content nav {
+    display: none;
+  }
+
+  .bundles-header-content-menu-button {
+    background: transparent;
+    border: none;
+    display: block;
+  }
+
+  .bundles-header-content-menu-button svg {
+    height: calc(18px * var(--scale-factor));
+    width: calc(18px * var(--scale-factor));
+  }
+
+  .bundles-header-content-menu-button-close-icon {
+    display: none;
+  }
+
+  .bundles-header-mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+    z-index: 20;
+  }
+
+  .bundles-header-mobile-menu ul li a {
+    color: white;
+    display: block;
+    font-family: "Forma DJR Banner";
+    font-size: calc(20px * var(--scale-factor));
+    font-weight: 400;
+    padding: calc(16px * var(--scale-factor)) calc(20px * var(--scale-factor));
+    text-decoration: none;
+  }
+
+  .bundles-choose-membership-section-content {
+    padding: calc(60px * var(--scale-factor)) calc(20px * var(--scale-factor)) calc(120px * var(--scale-factor));
+  }
+
+  .bundle-stay-connected-section-content,
+  .bundle-reliable-connectivity-section-content,
+  .bundle-designed-for-movement-section-content {
+    flex-direction: column;
+    gap: calc(8px * var(--scale-factor));
+    padding: calc(30px * var(--scale-factor)) calc(20px * var(--scale-factor)) 0;
+  }
+
+  .bundle-reliable-connectivity-section-content {
+    flex-direction: column-reverse;
+  }
+
+  .bundle-stay-connected-section-content div,
+  .bundle-reliable-connectivity-section-content div,
+  .bundle-designed-for-movement-section-content div {
+    align-items: center;
+    display: flex;
+    padding: 0;
+    width: 100%;
+  }
+
+  .bundle-stay-connected-section-content img,
+  .bundle-reliable-connectivity-section-content img,
+  .bundle-designed-for-movement-section-content img {
+    height: calc(560px * var(--scale-factor));
+    object-fit: cover;
+    object-position: center 0%;
+    width: 100%;
+  }
+
+  .bundles-choose-how-you-stay-connected-section-content {
+    padding: calc(60px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  }
+}
+
+@media (max-width: 500px) {
+  .bundles-choose-how-you-stay-connected-section-content-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .bundles-choose-how-you-stay-connected-section-content-actions a {
+    width: 100%;
+  }
+}
+
+@media (max-width: 468px) {
+  .bundles-hero-section-content-actions {
+    flex-direction: column;
+  }
+
+  .bundles-hero-section-content-actions a {
+    width: 100%;
+  }
+
+  .bundles-choose-membership-section-content ul {
+    gap: calc(48px * var(--scale-factor));
+  }
+}
