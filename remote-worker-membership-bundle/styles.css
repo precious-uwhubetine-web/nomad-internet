@@ -20,6 +20,7 @@
 
 .remote-worker-membership-bundle-header {
   background: rgba(16, 16, 16, 0.30);
+  backdrop-filter: blur(calc(6px * var(--scale-factor)));
   position: fixed;
   top: 0;
   z-index: 10;
