@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="../index.css" rel="stylesheet" />
+		<link href="styles.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+		<title>Pay Now</title>
+	</head>
+
+	<body>
+		<section class="pay-now-popup-container" id="pay-now-popup-container">
+			<div class="pay-now-popup" id="pay-now-popup">
+				<div class="pay-now-popup-header">
+					<div></div>
+					<img alt="" src="https://cdn.shopify.com/s/files/1/0103/2847/3658/files/logo-dark.png?v=1764060194" height="0" width="0" />
+					<button id="pay-now-popup-header-close-button">
+						<svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+							<path d="M15 5L5 15" stroke="#A1A1A1" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+							<path d="M5 5L15 15" stroke="#A1A1A1" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</button>
+				</div>
+
+				<div class="pay-now-popup-body">
+					<div class="pay-now-popup-step-one" id="pay-now-popup-step-one">
+						<h4>Enter your email address to make payments now.</h4>
+
+						<p class="pay-now-popup-step-one-error" id="pay-now-popup-step-one-error"></p>
+
+						<form id="pay-now-popup-step-one-form">
+							<label>
+								<span>Email Address</span>
+								<input name="email" placeholder="Enter your email address" required type="email" />
+							</label>
+
+							<button type="submit" id="pay-now-popup-step-one-form-button">PAY NOW</button>
+						</form>
+					</div>
+
+					<div class="pay-now-popup-step-two" id="pay-now-popup-step-two">
+						<div class="pay-now-popup-step-two-email-container">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+								<path d="M22 13V6C22 5.46957 21.7893 4.96086 21.4142 4.58579C21.0391 4.21071 20.5304 4 20 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V18C2 19.1 2.9 20 4 20H12M22 7L13.03 12.7C12.7213 12.8934 12.3643 12.996 12 12.996C11.6357 12.996 11.2787 12.8934 10.97 12.7L2 7M16 19L18 21L22 17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							<p id="pay-now-popup-step-two-email"></p>
+						</div>
+
+						<h4>Select Your Account</h4>
+
+						<div class="pay-now-popup-step-two-loader" id="pay-now-popup-step-two-loader">
+							<div class="bar-loader-dark"></div>
+						</div>
+
+						<ul class="pay-now-popup-step-two-accounts-list" id="pay-now-popup-step-two-accounts-list">
+						</ul>
+
+						<div class="pay-now-popup-step-two-footer">
+							<h5>No balance due right now?</h5>
+							<p>You can still pay ahead for future invoices on an account.</p>
+						</div>
+					</div>
+
+					<div class="pay-now-popup-step-three" id="pay-now-popup-step-three">
+						<div class="pay-now-popup-step-three-header">
+							<h3>Select a subscription to renew</h3>
+							<p>
+								This account is currently paid up. Choose a subscription below to pay for the next billing cycle.
+							</p>
+						</div>
+
+						<span class="pay-now-popup-step-three-error" id="pay-now-popup-step-three-error"></span>
+
+						<div class="pay-now-popup-step-three-loader" id="pay-now-popup-step-three-loader">
+							<div class="bar-loader-dark"></div>
+						</div>
+
+						<ul class="pay-now-popup-step-three-subscriptions-list" id="pay-now-popup-step-three-subscriptions-list">
+						</ul>
+
+						<button class="pay-now-popup-step-three-pay-now-button" id="pay-now-popup-step-three-pay-now-button">PAY NOW</button>
+					</div>
+
+					<div class="pay-now-popup-step-four" id="pay-now-popup-step-four">
+						<div class="pay-now-popup-step-four-header">
+							<svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
+								<path d="M38.9688 23.5625L25.6695 36.25L19.0312 29.9062" stroke="#008061" stroke-width="0.90625" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M29 50.75C41.0122 50.75 50.75 41.0122 50.75 29C50.75 16.9878 41.0122 7.25 29 7.25C16.9878 7.25 7.25 16.9878 7.25 29C7.25 41.0122 16.9878 50.75 29 50.75Z" stroke="#008061" stroke-width="0.90625" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+
+							<h3>Payment confirmed!</h3>
+							<p>Your payment has been applied to your subscription renewal.</p>
+						</div>
+
+						<div class="pay-now-popup-step-four-payment-details">
+							<h4>Payment details</h4>
+
+							<ul>
+								<li>
+									<p>Subscription</p>
+									<p id="pay-now-popup-step-four-payment-details-subscription-info"></p>
+								</li>
+								<li>
+									<p>Amount paid</p>
+									<p id="pay-now-popup-step-four-payment-details-amount-paid"></p>
+								</li>
+								<li>
+									<p>Processed on</p>
+									<p id="pay-now-popup-step-four-payment-details-processed-on"></p>
+								</li>
+							</ul>
+						</div>
+
+						<div class="pay-now-popup-step-four-receipt-info">
+							<svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+								<path d="M7 13.5C10.5899 13.5 13.5 10.5899 13.5 7C13.5 3.41015 10.5899 0.5 7 0.5C3.41015 0.5 0.5 3.41015 0.5 7C0.5 10.5899 3.41015 13.5 7 13.5Z" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M5.5 10H8.5" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M7 10V6.5H6" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M7 4.25C6.86193 4.25 6.75 4.13807 6.75 4C6.75 3.86193 6.86193 3.75 7 3.75" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M7 4.25C7.13807 4.25 7.25 4.13807 7.25 4C7.25 3.86193 7.13807 3.75 7 3.75" stroke="#1E1E1E" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+
+							<p>A receipt has been sent to <span id="pay-now-popup-step-four-receipt-info-email-display"></span></p>
+						</div>
+
+						<div class="pay-now-popup-step-four-footer">
+							<button id="pay-now-popup-step-four-footer-done-button">DONE</button>
+							<p>Need help? <a href="mailto:support@nomadinternet.com">Contact Support</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
