@@ -351,6 +351,9 @@
 }
 
 .pay-now-popup-step-three-subscriptions-list-item-main-content div a span {
+  align-items: center;
+  display: flex;
+  justify-content: center;
   transition: transform 0.2s;
 }
 

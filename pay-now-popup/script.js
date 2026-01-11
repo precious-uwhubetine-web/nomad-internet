@@ -295,9 +295,9 @@ const showPayNowPopupStepThree = async (account) => {
 
       payNowStepThreeSubscriptionsListItemMainContentViewMoreTriggers.forEach((trigger) => {
         trigger.addEventListener('click', (e) => {
-          const detailsElementId = e.target.dataset.detailsId;
+          const detailsElementId = trigger.dataset.detailsId;
           const detailsElement = document.getElementById(detailsElementId);
-          const iconContainer = e.target.querySelector('span');
+          const iconContainer = trigger.querySelector('span');
 
           if (detailsElement.style.display == 'block') {
             detailsElement.style.display = 'none';
