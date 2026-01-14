@@ -25,6 +25,11 @@ body {
   src: url(assets/forma-djr-banner-thin.woff2);
 }
 
+@font-face {
+  font-family: "Graphie";
+  src: url(assets/graphie-regular.woff2);
+}
+
 .Index {
   display: flex;
   flex-direction: column;
