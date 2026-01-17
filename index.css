@@ -17,17 +17,17 @@ body {
 
 @font-face {
   font-family: "Forma DJR Banner";
-  src: url(assets/forma-djr-banner-regular.woff2);
+  src: url(assets/fonts/forma-djr-banner-regular.woff2);
 }
 
 @font-face {
   font-family: "Forma DJR Banner Thin";
-  src: url(assets/forma-djr-banner-thin.woff2);
+  src: url(assets/fonts/forma-djr-banner-thin.woff2);
 }
 
 @font-face {
   font-family: "Graphie";
-  src: url(assets/graphie-regular.woff2);
+  src: url(assets/fonts/graphie-regular.woff2);
 }
 
 .Index {
