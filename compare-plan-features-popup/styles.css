@@ -367,6 +367,7 @@
     align-items: center;
     display: flex;
     gap: calc(8px * var(--scale-factor));
+    text-align: right;
   }
 
   .compare-plan-features-popup-mobile-list-item-features-available span,
