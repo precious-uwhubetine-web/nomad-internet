@@ -1,0 +1,2593 @@
+.trucking-top-bar {
+  --scale-factor: 0.8;
+
+  align-items: center;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  padding: calc(8px * var(--scale-factor));
+  text-align: center;
+}
+
+.trucking-top-bar p {
+  color: white;
+  font-family: "Forma DJR Banner";
+  font-size: calc(18px * var(--scale-factor));
+  letter-spacing: calc(0.9px * var(--scale-factor));
+}
+
+.trucking-header {
+  --scale-factor: 0.8;
+
+  background-color: white;
+  position: relative}
+
+.trucking-header-content {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: calc(1440px * var(--scale-factor));
+  padding: calc(16px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  position: relative;
+}
+
+.trucking-header-content-logo img {
+  height: calc(49px * var(--scale-factor));
+  width: auto;
+}
+
+.trucking-header-content nav {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.trucking-header-content nav ul {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.12);
+  border-radius: calc(7px * var(--scale-factor));
+  display: flex;
+  gap: calc(32px * var(--scale-factor));
+  list-style: none;
+  margin: 0;
+  padding: 0 calc(24px * var(--scale-factor));
+}
+
+.trucking-header-content nav ul li a {
+  color: black;
+  display: block;
+  font-family: "Forma DJR Banner";
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 400;
+  padding: calc(10px * var(--scale-factor)) 0;
+  text-decoration: none;
+}
+
+.trucking-header-content-get-connected-button {
+  align-items: center;
+  background-color: #008061;
+  border-radius: calc(4px * var(--scale-factor));
+  color: white;
+  display: flex;
+  font-family: "Graphie";
+  font-weight: 700;
+  height: calc(56px * var(--scale-factor));
+  justify-content: center;
+  text-decoration: none;
+  padding: calc(14px * var(--scale-factor));
+}
+
+.trucking-header-content-mobile-menu-button {
+  display: none;
+}
+
+.trucking-header-mobile-menu {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .trucking-header-content nav,
+  .trucking-header-content-get-connected-button {
+    display: none;
+  }
+
+  .trucking-header-content-mobile-menu-button {
+    background: none;
+    border: none;
+    display: flex;
+  }
+
+  .trucking-header-content-mobile-menu-button svg {
+    height: calc(24px * var(--scale-factor));
+    width: calc(24px * var(--scale-factor));
+  }
+
+  .trucking-header-content-logo img {
+    height: calc(32px * var(--scale-factor));
+  }
+
+  .trucking-header-mobile-menu {
+    backdrop-filter: blur(5px);
+    background: rgba(16, 16, 16, 0.7);
+    flex-direction: column;
+    gap: calc(24px * var(--scale-factor));
+    height: 100vh;
+    left: 0;
+    padding: calc(16px * var(--scale-factor));
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .trucking-header-mobile-menu div {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .trucking-header-mobile-menu div > svg {
+    width: calc(100px * var(--scale-factor));
+  }
+
+  .trucking-header-mobile-menu div button svg {
+    height: calc(32px * var(--scale-factor));
+    width: calc(32px * var(--scale-factor));
+  }
+
+  .trucking-header-mobile-menu nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .trucking-header-mobile-menu nav ul li a {
+    color: white;
+    display: block;
+    font-family: 'Forma DJR Banner';
+    font-size: calc(20px * var(--scale-factor));
+    font-weight: 400;
+    padding: calc(16px * var(--scale-factor)) 0;
+    text-decoration: none;
+  }
+
+  .trucking-header-mobile-menu > a {
+    align-items: center;
+    background-color: #008061;
+    border-radius: calc(4px * var(--scale-factor));
+    color: white;
+    display: flex;
+    font-family: "Graphie";
+    font-size: calc(18px * var(--scale-factor));
+    font-weight: 700;
+    height: calc(56px * var(--scale-factor));
+    justify-content: center;
+    padding: calc(14px * var(--scale-factor));
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .trucking-top-bar p {
+    font-size: calc(12px * var(--scale-factor));
+  }
+}
+
+.trucking-hero-section {
+  --scale-factor: 0.8;
+
+  align-items: center;
+  display: flex;
+  height: calc(100vh - 100px);
+  justify-content: center;
+  max-height: calc(800px * var(--scale-factor));
+  position: relative;
+  z-index: 1;
+}
+
+.trucking-hero-section-bg {
+  filter: brightness(0.7);
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.trucking-hero-section-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+  justify-content: center;
+  padding: calc(20px * var(--scale-factor));
+  position: relative;
+}
+
+.trucking-hero-section-content-badge {
+  align-items: center;
+  border-radius: 50rem;
+  background: rgba(0, 117, 87, 0.20);
+  border: calc(1px * var(--scale-factor)) solid rgba(0, 117, 87, 0.80);
+  display: flex;
+  gap: calc(8px * var(--scale-factor));
+  padding: calc(8px * var(--scale-factor)) calc(20px * var(--scale-factor));
+}
+
+.trucking-hero-section-content-badge svg {
+  height: calc(24px * var(--scale-factor));
+  width: calc(24px * var(--scale-factor));
+}
+
+.trucking-hero-section-content-badge p {
+  color: white;
+  font-family: 'Plus Jakarta Sans';
+  font-size: calc(20px * var(--scale-factor));
+}
+
+.trucking-hero-section-content-text {
+  display: flex;
+  flex-direction: column;
+  gap: calc(8px * var(--scale-factor));
+}
+
+.trucking-hero-section-content-text h1 {
+  color: white;
+  font-family: "Graphie";
+  font-size: calc(60px * var(--scale-factor));
+  font-weight: 700;
+  line-height: calc(69px * var(--scale-factor));
+  max-width: calc(900px * var(--scale-factor));
+  text-align: center;
+}
+
+.trucking-hero-section-content-text p {
+  color: white;
+  font-family: "Graphie";
+  font-size: calc(20px * var(--scale-factor));
+  line-height: calc(29px * var(--scale-factor));
+  text-align: center;
+}
+
+.trucking-hero-section-content-features {
+  column-gap: calc(24px * var(--scale-factor));
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: calc(16px * var(--scale-factor));
+}
+
+.trucking-hero-section-content-features li {
+  align-items: center;
+  color: white;
+  display: flex;
+  font-family: "Graphie";
+  font-size: calc(18px * var(--scale-factor));
+  gap: calc(8px * var(--scale-factor));
+}
+
+.trucking-hero-section-content-features li span:first-child {
+  align-items: center;
+  background-color: #008061;
+  border-radius: 50%;
+  display: flex;
+  height: calc(16px * var(--scale-factor));
+  justify-content: center;
+  width: calc(16px * var(--scale-factor));
+}
+
+.trucking-hero-section-content-features li span:first-child svg {
+  height: calc(12px * var(--scale-factor));
+  width: calc(12px * var(--scale-factor));
+}
+
+.trucking-hero-section-content-actions {
+  align-items: center;
+  display: flex;
+  gap: calc(24px * var(--scale-factor));
+  justify-content: center;
+}
+
+.trucking-hero-section-content-actions a {
+  align-items: center;
+  border-radius: calc(4px * var(--scale-factor));
+  color: white;
+  display: flex;
+  font-family: "Graphie";
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 700;
+  height: calc(56px * var(--scale-factor));
+  justify-content: center;
+  padding: calc(14px * var(--scale-factor));
+  text-decoration: none;
+}
+
+.trucking-hero-section-content-actions a:first-child {
+  background-color: #008061;
+}
+
+.trucking-hero-section-content-actions a:last-child {
+  background: none;
+  border: calc(2px * var(--scale-factor)) solid white;
+}
+
+@media (max-width: 650px) {
+  .trucking-top-bar p {
+    font-size: calc(12px * var(--scale-factor));
+  }
+
+  .trucking-hero-section-bg {
+    filter: brightness(0.5);
+    object-position: 65% center;
+  }
+
+  .trucking-hero-section-content-badge p {
+    font-size: calc(16px * var(--scale-factor));
+  }
+
+  .trucking-hero-section-content-text h1 {
+    font-size: calc(36px * var(--scale-factor));
+    line-height: 115%;
+  }
+
+  .trucking-hero-section-content-text p {
+    font-size: calc(16px * var(--scale-factor));
+    line-height: 177%;
+  }
+
+  .trucking-hero-section-content-features {
+    align-self: stretch;
+    grid-template-columns: 1fr;
+    justify-content: start;
+  }
+
+  .trucking-hero-section-content-actions {
+    align-self: stretch;
+    flex-direction: column;
+    gap: calc(8px * var(--scale-factor));
+  }
+
+  .trucking-hero-section-content-actions a {
+    width: 100%;
+  }
+}
+
+.trucking-features-section {
+  --scale-factor: 0.8;
+}
+
+.trucking-features-section-content ul {
+  align-items: center;
+  display: grid;
+  gap: calc(32px * var(--scale-factor));
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  margin: 0 auto;
+  max-width: calc(1440px * var(--scale-factor));
+  padding: calc(60px * var(--scale-factor)) calc(20px * var(--scale-factor));
+}
+
+.trucking-features-section-content ul li {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(12px * var(--scale-factor));
+  text-align: center;
+}
+
+.trucking-features-section-content ul li span {
+  background: linear-gradient(50deg, #008061 30.69%, #06BF3B 88.52%, #0DFF15 100.67%), #F54900;;
+  border-radius: 50%;
+  height: calc(64px * var(--scale-factor));
+  padding: calc(16px * var(--scale-factor));
+}
+
+.trucking-features-section-content ul li span svg {
+  height: calc(28px * var(--scale-factor));
+}
+
+.trucking-features-section-content ul li div {
+  display: flex;
+  flex-direction: column;
+  gap: calc(4px * var(--scale-factor));
+}
+
+.trucking-features-section-content ul li div h4 {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 500;
+  letter-spacing: calc(0.9px * var(--scale-factor));
+}
+
+.trucking-features-section-content ul li div p {
+  color: #4d4d4d;
+  font-family: "Forma DJR Banner";
+  font-size: calc(14px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(0.7px * var(--scale-factor));
+}
+
+@media (max-width: 650px) {
+  .trucking-features-section-content ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.trucking-internet-travel-with-you-section {
+  --scale-factor: 0.8;
+
+  padding: calc(0px * var(--scale-factor)) calc(20px * var(--scale-factor));
+}
+
+.trucking-internet-travel-with-you-card {
+  border-radius: calc(15px * var(--scale-factor));
+  display: flex;
+  margin: 0 auto;
+  max-width: calc(1440px * var(--scale-factor));
+  overflow: hidden;
+}
+
+.trucking-internet-travel-with-you-card-left {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  gap: calc(48px * var(--scale-factor));
+  padding: calc(60px * var(--scale-factor)) calc(48px * var(--scale-factor));
+  width: 50%;
+}
+
+.trucking-internet-travel-with-you-card-left-header {
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+}
+
+.trucking-internet-travel-with-you-card-left-header h2 {
+  color: white;
+  font-family: "Forma DJR Banner";
+  font-size: calc(28px * var(--scale-factor));
+  font-weight: 700;
+  letter-spacing: calc(1.4px * var(--scale-factor));
+}
+
+.trucking-internet-travel-with-you-card-left-header p {
+  color: white;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+}
+
+.trucking-internet-travel-with-you-card-left ul {
+  display: flex;
+  flex-direction: column;
+  gap: calc(32px * var(--scale-factor));
+  list-style: none;
+}
+
+.trucking-internet-travel-with-you-card-left ul li {
+  display: flex;
+  gap: calc(32px * var(--scale-factor));
+}
+
+.trucking-internet-travel-with-you-card-left ul li svg {
+  height: calc(40px * var(--scale-factor));
+  width: calc(40px * var(--scale-factor));
+}
+
+.trucking-internet-travel-with-you-card-left ul li div {
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+}
+
+.trucking-internet-travel-with-you-card-left ul li div h3 {
+  color: white;
+  font-family: "Forma DJR Banner";
+  font-size: calc(24px * var(--scale-factor));
+  font-weight: 500;
+  letter-spacing: calc(1.2px * var(--scale-factor));
+}
+
+.trucking-internet-travel-with-you-card-left ul li div p {
+  color: white;
+  font-family: "Forma DJR Banner";
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(0.8px * var(--scale-factor));
+}
+
+.trucking-internet-travel-with-you-card-left-footer {
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+}
+
+.trucking-internet-travel-with-you-card-left-footer-actions {
+  display: flex;
+  gap: calc(24px * var(--scale-factor));
+}
+
+.trucking-internet-travel-with-you-card-left-footer-actions a {
+  align-items: center;
+  border-radius: calc(4px * var(--scale-factor));
+  color: white;
+  display: flex;
+  font-family: "Graphie";
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 700;
+  height: calc(56px * var(--scale-factor));
+  justify-content: center;
+  padding: calc(14px * var(--scale-factor));
+  text-decoration: none;
+}
+
+.trucking-internet-travel-with-you-card-left-footer-actions a:first-child {
+  background-color: #008061;
+}
+
+.trucking-internet-travel-with-you-card-left-footer-actions a:last-child {
+  background: none;
+  border: calc(2px * var(--scale-factor)) solid white;
+}
+
+.trucking-internet-travel-with-you-card-left-footer p {
+  color: white;
+  font-family: "Forma DJR Banner";
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(0.8px * var(--scale-factor));
+}
+
+.trucking-internet-travel-with-you-card-right {
+  height: calc(713px * var(--scale-factor));
+  position: relative;
+  width: 50%;
+}
+
+.trucking-internet-travel-with-you-card-right-bg {
+  object-fit: cover;
+  width: 100%;
+}
+
+.trucking-internet-travel-with-you-card-right-logo {
+  position: absolute;
+  top: calc(20px * var(--scale-factor));
+  right: calc(20px * var(--scale-factor));
+  height: calc(49px * var(--scale-factor));
+  width: auto;
+}
+
+@media (max-width: 1100px) {
+  .trucking-internet-travel-with-you-card-left,
+  .trucking-internet-travel-with-you-card-right,
+  .trucking-internet-travel-with-you-card-right-bg {
+    height: 800px;
+  }
+}
+
+@media (max-width: 950px) {
+  .trucking-internet-travel-with-you-card {
+    flex-direction: column;
+    height: auto;
+    max-width: calc(800px * var(--scale-factor));
+  }
+
+  .trucking-internet-travel-with-you-card-left,
+  .trucking-internet-travel-with-you-card-right {
+    width: 100%;
+    height: max-content;
+  }
+
+  .trucking-internet-travel-with-you-card-left {
+    padding: calc(24px * var(--scale-factor)) calc(16px * var(--scale-factor));
+  }
+
+  .trucking-internet-travel-with-you-card-left-header {
+    align-items: center;
+  }
+
+  .trucking-internet-travel-with-you-card-left-header h2,
+  .trucking-internet-travel-with-you-card-left-header p {
+    text-align: center;
+  }
+
+  .trucking-internet-travel-with-you-card-left ul li {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .trucking-internet-travel-with-you-card-left ul li h3,
+  .trucking-internet-travel-with-you-card-left ul li p {
+    text-align: center;
+  }
+
+  .trucking-internet-travel-with-you-card-left-footer-actions {
+    flex-direction: column;
+    gap: calc(16px * var(--scale-factor));
+  }
+
+  .trucking-internet-travel-with-you-card-left-footer p {
+    text-align: center;
+  }
+
+  .trucking-internet-travel-with-you-card-right-bg {
+    height: 350px;
+  }
+
+  .trucking-internet-travel-with-you-card-right-logo {
+    bottom: calc(24px * var(--scale-factor));
+    left: 50%;
+    top: auto;
+    transform: translateX(-50%);
+  }
+}
+
+.trucking-how-nomad-works-in-your-truck-section {
+  --scale-factor: 0.8;
+
+  display: flex;
+  flex-direction: column;
+  gap: calc(80px * var(--scale-factor));
+  padding: calc(120px * var(--scale-factor)) calc(20px * var(--scale-factor));
+}
+
+.trucking-how-nomad-works-in-your-truck-section-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  justify-content: center;
+}
+
+.trucking-how-nomad-works-in-your-truck-section-header h2 {
+  color: black;
+  font-family: "Graphie";
+  font-size: calc(48px * var(--scale-factor));
+  font-weight: 600;
+  text-align: center;
+}
+
+.trucking-how-nomad-works-in-your-truck-section-header p {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+  max-width: calc(456px * var(--scale-factor));
+  text-align: center;
+}
+
+.trucking-how-nomad-works-in-your-truck-steps {
+  align-items: center;
+  display: grid;
+  gap: calc(24px * var(--scale-factor));
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: calc(1440px * var(--scale-factor));
+}
+
+.trucking-how-nomad-works-in-your-truck-steps li {
+  background-color: #262626;
+  background-image: url(https://cdn.shopify.com/s/files/1/0103/2847/3658/files/trucking-how-nomad-works-card-bg.png);
+  align-items: center;
+  border: calc(3px * var(--scale-factor)) solid black;
+  border-radius: calc(20px * var(--scale-factor));
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+  overflow: hidden;
+  padding: calc(24px * var(--scale-factor));
+  position: relative;
+}
+
+.trucking-how-nomad-works-in-your-truck-steps li svg {
+  height: calc(226px * var(--scale-factor));
+  left: calc(-24px * var(--scale-factor));
+  position: absolute;
+  top: calc(-24px * var(--scale-factor));
+  width: calc(226px * var(--scale-factor));
+}
+
+.trucking-how-nomad-works-in-your-truck-steps li span {
+  background-color: rgba(0, 0, 0, 0.60);
+  border: calc(1px * var(--scale-factor)) solid white;
+  border-radius: 50rem;
+  box-shadow: 0 403px 113px 0 rgba(23, 138, 0, 0.00), 0 258px 103px 0 rgba(23, 138, 0, 0.01), 0 145px 87px 0 rgba(23, 138, 0, 0.05), 0 64px 64px 0 rgba(23, 138, 0, 0.09), 0 16px 35px 0 rgba(23, 138, 0, 0.10);
+  color: white;
+  display: flex;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+  padding: calc(8px * var(--scale-factor)) calc(16px * var(--scale-factor));
+}
+
+.trucking-how-nomad-works-in-your-truck-steps li img {
+  height: calc(188px * var(--scale-factor));
+  object-fit: contain;
+  width: auto;
+}
+
+.trucking-how-nomad-works-in-your-truck-steps li div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+}
+
+.trucking-how-nomad-works-in-your-truck-steps li div h3 {
+  color: white;
+  font-family: "Forma DJR Banner";
+  font-size: calc(28px * var(--scale-factor));
+  font-weight: 500;
+  letter-spacing: calc(1.4px * var(--scale-factor));
+  text-align: center;
+}
+
+.trucking-how-nomad-works-in-your-truck-steps li div p {
+  color: white;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+  max-width: calc(269px * var(--scale-factor));
+  text-align: center;
+}
+
+@media (max-width: 950px) {
+  .trucking-how-nomad-works-in-your-truck-steps {
+    grid-template-columns: 1fr;
+    max-width: calc(800px * var(--scale-factor));
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .trucking-how-nomad-works-in-your-truck-section {
+    gap: calc(30px * var(--scale-factor));
+  }
+
+  .trucking-how-nomad-works-in-your-truck-section-header h2 {
+    font-size: calc(32px * var(--scale-factor));
+  }
+
+  .trucking-how-nomad-works-in-your-truck-section-header p {
+    font-size: calc(16px * var(--scale-factor));
+  }
+}
+
+.trucking-uses-section {
+  --scale-factor: 0.8;
+
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  gap: calc(48px * var(--scale-factor));
+  overflow: hidden;
+  padding: calc(120px * var(--scale-factor)) calc(20px * var(--scale-factor));
+}
+
+.trucking-uses-section div {
+  align-items: center;
+  display: flex;
+  gap: calc(32px * var(--scale-factor));
+  justify-content: center;
+}
+
+.trucking-uses-section div span {
+  background: linear-gradient(90deg, rgba(17, 0, 0, 0.10) 0%, #FFF 100%);
+  height: calc(2px * var(--scale-factor));
+  width: calc(154px * var(--scale-factor));
+}
+
+.trucking-uses-section div span:first-of-type {
+  transform: rotate(180deg);
+}
+
+.trucking-uses-section div p {
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+  text-align: center;
+}
+
+.trucking-uses-section ul {
+  align-items: center;
+  display: flex;
+  gap: calc(128px * var(--scale-factor));
+  justify-content: center;
+  margin: 0 auto;
+  width: max-content;
+}
+
+.trucking-uses-section ul li img {
+  opacity: 0.5;
+  height: calc(32px * var(--scale-factor));
+}
+
+@media (max-width: 768px) {
+  .trucking-uses-section {
+    padding: calc(60px * var(--scale-factor)) 0;
+  }
+
+  .trucking-uses-section div span {
+    width: calc(32px * var(--scale-factor));
+  }
+
+  .trucking-uses-section ul li img {
+    height: calc(24px * var(--scale-factor));
+  }
+}
+
+.trucking-what-truckers-are-saying-section {
+  --scale-factor: 0.8;
+
+  display: flex;
+  flex-direction: column;
+  gap: calc(80px * var(--scale-factor));
+  padding: calc(120px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  position: relative;
+  z-index: 1;
+}
+
+.trucking-what-truckers-are-saying-section-bg {
+  object-fit: cover;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.trucking-what-truckers-are-saying-section-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  justify-content: center;
+}
+
+.trucking-what-truckers-are-saying-section-header svg {
+  height: calc(60px * var(--scale-factor));
+  width: calc(60px * var(--scale-factor));
+}
+
+.trucking-what-truckers-are-saying-section-header h2 {
+  color: white;
+  font-family: "Forma DJR Banner";
+  font-size: calc(48px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(2.4px * var(--scale-factor));
+  text-align: center;
+}
+
+.trucking-what-truckers-are-saying-section-header p {
+  color: white;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+  max-width: calc(324px * var(--scale-factor));
+  text-align: center;
+}
+
+.trucking-what-truckers-are-saying-reviews {
+  display: grid;
+  gap: calc(32px * var(--scale-factor));
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  margin: 0 auto;
+  max-width: calc(1440px * var(--scale-factor));
+}
+
+.trucking-what-truckers-are-saying-reviews li {
+  background-color: rgba(245, 245, 245, 0.70);
+  border: calc(3px * var(--scale-factor)) solid white;
+  border-radius: calc(15px * var(--scale-factor));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(358px * var(--scale-factor));
+  padding: calc(24px * var(--scale-factor));
+}
+
+.trucking-what-truckers-are-saying-reviews-item-top {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.trucking-what-truckers-are-saying-reviews-item-top img {
+  width: calc(43px * var(--scale-factor));
+}
+
+.trucking-what-truckers-are-saying-reviews-item-top div:last-child  {
+  align-items: center;
+  display: flex;
+}
+
+.trucking-what-truckers-are-saying-reviews-item-top div:last-child svg {
+  height: calc(27px * var(--scale-factor));
+  width: calc(27px * var(--scale-factor));
+}
+
+.trucking-what-truckers-are-saying-reviews-item-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+}
+
+.trucking-what-truckers-are-saying-reviews-item-bottom div {
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+}
+
+.trucking-what-truckers-are-saying-reviews-item-bottom h4 {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 500;
+  letter-spacing: calc(1px * var(--scale-factor));
+}
+
+.trucking-what-truckers-are-saying-reviews-item-bottom p {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+}
+
+.trucking-what-truckers-are-saying-reviews-controls {
+  display: none;
+}
+
+@media (max-width: 950px) {
+  .trucking-what-truckers-are-saying-reviews {
+    gap: calc(16px * var(--scale-factor));
+  }
+}
+
+@media (max-width: 768px) {
+  .trucking-what-truckers-are-saying-section {
+    gap: calc(32px * var(--scale-factor));
+  }
+
+  .trucking-what-truckers-are-saying-section-header svg {
+    height: calc(42px * var(--scale-factor));
+    width: calc(42px * var(--scale-factor));
+  }
+
+  .trucking-what-truckers-are-saying-section-header h2 {
+    font-size: calc(32px * var(--scale-factor));
+  }
+
+  .trucking-what-truckers-are-saying-section-header p {
+    font-size: calc(16px * var(--scale-factor));
+  }
+
+  .trucking-what-truckers-are-saying-reviews {
+    grid-template-columns: 1fr;
+    max-width: calc(400px * var(--scale-factor));
+    width: 100%;
+  }
+
+  .trucking-what-truckers-are-saying-reviews li:nth-child(2),
+  .trucking-what-truckers-are-saying-reviews li:nth-child(3) {
+    display: none;
+  }
+
+  .trucking-what-truckers-are-saying-reviews-controls {
+    align-items: center;
+    display: flex;
+    gap: calc(24px * var(--scale-factor));
+    justify-content: center;
+  }
+
+  .trucking-what-truckers-are-saying-reviews-controls button {
+    align-items: center;
+    background: none;
+    border: calc(2px * var(--scale-factor)) solid white;
+    border-radius: 50%;
+    display: flex;
+    height: calc(50px * var(--scale-factor));
+    justify-content: center;
+    width: calc(50px * var(--scale-factor));
+  }
+
+  .trucking-what-truckers-are-saying-reviews-controls button svg {
+    height: calc(24px * var(--scale-factor));
+    width: calc(24px * var(--scale-factor));
+  }
+}
+
+.trucking-choose-plan-section {
+  --scale-factor: 0.8;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(62px * var(--scale-factor));
+  padding: calc(120px * var(--scale-factor)) calc(20px * var(--scale-factor));
+}
+
+.trucking-choose-plan-section-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  justify-content: center;
+}
+
+.trucking-choose-plan-section-header h2 {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(48px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(2.4px * var(--scale-factor));
+  text-align: center;
+}
+
+.trucking-choose-plan-section-header p {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+  max-width: calc(456px * var(--scale-factor));
+  text-align: center;
+}
+
+.trucking-choose-plan-section-plans {
+  align-items: center;
+  display: flex;
+  gap: calc(48px * var(--scale-factor));
+  justify-content: center;
+  width: 100%;
+}
+
+.trucking-choose-plan-section-plans > li {
+  background-color: white;
+  border: calc(5px * var(--scale-factor)) solid #e9e9e9;
+  border-radius: calc(30px * var(--scale-factor));
+  cursor: pointer;
+  max-width: calc(522px * var(--scale-factor));
+  transition: transform 0.3s ease;
+  transition-delay: 0.1s;
+  width: 100%;
+}
+
+.trucking-choose-plan-section-plans > li a {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: calc(48px * var(--scale-factor));
+  justify-content: space-between;
+  padding: calc(24px * var(--scale-factor));
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  transition-delay: 0.1s;
+  width: 100%;
+}
+
+.trucking-choose-plan-section-plans > li:hover {
+  transform: scale(1.01);
+}
+
+.trucking-choose-plan-section-plans > li:nth-child(2) {
+  background-color: #e5f2ef;
+  border-color: #008061;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.trucking-choose-plan-section-plans > li div {
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+}
+
+.trucking-choose-plan-section-plans > li div h4 {
+  font-family: "Forma DJR Banner";
+  font-size: calc(32px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1.6px * var(--scale-factor));
+}
+
+.trucking-choose-plan-section-plans > li div h3 {
+  font-family: "Forma DJR Banner";
+  font-size: calc(50px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(2.5px * var(--scale-factor));
+}
+
+.trucking-choose-plan-section-plans > li div h3 span {
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(0.3px * var(--scale-factor));
+}
+
+.trucking-choose-plan-section-plans > li ul {
+  background-color: #f5f5f5;
+  border-radius: calc(30px * var(--scale-factor));
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  list-style: none;
+  margin: 0;
+  padding: calc(16px * var(--scale-factor));
+}
+
+.trucking-choose-plan-section-plans > li ul li {
+  align-items: center;
+  display: flex;
+  gap: calc(12px * var(--scale-factor));
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+}
+
+.trucking-choose-plan-section-plans > li ul li span {
+  align-items: center;
+  background-color: rgba(74, 124, 158, 0.20);
+  border-radius: 50%;
+  display: flex;
+  height: calc(20px * var(--scale-factor));
+  justify-content: center;
+  width: calc(20px * var(--scale-factor));
+}
+
+.trucking-choose-plan-section-plans > li ul li span svg {
+  height: calc(14px * var(--scale-factor));
+  width: calc(14px * var(--scale-factor));
+}
+
+.trucking-choose-plan-section-plans > li button {
+  align-items: center;
+  border-radius: 50rem;
+  cursor: pointer;
+  display: flex;
+  font-family: "Forma DJR Banner";
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 400;
+  gap: calc(8px * var(--scale-factor));
+  height: calc(56px * var(--scale-factor));
+  justify-content: center;
+  letter-spacing: calc(0.9px * var(--scale-factor));
+  padding: calc(14px * var(--scale-factor));
+  text-decoration: none;
+}
+
+.trucking-choose-plan-section-plans > li button span {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  height: calc(24px * var(--scale-factor));
+  justify-content: center;
+  width: calc(24px * var(--scale-factor));
+}
+
+.trucking-choose-plan-section-plans > li button span svg {
+  height: calc(12px * var(--scale-factor));
+  width: calc(12px * var(--scale-factor));
+}
+
+.trucking-choose-plan-section-plans > li:first-child button {
+  border: calc(1px * var(--scale-factor)) solid black;
+}
+
+.trucking-choose-plan-section-plans > li:first-child button span {
+  background-color: black;
+}
+
+.trucking-choose-plan-section-plans > li:last-child button {
+  background-color: #008061;
+  color: white;
+}
+
+.trucking-choose-plan-section-plans > li:last-child button span {
+  background-color: white;
+}
+
+.trucking-choose-plan-section-plans > li p {
+  font-family: "Forma DJR Banner";
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(0.8px * var(--scale-factor));
+  text-align: center;
+}
+
+.trucking-choose-plan-section-plans-badge {
+  align-self: flex-start;
+  align-items: center;
+  border-radius: 50rem;
+  background: #008061;
+  box-shadow: 0 403px 113px 0 rgba(23, 138, 0, 0.00), 0 258px 103px 0 rgba(23, 138, 0, 0.01), 0 145px 87px 0 rgba(23, 138, 0, 0.05), 0 64px 64px 0 rgba(23, 138, 0, 0.09), 0 16px 35px 0 rgba(23, 138, 0, 0.10);
+  color: white;
+  display: flex;
+  font-family: "Plus Jakarta Sans";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 500;
+  gap: calc(8px * var(--scale-factor));
+  margin-bottom: calc(8px * var(--scale-factor));
+  overflow: hidden;
+  padding: calc(8px * var(--scale-factor)) calc(16px * var(--scale-factor));
+  position: relative;
+}
+
+.trucking-choose-plan-section-plans-badge svg:nth-of-type(1) {
+  height: calc(68px * var(--scale-factor));
+  left: calc(29px * var(--scale-factor));
+  mix-blend-mode: plus-lighter;
+  position: absolute;
+  top: calc(-16px * var(--scale-factor));
+  width: calc(94px * var(--scale-factor));
+}
+
+.trucking-choose-plan-section-plans-badge svg:nth-of-type(2) {
+  height: calc(16px * var(--scale-factor));
+  width: calc(16px * var(--scale-factor));
+}
+
+.trucking-choose-plan-section-footer {
+  align-items: center;
+  display: flex;
+  gap: calc(16px * var(--scale-factor));
+}
+
+.trucking-choose-plan-section-footer div {
+  align-items: center;
+  display: flex;
+}
+
+.trucking-choose-plan-section-footer div svg {
+  height: calc(24px * var(--scale-factor));
+  width: calc(24px * var(--scale-factor));
+}
+
+.trucking-choose-plan-section-footer p {
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+}
+
+@media (max-width: 768px) {
+  .trucking-choose-plan-section {
+    gap: calc(32px * var(--scale-factor));
+  }
+
+  .trucking-choose-plan-section-header h2 {
+    font-size: calc(32px * var(--scale-factor));
+  }
+
+  .trucking-choose-plan-section-header p {
+    font-size: calc(16px * var(--scale-factor));
+  }
+
+  .trucking-choose-plan-section-plans {
+    flex-direction: column;
+  }
+
+  .trucking-choose-plan-section-plans > li a {
+    gap: calc(32px * var(--scale-factor));
+    padding: calc(16px * var(--scale-factor));
+  }
+
+  .trucking-choose-plan-section-plans > li a div h4 {
+    font-size: calc(24px * var(--scale-factor));
+  }
+
+  .trucking-choose-plan-section-plans > li a div h3 {
+    font-size: calc(42px * var(--scale-factor));
+  }
+
+  .trucking-choose-plan-section-footer {
+    flex-direction: column;
+    gap: calc(16px * var(--scale-factor));
+  }
+
+  .trucking-choose-plan-section-footer div {
+    gap: calc(8px * var(--scale-factor));
+  }
+
+  .trucking-choose-plan-section-footer p {
+    font-size: calc(16px * var(--scale-factor));
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .trucking-choose-plan-section {
+    padding: calc(60px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  }
+}
+
+.trucking-comparison-section {
+  --scale-factor: 0.8;
+
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  gap: calc(62px * var(--scale-factor));
+  padding: calc(120px * var(--scale-factor)) calc(20px * var(--scale-factor));
+}
+
+.trucking-comparison-section-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  justify-content: center;
+}
+
+.trucking-comparison-section-header h2 {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(48px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(2.4px * var(--scale-factor));
+  text-align: center;
+}
+
+.trucking-comparison-section-header p {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+  text-align: center;
+}
+
+.trucking-comparison-section-table-container {
+  border-radius: calc(15px * var(--scale-factor));
+  margin: 0 auto;
+  max-width: calc(1440px * var(--scale-factor));
+  overflow-x: auto;
+  width: 100%;
+}
+
+.trucking-comparison-section-table-container table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.trucking-comparison-section-table-container table tr {
+  border-bottom: calc(2px * var(--scale-factor)) solid #F5F5F5;
+}
+
+.trucking-comparison-section-table-container table th {
+  background-color: #313131;
+  color: white;
+  font-size: calc(16px * var(--scale-factor));
+  font-family: "Inter";
+  font-weight: 700;
+  letter-spacing: calc(-0.3px * var(--scale-factor));
+  padding: calc(20px * var(--scale-factor)) calc(16px * var(--scale-factor));
+}
+
+.trucking-comparison-section-table-container table th:nth-child(2) {
+  background-color: #008061;
+}
+
+.trucking-comparison-section-table-container table tr {
+  background-color: #b4b4b4;
+}
+
+.trucking-comparison-section-table-container table tr:nth-child(even) {
+  background-color: #c9c9c9;
+}
+
+.trucking-comparison-section-table-container table tr:hover {
+  background-color: #b8b8b8;
+}
+
+.trucking-comparison-section-table-container table tr:nth-child(even):hover {
+  background-color: #cccccc;
+}
+
+.trucking-comparison-section-table-container table td {
+  color: black;
+  font-size: calc(16px * var(--scale-factor));
+  font-family: "Inter";
+  font-weight: 400;
+  letter-spacing: calc(-0.3px * var(--scale-factor));
+  padding: calc(20px * var(--scale-factor));
+  text-align: center;
+}
+
+.trucking-comparison-section-table-container table td:nth-child(2) {
+  background-color: rgba(0, 128, 97, 0.10);
+}
+
+.trucking-comparison-section-table-container table th:first-child,
+.trucking-comparison-section-table-container table td:first-child {
+  text-align: left;
+}
+
+.trucking-comparison-section-list-mobile {
+  display: none;
+}
+
+.trucking-comparison-section-table-true,
+.trucking-comparison-section-list-true,
+.trucking-comparison-section-table-false,
+.trucking-comparison-section-list-false {
+  align-items: center;
+  background-color: #008061;
+  border-radius: 50%;
+  display: flex;
+  height: calc(28px * var(--scale-factor));
+  justify-content: center;
+  width: calc(28px * var(--scale-factor));
+}
+
+.trucking-comparison-section-table-true,
+.trucking-comparison-section-table-false {
+  margin: 0 auto;
+}
+
+.trucking-comparison-section-table-true svg,
+.trucking-comparison-section-list-true svg,
+.trucking-comparison-section-table-false svg,
+.trucking-comparison-section-list-false svg {
+  height: calc(18px * var(--scale-factor));
+  width: calc(18px * var(--scale-factor));
+}
+
+.trucking-comparison-section-table-false,
+.trucking-comparison-section-list-false {
+  background-color: #c50009;
+}
+
+@media (max-width: 768px) {
+  .trucking-comparison-section-header h2 {
+    font-size: calc(32px * var(--scale-factor));
+  }
+}
+
+@media (max-width: 650px) {
+  .trucking-comparison-section {
+    padding: calc(60px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  }
+
+  .trucking-comparison-section-table-container {
+    display: none;
+  }
+
+  .trucking-comparison-section-list-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: calc(16px * var(--scale-factor));
+    list-style: none;
+  }
+
+  .trucking-comparison-section-list-mobile > li {
+    background-color: white;
+    border: calc(3px * var(--scale-factor)) solid #e5e7eb;
+    border-radius: calc(14px * var(--scale-factor));
+    display: flex;
+    flex-direction: column;
+    gap: calc(24px * var(--scale-factor));
+    padding: calc(24px * var(--scale-factor));
+  }
+
+  .trucking-comparison-section-list-mobile > li:first-child {
+    border: calc(3px * var(--scale-factor)) solid #008061;
+  }
+
+  .trucking-comparison-section-list-mobile > li ul {
+    display: flex;
+    flex-direction: column;
+    gap: calc(12px * var(--scale-factor));
+    list-style: none;
+  }
+
+  .trucking-comparison-section-list-mobile > li ul li {
+    align-items: center;
+    display: flex;
+    font-family: 'Forma DJR Banner';
+    font-size: calc(14px * var(--scale-factor));
+    font-weight: 400;
+    letter-spacing: calc(0.7px * var(--scale-factor));
+    gap: calc(12px * var(--scale-factor));
+    justify-content: space-between;
+  }
+
+  .trucking-comparison-section-list-mobile > li:first-child > svg {
+    width: calc(108px * var(--scale-factor));
+  }
+
+  .trucking-comparison-section-list-mobile > li div {
+    align-items: center;
+    display: flex;
+    gap: calc(8px * var(--scale-factor));
+  }
+
+  .trucking-comparison-section-list-mobile > li div svg {
+    height: calc(32px * var(--scale-factor));
+    width: calc(32px * var(--scale-factor));
+  }
+
+  .trucking-comparison-section-list-mobile > li div h5 {
+    font-family: 'Forma DJR Banner';
+    font-size: calc(18px * var(--scale-factor));
+    font-weight: 700;
+    letter-spacing: calc(0.9px * var(--scale-factor));
+  }
+}
+
+.trucking-risk-free-section {
+  --scale-factor: 0.8;
+
+  display: flex;
+  flex-direction: column;
+  gap: calc(62px * var(--scale-factor));
+  padding: calc(120px * var(--scale-factor)) calc(20px * var(--scale-factor));
+}
+
+.trucking-risk-free-section-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  justify-content: center;
+}
+
+.trucking-risk-free-section-header h2 {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(48px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(2.4px * var(--scale-factor));
+  text-align: center;
+}
+
+.trucking-risk-free-section-header p {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+  max-width: calc(430px * var(--scale-factor));
+  text-align: center;
+}
+
+.trucking-risk-free-section ul {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(24px * var(--scale-factor));
+  justify-content: center;
+  margin: 0 auto;
+  max-width: calc(1440px * var(--scale-factor));
+}
+
+.trucking-risk-free-section ul li {
+  align-items: center;
+  background-color: #262626;
+  background-image: url(https://cdn.shopify.com/s/files/1/0103/2847/3658/files/trucking-how-nomad-works-card-bg.png);
+  border: calc(3px * var(--scale-factor)) solid #404040;
+  border-radius: calc(14px * var(--scale-factor));
+  display: flex;
+  flex: 1 0 22%;
+  flex-direction: column;
+  gap: calc(48px * var(--scale-factor));
+  padding: calc(24px * var(--scale-factor));
+}
+
+.trucking-risk-free-section ul li span {
+  align-items: center;
+  background: linear-gradient(50deg, #008061 30.69%, #06BF3B 88.52%, #0DFF15 100.67%);
+  border-radius: calc(10px * var(--scale-factor));
+  display: flex;
+  height: calc(52px * var(--scale-factor));
+  justify-content: center;
+  width: calc(52px * var(--scale-factor));
+}
+
+.trucking-risk-free-section ul li span svg {
+  height: calc(28px * var(--scale-factor));
+  width: calc(28px * var(--scale-factor));
+}
+
+.trucking-risk-free-section ul li div {
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+}
+
+.trucking-risk-free-section ul li div h5 {
+  color: white;
+  font-family: "Forma DJR Banner";
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 700;
+  letter-spacing: calc(0.9px * var(--scale-factor));
+  text-align: center;
+}
+
+.trucking-risk-free-section ul li div p {
+  color: #a1a1a1;
+  font-family: "Forma DJR Banner";
+  font-size: calc(14px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(0.7px * var(--scale-factor));
+  text-align: center;
+}
+
+@media (max-width: 950px) {
+  .trucking-risk-free-section ul {
+    align-items: stretch;
+    gap: calc(8px * var(--scale-factor));
+  }
+
+  .trucking-risk-free-section ul li {
+    flex: 1 1 45%;
+    gap: calc(16px * var(--scale-factor));
+    padding: calc(24px * var(--scale-factor)) calc(8px * var(--scale-factor));
+  }
+
+  .trucking-risk-free-section ul li div {
+    gap: calc(8px * var(--scale-factor));
+  }
+}
+
+@media (max-width: 768px) {
+  .trucking-risk-free-section-header h2 {
+    font-size: calc(32px * var(--scale-factor));
+  }
+
+  .trucking-risk-free-section-header p {
+    font-size: calc(16px * var(--scale-factor));
+  }
+}
+
+@media (max-width: 650px) {
+  .trucking-risk-free-section {
+    padding: calc(60px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  }
+}
+
+.trucking-faq-section {
+  --scale-factor: 0.8;
+
+  align-items: center;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  gap: calc(62px * var(--scale-factor));
+  padding: calc(120px * var(--scale-factor)) calc(20px * var(--scale-factor));
+}
+
+.trucking-faq-section-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  justify-content: center;
+}
+
+.trucking-faq-section-header h2 {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(48px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(2.4px * var(--scale-factor));
+  text-align: center;
+}
+
+.trucking-faq-section-header p {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+  max-width: calc(456px * var(--scale-factor));
+  text-align: center;
+}
+
+.trucking-faq-section ul {
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  max-width: calc(896px * var(--scale-factor));
+}
+
+.trucking-faq-section ul li {
+  background-color: white;
+  border: calc(1px * var(--scale-factor)) solid #e5e7eb;
+  border-radius: calc(14px * var(--scale-factor));
+  padding: calc(24px * var(--scale-factor));
+}
+
+.trucking-faq-section ul li div {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: calc(10px * var(--scale-factor)) 0;
+}
+
+.trucking-faq-section ul li div h5 {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(24px * var(--scale-factor));
+  font-weight: 500;
+  letter-spacing: calc(1.2px * var(--scale-factor));
+}
+
+.trucking-faq-section ul li div span {
+  display: flex;
+}
+
+.trucking-faq-section ul li div svg {
+  transition: 0.2s transform;
+  width: calc(16px * var(--scale-factor));
+}
+
+.trucking-faq-section ul li p {
+  color: #a1a1a1;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  height: 0;
+  letter-spacing: calc(1px * var(--scale-factor));
+  overflow: hidden;
+  transition: 0.2s height;
+}
+
+
+@media (max-width: 768px) {
+  .trucking-faq-section-header h2 {
+    font-size: calc(32px * var(--scale-factor));
+  }
+
+  .trucking-faq-in-your-truck-section-header p {
+    font-size: calc(16px * var(--scale-factor));
+  }
+
+  .trucking-faq-section ul li {
+    padding: calc(16px * var(--scale-factor));
+  }
+
+  .trucking-faq-section ul li div {
+    gap: calc(16px * var(--scale-factor));
+  }
+
+  .trucking-faq-section ul li div h5 {
+    font-size: calc(18px * var(--scale-factor));
+    letter-spacing: calc(0.9px * var(--scale-factor));
+  }
+
+  .trucking-faq-section ul li div p {
+    font-size: calc(16px * var(--scale-factor));
+    letter-spacing: calc(0.8px * var(--scale-factor));
+  }
+}
+
+
+@media (max-width: 650px) {
+  .trucking-faq-section {
+    padding: calc(60px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  }
+}
+
+.trucking-get-started-section {
+  --scale-factor: 0.8;
+
+  background-color: #f5f5f5;
+  padding: calc(100px * var(--scale-factor)) calc(20px * var(--scale-factor));
+}
+
+.trucking-get-started-section-card {
+  align-items: center;
+  background-color: black;
+  background-image: url(https://cdn.shopify.com/s/files/1/0103/2847/3658/files/trucking-how-nomad-works-card-bg.png);
+  border: calc(5px * var(--scale-factor)) solid #535353;;
+  border-radius: calc(30px * var(--scale-factor));
+  display: flex;
+  gap: calc(32px * var(--scale-factor));
+  margin: 0 auto;
+  max-width: calc(1440px * var(--scale-factor));
+  padding: calc(48px * var(--scale-factor)) 0 calc(48px * var(--scale-factor)) calc(48px * var(--scale-factor));
+  position: relative;
+  overflow: hidden;
+}
+
+.trucking-get-started-section-card-top-ellipse {
+  background: rgba(0, 133, 101, 0.80);
+  border-radius: 857px;
+  filter: blur(100px);
+  position: absolute;
+  width: calc(857px * var(--scale-factor));
+  height: calc(378px * var(--scale-factor));
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -85%);
+}
+
+.trucking-get-started-section-card-bottom-ellipse {
+  background: rgba(0, 133, 101, 0.80);
+  border-radius: 857px;
+  filter: blur(100px);
+  position: absolute;
+  width: calc(857px * var(--scale-factor));
+  height: calc(378px * var(--scale-factor));
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 85%);
+}
+
+.trucking-get-started-section-card-left {
+  display: flex;
+  flex-direction: column;
+  gap: calc(32px * var(--scale-factor));
+  position: relative;
+}
+
+.trucking-get-started-section-card-left-text {
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+}
+
+.trucking-get-started-section-card-left-text h3 {
+  color: white;
+  font-family: "Graphie";
+  font-size: calc(44px * var(--scale-factor));
+  font-weight: 700;
+  line-height: 115%
+}
+
+.trucking-get-started-section-card-left-text p {
+  color: white;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+  max-width: calc(600px * var(--scale-factor));
+}
+
+.trucking-get-started-section-card-left-actions-notes {
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+}
+
+.trucking-get-started-section-card-left-actions {
+  display: flex;
+  gap: calc(24px * var(--scale-factor));
+}
+
+.trucking-get-started-section-card-left-actions a {
+  align-items: center;
+  border-radius: calc(4px * var(--scale-factor));
+  color: white;
+  display: flex;
+  font-family: "Graphie";
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 700;
+  height: calc(56px * var(--scale-factor));
+  justify-content: center;
+  padding: calc(14px * var(--scale-factor));
+  text-decoration: none;
+}
+
+.trucking-get-started-section-card-left-actions a:first-child {
+  background-color: #008061;
+}
+
+.trucking-get-started-section-card-left-actions a:last-child {
+  background: none;
+  border: calc(2px * var(--scale-factor)) solid white;
+}
+
+.trucking-get-started-section-card-left-notes {
+  align-items: center;
+  display: flex;
+  gap: calc(8px * var(--scale-factor));
+}
+
+.trucking-get-started-section-card-left-notes div {
+  display: flex;
+}
+
+.trucking-get-started-section-card-left-notes svg {
+  height: calc(18px * var(--scale-factor));
+  width: calc(18px * var(--scale-factor));
+}
+
+.trucking-get-started-section-card-left-notes p {
+  color: white;
+  font-family: "Forma DJR Banner";
+  font-size: calc(14px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(0.7px * var(--scale-factor));
+  line-height: 100%;
+}
+
+.trucking-get-started-section-card-left-support {
+  align-items: center;
+  display: flex;
+  gap: calc(8px * var(--scale-factor))
+}
+
+.trucking-get-started-section-card-left-support svg {
+  height: calc(16px * var(--scale-factor));
+  width: calc(16px * var(--scale-factor));
+}
+
+.trucking-get-started-section-card-left-support p {
+  color: white;
+  font-family: "Inter";
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(-0.15px * var(--scale-factor));
+}
+
+.trucking-get-started-section-card-left-support p a {
+  color: #00eeb4;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.trucking-get-started-section-card-image {
+  height: calc(357px * var(--scale-factor));
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .trucking-get-started-section-card-image {
+    height: calc(150px * var(--scale-factor));
+  }
+}
+
+@media (max-width: 768px) {
+  .trucking-get-started-section-card {
+    flex-direction: column;
+    padding: calc(32px * var(--scale-factor)) calc(16px * var(--scale-factor));
+  }
+
+  .trucking-get-started-section-card-left-text h3 {
+    font-size: calc(32px * var(--scale-factor));
+  }
+
+  .trucking-get-started-section-card-left-text p {
+    font-size: calc(16px * var(--scale-factor));
+    max-width: 100%;
+  }
+
+  .trucking-get-started-section-card-left-actions {
+    flex-direction: column;
+    gap: calc(16px * var(--scale-factor));
+  }
+
+  .trucking-get-started-section-card-left-notes {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .trucking-get-started-section-card-left-notes p {
+    text-align: center;
+  }
+
+  .trucking-get-started-section-card-left-support {
+    justify-content: center;
+  }
+
+  .trucking-get-started-section-card-top-ellipse {
+    transform: translate(-50%, -20%);
+  }
+
+  .trucking-get-started-section-card-bottom-ellipse {
+    transform: translate(-50%, 20%);
+  }
+
+  .trucking-get-started-section-card-image {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .trucking-get-started-section {
+    padding: calc(60px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  }
+}
+
+.trucking-popup-container {
+  --scale-factor: 0.8;
+
+  align-items: center;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  padding: 0 calc(20px * var(--scale-factor));
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
+}
+
+.trucking-popup-loader {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.trucking-popup-stay-connected {
+  animation: 0.5s slide-up forwards;
+  animation-delay: 0.1s;
+  background-color: white;
+  border-radius: calc(20px * var(--scale-factor));
+  display: flex;
+  max-height: 90vh;
+  max-width: calc(987px * var(--scale-factor));
+  overflow: auto;
+  position: relative;
+  transform: translateY(calc(50px * var(--scale-factor)));
+  width: 100%;
+}
+
+.trucking-popup-stay-connected-close-button {
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  height: calc(36px * var(--scale-factor));
+  justify-content: center;
+  position: absolute;
+  right: calc(20px * var(--scale-factor));
+  top: calc(20px * var(--scale-factor));
+  transition: transform 0.1s ease;
+  width: calc(36px * var(--scale-factor));
+  z-index: 1;
+}
+
+.trucking-popup-stay-connected-close-button svg {
+  height: calc(20px * var(--scale-factor));
+  width: calc(20px * var(--scale-factor));
+}
+
+.trucking-popup-stay-connected-close-button:active {
+  transform: scale(0.85);
+}
+
+.trucking-popup-stay-connected-left {
+  overflow: hidden;
+  position: relative;
+  width: 50%;
+}
+
+.trucking-popup-stay-connected-left-bg {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.trucking-popup-stay-connected-left-logo {
+  left: calc(24px * var(--scale-factor));
+  position: absolute;
+  top: calc(24px * var(--scale-factor));
+  width: calc(147px * var(--scale-factor));
+}
+
+.trucking-popup-stay-connected-right,
+.trucking-popup-stay-connected-right-mobile {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+  overflow-y: auto;
+  padding: calc(24px * var(--scale-factor));
+  position: relative;
+  width: 50%;
+}
+
+.trucking-popup-stay-connected-right-mobile {
+  display: none;
+}
+
+.trucking-popup-stay-connected-right-text {
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+}
+
+.trucking-popup-stay-connected-right-text h1 {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(48px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(2px * var(--scale-factor));
+  line-height: 125%;
+}
+
+.trucking-popup-stay-connected-right-text p {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(0.8px * var(--scale-factor));
+}
+
+.trucking-popup-stay-connected-right-text ul {
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.trucking-popup-stay-connected-right-text ul li {
+  align-items: center;
+  display: flex;
+  gap: calc(16px * var(--scale-factor));
+}
+
+.trucking-popup-stay-connected-right-text ul li svg {
+  height: calc(20px * var(--scale-factor));
+  width: calc(20px * var(--scale-factor));
+}
+
+.trucking-popup-stay-connected-right-text ul li div {
+  display: flex;
+  flex-direction: column;
+  gap: calc(8px * var(--scale-factor));
+}
+
+.trucking-popup-stay-connected-right-text ul li div h5 {
+  color: #1e2939;
+  font-family: "Inter";
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 700;
+  letter-spacing: calc(-0.3px * var(--scale-factor));
+}
+
+.trucking-popup-stay-connected-right-text ul li div p {
+  color: #1e2939;
+  font-family: "Inter";
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: calc(-0.3px * var(--scale-factor));
+}
+
+.trucking-popup-stay-connected-right a,
+.trucking-popup-stay-connected-right-mobile a {
+  align-items: center;
+  background-color: #008061;
+  border: calc(2px * var(--scale-factor)) solid #005d46;
+  border-radius: 50rem;
+  box-shadow: 0 66px 18px 0 rgba(0, 128, 97, 0.00), 0 42px 17px 0 rgba(0, 128, 97, 0.01), 0 24px 14px 0 rgba(0, 128, 97, 0.05), 0 11px 11px 0 rgba(0, 128, 97, 0.09), 0 3px 6px 0 rgba(0, 128, 97, 0.10);
+  color: white;
+  display: flex;
+  font-family: "Forma DJR Banner";
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 700;
+  gap: calc(8px * var(--scale-factor));
+  height: calc(56px * var(--scale-factor));
+  justify-content: center;
+  letter-spacing: calc(0.9px * var(--scale-factor));
+  padding: calc(14px * var(--scale-factor));
+  text-decoration: none;
+}
+
+.trucking-popup-stay-connected-right a span,
+.trucking-popup-stay-connected-right-mobile a span {
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  height: calc(24px * var(--scale-factor));
+  justify-content: center;
+  width: calc(24px * var(--scale-factor));
+}
+
+.trucking-popup-stay-connected-right a span svg,
+.trucking-popup-stay-connected-right-mobile a span svg {
+  height: calc(12px * var(--scale-factor));
+  width: calc(12px * var(--scale-factor));
+}
+
+.trucking-popup-stay-connected-right-benefits {
+  align-items: center;
+  display: flex;
+  gap: calc(8px * var(--scale-factor));
+  justify-content: center;
+}
+
+.trucking-popup-stay-connected-right-benefits svg {
+  height: calc(16px * var(--scale-factor));
+  width: calc(16px * var(--scale-factor));
+}
+
+.trucking-popup-stay-connected-right-benefits p {
+  font-family: "Forma DJR Banner";
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(0.8px * var(--scale-factor));
+}
+
+.trucking-popup-stay-connected-right hr,
+.trucking-popup-stay-connected-right-mobile hr {
+  border: none;
+  border-top: calc(1px * var(--scale-factor)) solid #c3c3c3;
+}
+
+.trucking-popup-stay-connected-right-features {
+  display: flex;
+  gap: calc(16px * var(--scale-factor));
+  list-style: none;
+}
+
+.trucking-popup-stay-connected-right-features li {
+  align-items: center;
+  display: flex;
+  flex: 0 0 30%;
+  flex-direction: column;
+  gap: calc(12px * var(--scale-factor));
+  justify-content: start;
+}
+
+.trucking-popup-stay-connected-right-features li span {
+  align-items: center;
+  background: linear-gradient(50deg, #008061 30.69%, #06BF3B 88.52%, #0DFF15 100.67%), #F54900;
+  border-radius: 50%;
+  display: flex;
+  height: calc(42px * var(--scale-factor));
+  justify-content: center;
+  width: calc(42px * var(--scale-factor));
+}
+
+.trucking-popup-stay-connected-right-features li span svg {
+  height: calc(16px * var(--scale-factor));
+  width: calc(16px * var(--scale-factor));
+}
+
+.trucking-popup-stay-connected-right-features li p {
+  font-family: "Forma DJR Banner";
+  font-size: calc(14px * var(--scale-factor));
+  font-weight: 500;
+  letter-spacing: calc(0.7px * var(--scale-factor));
+  text-align: center;
+}
+
+.trucking-popup-stay-connected-right-testimonial {
+  align-items: center;
+  border-left: calc(4px * var(--scale-factor)) solid #030213;
+  display: flex;
+  height: calc(30px * var(--scale-factor));
+  padding: 0 calc(8px * var(--scale-factor)) 0 calc(20px * var(--scale-factor));
+}
+
+.trucking-popup-stay-connected-right-testimonial p {
+  color: #4a5565;
+  font-family: "Inter";
+  font-size: calc(14px * var(--scale-factor));
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: calc(-0.1px * var(--scale-factor));
+  line-height: calc(20px * var(--scale-factor));
+}
+
+.trucking-popup-find-setup {
+  animation: 0.5s slide-up forwards;
+  animation-delay: 0.1s;
+  background-color: white;
+  border-radius: calc(20px * var(--scale-factor));
+  display: none;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+  max-height: 90vh;
+  max-width: calc(510px * var(--scale-factor));
+  overflow: auto;
+  padding: calc(24px * var(--scale-factor)) calc(32px * var(--scale-factor));
+  position: relative;
+  transform: translateY(calc(50px * var(--scale-factor)));
+  width: 100%;
+}
+
+.trucking-popup-find-setup-header {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 36px 1fr 36px;
+  justify-items: center;
+}
+
+.trucking-popup-find-setup-header img {
+  width: calc(109px * var(--scale-factor));
+}
+
+.trucking-popup-find-setup-header button {
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  height: calc(36px * var(--scale-factor));
+  justify-content: center;
+  justify-self: end;
+  transition: transform 0.1s ease;
+  width: calc(36px * var(--scale-factor));
+}
+
+.trucking-popup-find-setup-header button svg {
+  height: calc(20px * var(--scale-factor));
+  width: calc(20px * var(--scale-factor));
+}
+
+.trucking-popup-find-setup-progress {
+  align-items: center;
+  display: flex;
+  gap: calc(8px * var(--scale-factor));
+  justify-content: center;
+}
+
+.trucking-popup-find-setup-progress div {
+  background-color: #e5e7eb;
+  border-radius: 50rem;
+  height: calc(6px * var(--scale-factor));
+  width: calc(64px * var(--scale-factor));
+}
+
+.trucking-popup-find-setup-progress div span {
+  background-color: #008061;
+  display: block;
+  height: 100%;
+  transition: width 0.3s ease;
+  width: 0;
+}
+
+
+.trucking-popup-find-setup-error {
+  align-items: flex-start;
+  background: #fff5f5;
+  border: calc(1px * var(--scale-factor)) solid #ffcccc;
+  border-radius: calc(15px * var(--scale-factor));
+  display: none;
+  gap: calc(16px * var(--scale-factor));
+  justify-content: flex-start;
+  padding: calc(20px * var(--scale-factor));
+}
+
+.trucking-popup-find-setup-error svg {
+  width: calc(24px * var(--scale-factor));
+}
+
+.trucking-popup-find-setup-error p {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+}
+
+.trucking-popup-find-setup h1 {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(40px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(2px * var(--scale-factor));
+  line-height: 120%;
+  margin: 0 auto;
+  max-width: calc(345px * var(--scale-factor));
+  text-align: center;
+}
+
+.trucking-popup-find-setup > p {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(0.8px * var(--scale-factor));
+  margin: 0 auto;
+  margin-bottom: calc(18px * var(--scale-factor));
+  max-width: calc(393px * var(--scale-factor));
+  text-align: center;
+}
+
+.trucking-popup-find-setup form {
+  display: flex;
+  flex-direction: column;
+  gap: calc(48px * var(--scale-factor));
+}
+
+.trucking-popup-find-setup .trucking-popup-find-setup-step-2,
+.trucking-popup-find-setup .trucking-popup-find-setup-step-3 {
+  display: none;
+}
+
+.trucking-popup-find-setup-form-content {
+  color: #101828;
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  font-family: 'Inter';
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(-0.5px * var(--scale-factor));
+}
+
+.trucking-popup-find-setup form div ul {
+  display: flex;
+  flex-direction: column;
+  gap: calc(12px * var(--scale-factor));
+  list-style: none;
+}
+
+.trucking-popup-find-setup form div ul li button {
+  background: none;
+  border: calc(2px * var(--scale-factor)) solid #e5e7eb;
+  border-radius: calc(10px * var(--scale-factor));
+  color: #364153;
+  cursor: pointer;
+  font-family: 'Inter';
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(-0.3px * var(--scale-factor));
+  padding: calc(18px * var(--scale-factor)) calc(28px * var(--scale-factor));
+  text-align: left;
+  width: 100%;
+}
+
+.trucking-popup-find-setup form button[type="submit"] {
+  align-items: center;
+  background-color: #008061;
+  border: calc(2px * var(--scale-factor)) solid #005d46;
+  border-radius: 50rem;
+  box-shadow: 0 66px 18px 0 rgba(0, 128, 97, 0.00), 0 42px 17px 0 rgba(0, 128, 97, 0.01), 0 24px 14px 0 rgba(0, 128, 97, 0.05), 0 11px 11px 0 rgba(0, 128, 97, 0.09), 0 3px 6px 0 rgba(0, 128, 97, 0.10);
+  color: white;
+  cursor: pointer;
+  display: flex;
+  font-family: "Inter";
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+  gap: calc(8px * var(--scale-factor));
+  height: calc(56px * var(--scale-factor));
+  justify-content: center;
+  letter-spacing: calc(0.4px * var(--scale-factor));
+  padding: calc(14px * var(--scale-factor));
+}
+
+.trucking-popup-find-setup form button[type="submit"] span {
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  height: calc(24px * var(--scale-factor));
+  justify-content: center;
+  width: calc(24px * var(--scale-factor));
+}
+
+.trucking-popup-find-setup form button[type="submit"] span svg {
+  height: calc(12px * var(--scale-factor));
+  width: calc(12px * var(--scale-factor));
+}
+
+.trucking-popup-find-setup form button[type="submit"]:disabled {
+  background-color: #030213;
+  border-color: #030213;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.trucking-popup-find-setup-button-container {
+  display: grid;
+  gap: calc(16px * var(--scale-factor));
+  grid-template-columns: 1fr 1fr;
+}
+
+.trucking-popup-find-setup-back-button {
+  background-color: white;
+  border: calc(1px * var(--scale-factor)) solid black;
+  border-radius: 50rem;
+  color: black;
+  cursor: pointer;
+  font-family: "Inter";
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 400;
+  height: calc(56px * var(--scale-factor));
+  letter-spacing: calc(0.9px * var(--scale-factor));
+  padding: calc(14px * var(--scale-factor));
+}
+
+.trucking-popup-find-setup-step-3-name-container {
+  display: grid;
+  gap: calc(16px * var(--scale-factor));
+  grid-template-columns: 1fr 1fr;
+}
+
+.trucking-popup-find-setup form label {
+  color: #364153;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Inter';
+  font-size: calc(14px * var(--scale-factor));
+  font-weight: 400;
+  gap: calc(8px * var(--scale-factor));
+  letter-spacing: calc(-0.2px * var(--scale-factor));
+}
+
+.trucking-popup-find-setup form input {
+  border: calc(2px * var(--scale-factor)) solid #e3e5ea;
+  border-radius: calc(10px * var(--scale-factor));
+  font-family: 'Inter';
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(-0.3px * var(--scale-factor));
+  padding: calc(12px * var(--scale-factor)) calc(16px * var(--scale-factor));
+  width: 100%;
+}
+
+.trucking-popup-find-setup form div ul li .trucking-popup-find-setup-form-content-button-selected {
+  background-color: #f2fffd;
+  border-color: #008061;
+}
+
+@media (max-width: 768px) {
+  .trucking-popup-stay-connected {
+    flex-direction: column;
+    overflow: auto;
+    width: 100%;
+  }
+
+  .trucking-popup-stay-connected-right {
+    display: none;
+  }
+
+  .trucking-popup-stay-connected-right-mobile {
+    display: flex;
+  }
+
+  .trucking-popup-stay-connected-left,
+  .trucking-popup-stay-connected-right-mobile {
+    overflow: visible;
+    width: 100%;
+  }
+
+  .trucking-popup-stay-connected-left-logo {
+    width: calc(90px * var(--scale-factor));
+  }
+
+  .trucking-popup-stay-connected-right-text h1 {
+    font-size: calc(32px * var(--scale-factor));
+  }
+}
+
+@media (max-width: 650px) {
+  .trucking-popup-find-setup {
+    padding: calc(16px * var(--scale-factor));
+  }
+
+  .trucking-popup-find-setup h1 {
+    font-size: calc(24px * var(--scale-factor));
+  }
+
+  .trucking-popup-find-setup p {
+    font-size: calc(16px * var(--scale-factor));
+  }
+}
