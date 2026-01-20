@@ -1,3 +1,25 @@
+let prevScrollPos = window.pageYOffset;
+const header = document.querySelector('header');
+
+window.onscroll = function () {
+  setTimeout(() => {
+    const currentScrollPos = window.pageYOffset;
+    if (prevScrollPos > currentScrollPos) {
+      header.style.transform = 'translateY(0)';
+    } else if (prevScrollPos < currentScrollPos) {
+      if (prevScrollPos > 200) {
+        header.style.transform = 'translateY(-100%)';
+      }
+    }
+
+    if (currentScrollPos === 0) {
+      header.style.transform = 'translateY(0)';
+    }
+
+    prevScrollPos = currentScrollPos;
+  }, 250);
+};
+
 const openMobileMenu = () => {
   const headerMobileMenu = document.getElementById('trucking-header-mobile-menu');
   headerMobileMenu.style.display = 'flex';
@@ -33,38 +55,43 @@ window.addEventListener('DOMContentLoaded', () => {
   })
 });
 
-let truckingPageCurrentReviewPosition = 0;
+let truckingPageCurrentReviewPosition = 1;
+
+const showCurrentReview = (numReviews) => {
+  const truckingReviewsContainer = document.getElementById('trucking-what-truckers-are-saying-reviews');
+
+  const currentReview = truckingReviewsContainer.children[truckingPageCurrentReviewPosition]
+
+  const reviews = currentReview.parentElement;
+  const currentReviewLeft = currentReview.offsetLeft;
+  const currentReviewWidth = currentReview.offsetWidth;
+  const reviewsWidth = reviews.clientWidth;
+
+  reviews.scrollLeft = currentReviewLeft - (reviewsWidth / 2) + (currentReviewWidth / 2) -  20;
+};
 
 const showPreviousReview = (numReviews) => {
   const truckingReviewsContainer = document.getElementById('trucking-what-truckers-are-saying-reviews');
 
-  if (truckingPageCurrentReviewPosition > 0) {
+  if (truckingPageCurrentReviewPosition > 1) {
     truckingPageCurrentReviewPosition--;
-  }  else {
-    truckingPageCurrentReviewPosition = numReviews - 1;
+  } else {
+    truckingPageCurrentReviewPosition = 3;
   }
 
-  Array.from(truckingReviewsContainer.children).forEach((child) => {
-    child.style.display = 'none';
-  });
-
-  truckingReviewsContainer.children[truckingPageCurrentReviewPosition].style.display = 'flex';
+  truckingReviewsContainer.children[truckingPageCurrentReviewPosition].scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' })
 };
 
 const showNextReview = (numReviews) => {
   const truckingReviewsContainer = document.getElementById('trucking-what-truckers-are-saying-reviews');
 
-  if (truckingPageCurrentReviewPosition < (numReviews - 1)) {
+  if (truckingPageCurrentReviewPosition < 3) {
     truckingPageCurrentReviewPosition++;
   }  else {
-    truckingPageCurrentReviewPosition = 0;
+    truckingPageCurrentReviewPosition = 1;
   }
 
-  Array.from(truckingReviewsContainer.children).forEach((child) => {
-    child.style.display = 'none';
-  });
-
-  truckingReviewsContainer.children[truckingPageCurrentReviewPosition].style.display = 'flex';
+  truckingReviewsContainer.children[truckingPageCurrentReviewPosition].scrollIntoView({ behavior: 'smooth', block: 'center', inline: 'center' })
 }
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -72,20 +99,18 @@ window.addEventListener('DOMContentLoaded', () => {
   const truckingReviewsPreviousButton = document.getElementById('trucking-what-truckers-are-saying-reviews-controls-button-prev');
   const truckingReviewsNextButton = document.getElementById('trucking-what-truckers-are-saying-reviews-controls-button-next');
 
-  let numReviews = truckingReviewsContainer.children.length;
+  let numReviews = 3;
 
   truckingReviewsPreviousButton.addEventListener('click', () => showPreviousReview(numReviews));
   truckingReviewsNextButton.addEventListener('click', () => showNextReview(numReviews));
 
-  window.addEventListener('resize', () => {
-    if (window.innerWidth > 768) {
-      const truckingReviewsContainer = document.getElementById('trucking-what-truckers-are-saying-reviews');
+  if (window.innerWidth < 768) {
+    showCurrentReview();
+  }
 
-      Array.from(truckingReviewsContainer.children).forEach((child) => {
-        child.style.display = 'flex';
-      });
-    }  else {
-      showNextReview(numReviews);
+  window.addEventListener('resize', () => {
+    if (window.innerWidth < 768) {
+      showCurrentReview();
     }
   })
 });
@@ -96,19 +121,24 @@ window.addEventListener('DOMContentLoaded', () => {
   truckingFAQSectionQuestionHeaders.forEach((header) => {
     header.addEventListener('click', () => {
       const question = header.parentElement;
-      const answer = question.querySelector('p');
+      const answer = question.querySelector('.trucking-faq-section-question-answer');
 
-      if (answer.style.height == '') {
+      if (answer.style.gridTemplateRows == '1fr') {
+        answer.style.gridTemplateRows = '0fr';
+        header.querySelector('svg').style.transform = 'rotate(0deg)';
+        question.classList.remove('trucking-faq-section-question-active')
+      } else {
         truckingFAQSectionQuestionHeaders.forEach((h) => {
-          h.parentElement.querySelector('p').style.height = ''
+          const hAnswer = h.parentElement.querySelector('.trucking-faq-section-question-answer');
+
+          h.parentElement.classList.remove('trucking-faq-section-question-active')
+          hAnswer.style.gridTemplateRows = '0fr';
           h.querySelector('svg').style.transform = 'rotate(0deg)';
         })
 
-        answer.style.height = 'max-content';
+        answer.style.gridTemplateRows = '1fr';
+        question.classList.add('trucking-faq-section-question-active')
         header.querySelector('svg').style.transform = 'rotate(180deg)';
-      } else {
-        answer.style.height = '';
-        header.querySelector('svg').style.transform = 'rotate(0deg)';
       }
     });
   });

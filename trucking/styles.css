@@ -824,7 +824,6 @@
     height: calc(24px * var(--scale-factor));
   }
 }
-
 .trucking-what-truckers-are-saying-section {
   --scale-factor: 0.8;
 
@@ -833,6 +832,7 @@
   gap: calc(80px * var(--scale-factor));
   padding: calc(120px * var(--scale-factor)) calc(20px * var(--scale-factor));
   position: relative;
+  scroll-margin-top: calc(100px * var(--scale-factor));
   z-index: 1;
 }
 
@@ -896,6 +896,10 @@
   justify-content: space-between;
   height: calc(358px * var(--scale-factor));
   padding: calc(24px * var(--scale-factor));
+}
+
+.trucking-what-truckers-are-saying-reviews .trucking-what-truckers-are-saying-reviews-item-mobile {
+  display: none;
 }
 
 .trucking-what-truckers-are-saying-reviews-item-top {
@@ -975,14 +979,20 @@
   }
 
   .trucking-what-truckers-are-saying-reviews {
-    grid-template-columns: 1fr;
-    max-width: calc(400px * var(--scale-factor));
+    display: flex;
+    gap: calc(400px * var(--scale-factor));
+    justify-content: flex-start;
+    overflow-x: hidden;
+    padding: 0 calc(20px * var(--scale-factor));
     width: 100%;
   }
 
-  .trucking-what-truckers-are-saying-reviews li:nth-child(2),
-  .trucking-what-truckers-are-saying-reviews li:nth-child(3) {
-    display: none;
+  .trucking-what-truckers-are-saying-reviews li {
+    flex: 1 0 300px;
+  }
+
+  .trucking-what-truckers-are-saying-reviews .trucking-what-truckers-are-saying-reviews-item-mobile {
+    display: flex;
   }
 
   .trucking-what-truckers-are-saying-reviews-controls {
@@ -1707,9 +1717,14 @@
   border: calc(1px * var(--scale-factor)) solid #e5e7eb;
   border-radius: calc(14px * var(--scale-factor));
   padding: calc(24px * var(--scale-factor));
+  transition: border-color 0.2s;
 }
 
-.trucking-faq-section ul li div {
+.trucking-faq-section ul .trucking-faq-section-question-active {
+  border-color: #008062;
+}
+
+.trucking-faq-section-question-header {
   align-items: center;
   cursor: pointer;
   display: flex;
@@ -1717,7 +1732,7 @@
   padding: calc(10px * var(--scale-factor)) 0;
 }
 
-.trucking-faq-section ul li div h5 {
+.trucking-faq-section-question-header h5 {
   color: black;
   font-family: "Forma DJR Banner";
   font-size: calc(24px * var(--scale-factor));
@@ -1725,26 +1740,29 @@
   letter-spacing: calc(1.2px * var(--scale-factor));
 }
 
-.trucking-faq-section ul li div span {
+.trucking-faq-section-question-header span {
   display: flex;
 }
 
-.trucking-faq-section ul li div svg {
+.trucking-faq-section-question-header svg {
   transition: 0.2s transform;
   width: calc(16px * var(--scale-factor));
 }
 
-.trucking-faq-section ul li p {
-  color: #a1a1a1;
-  font-family: "Forma DJR Banner";
-  font-size: calc(20px * var(--scale-factor));
-  font-weight: 400;
-  height: 0;
-  letter-spacing: calc(1px * var(--scale-factor));
-  overflow: hidden;
-  transition: 0.2s height;
+.trucking-faq-section-question-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.2s;
 }
 
+.trucking-faq-section-question-answer p {
+  color: #a1a1a1;
+  font-family: "Forma DJR Banner";
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+  overflow: hidden;
+}
 
 @media (max-width: 768px) {
   .trucking-faq-section-header h2 {
@@ -1759,21 +1777,20 @@
     padding: calc(16px * var(--scale-factor));
   }
 
-  .trucking-faq-section ul li div {
+  .trucking-faq-section-question-header {
     gap: calc(16px * var(--scale-factor));
   }
 
-  .trucking-faq-section ul li div h5 {
+  .trucking-faq-section-question-header h5 {
     font-size: calc(18px * var(--scale-factor));
     letter-spacing: calc(0.9px * var(--scale-factor));
   }
 
-  .trucking-faq-section ul li div p {
+  .trucking-faq-section-question-header p {
     font-size: calc(16px * var(--scale-factor));
     letter-spacing: calc(0.8px * var(--scale-factor));
   }
 }
-
 
 @media (max-width: 650px) {
   .trucking-faq-section {
