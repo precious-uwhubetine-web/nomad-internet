@@ -1,0 +1,768 @@
+.plans-page-choose-plan-section {
+  --scale-factor: 0.8;
+
+  display: flex;
+  gap: calc(48px * var(--scale-factor));
+  margin: 0 auto;
+  max-width: calc(1600px * var(--scale-factor));
+  overflow: inherit;
+  padding: calc(120px * var(--scale-factor)) calc(20px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section hr {
+  border: none;
+  border-top: calc(1px * var(--scale-factor)) solid #949494;
+  margin: 0;
+}
+
+.plans-page-choose-plan-section > div:first-child {
+  width: calc(480px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section .slick-slide .img {
+  position: relative;
+  cursor: pointer;
+}
+
+.plans-page-choose-plan-section .slick-slide .img span.slick-overlay {
+  top: 45%;
+  left: 50%;
+  opacity: 0.85;
+  position: absolute;
+}
+
+.plans-page-choose-plan-section .slick-slide .img span.slick-overlay i {
+  font-size: 3rem;
+  color: #008061;
+}
+
+.plans-page-choose-plan-section .slider-main .img img {
+  margin: 0 auto;
+}
+
+.plans-page-choose-plan-section .slick-next {
+  right: 30px;
+}
+
+.plans-page-choose-plan-section .slick-prev {
+  left: 30px;
+}
+
+.plans-page-choose-plan-section .slick-prev img {
+  transform: rotate(180deg);
+}
+
+.plans-page-choose-plan-section .slick-next,
+.plans-page-choose-plan-section .slick-prev {
+  z-index: 1;
+  width: 34px;
+  height: 34px;
+}
+
+.plans-page-choose-plan-section .slick-next:before,
+.plans-page-choose-plan-section .slick-prev:before {
+  content: none;
+}
+
+.plans-page-choose-plan-section .slick-dots {
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plans-page-choose-plan-section .slick-dots li {
+  margin: 0;
+  height: 15px;
+}
+
+.plans-page-choose-plan-section .slick-dots li button {
+  background: #a3a3a3;
+  border-radius: 50px;
+  padding: 0;
+  width: 5px;
+  height: 5px;
+  transition: 0.3s all;
+}
+
+.plans-page-choose-plan-section .slick-dots li.slick-active button {
+  background-color: #000;
+  width: 12px;
+}
+
+.plans-page-choose-plan-section .slick-dots li button:before {
+  content: none;
+}
+
+.plans-page-choose-plan-section-main {
+  display: flex;
+  flex-direction: column;
+  gap: calc(120px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-header {
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-header h1 {
+  font-size: calc(42px * var(--scale-factor));
+  font-family: 'Inter';
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.plans-page-choose-plan-section-header p {
+  font-size: calc(18px * var(--scale-factor));
+  font-family: 'Inter';
+  font-weight: 500;
+}
+
+.plans-page-choose-plan-section-header ul {
+  display: flex;
+  flex-direction: column;
+  gap: calc(8px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-header ul li {
+  align-items: center;
+  display: flex;
+  font-family: 'Inter';
+  font-size: calc(16px * var(--scale-factor));
+  gap: calc(8px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-header ul li svg {
+  height: calc(24px * var(--scale-factor));
+  width: calc(24px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-one,
+.plans-page-choose-plan-section-step-two {
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+  scroll-margin-top: calc(180px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-one-heading,
+.plans-page-choose-plan-section-step-two-heading {
+  display: flex;
+  gap: calc(24px * var(--scale-factor));
+  justify-content: space-between;
+}
+
+.plans-page-choose-plan-section-step-one-heading-text,
+.plans-page-choose-plan-section-step-two-heading-text {
+  display: flex;
+  flex-direction: column;
+  gap: calc(8px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-one-heading-text h3,
+.plans-page-choose-plan-section-step-two-heading-text h3 {
+  color: #101828;
+  font-size: calc(20px * var(--scale-factor));
+  font-family: 'Inter';
+  font-weight: 500;
+}
+
+.plans-page-choose-plan-section-step-one-heading-text h3 span,
+.plans-page-choose-plan-section-step-two-heading-text h3 span {
+  font-weight: 700;
+}
+
+.plans-page-choose-plan-section-step-one-heading-text p,
+.plans-page-choose-plan-section-step-two-heading-text p {
+  color: #4a5565;
+  font-size: calc(16px * var(--scale-factor));
+  font-family: 'Inter';
+}
+
+.plans-page-choose-plan-section-step-one-heading button {
+  background: none;
+  border: calc(2px * var(--scale-factor)) solid black;
+  border-radius: calc(4px * var(--scale-factor));
+  color: black;
+  cursor: pointer;
+  font-family: 'Graphie';
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 700;
+  height: max-content;
+  padding: calc(14px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-one-badge {
+  align-items: center;
+  background-color: #008061;
+  border-radius: 50rem;
+  display: flex;
+  gap: calc(8px * var(--scale-factor));
+  justify-content: center;
+  margin: 0 auto;
+  padding: calc(8px * var(--scale-factor)) calc(16px * var(--scale-factor));
+  width: max-content;
+}
+
+.plans-page-choose-plan-section-step-one-badge svg {
+  height: calc(24px * var(--scale-factor));
+  width: calc(24px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-one-badge p {
+  color: white;
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 500;
+}
+
+.plans-page-choose-plan-section-step-one-plans {
+  display: flex;
+  gap: calc(24px * var(--scale-factor));
+  justify-content: center;
+}
+
+.plans-page-choose-plan-section-step-one-plans > li {
+  background-color: white;
+  border: calc(1px * var(--scale-factor)) solid #606060;
+  border-radius: calc(15px * var(--scale-factor));
+  box-shadow: 0 382px 107px 0 rgba(0, 0, 0, 0.00), 0 245px 98px 0 rgba(0, 0, 0, 0.01), 0 138px 83px 0 rgba(0, 0, 0, 0.05), 0 61px 61px 0 rgba(0, 0, 0, 0.09), 0 15px 34px 0 rgba(0, 0, 0, 0.10);
+  cursor: pointer;
+  flex: 1 1 auto;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  transition-delay: 0.1s;
+}
+
+.plans-page-choose-plan-section-step-one-plans > li:hover {
+  transform: scale(1.01);
+}
+
+.plans-page-choose-plan-section-step-one-plans > li a {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+}
+
+.plans-page-choose-plan-section-step-one-plans-card-image {
+  position: relative;
+}
+
+.plans-page-choose-plan-section-step-one-plans-card-image img:first-child {
+  filter: brightness(0.5);
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.plans-page-choose-plan-section-step-one-plans-card-image img:last-child {
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: calc(267px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-one-plans-card-text {
+  display: grid;
+  flex: 1;
+  gap: calc(16px * var(--scale-factor));
+  grid-template-rows: auto auto 1fr auto auto auto;
+  padding: calc(24px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-one-plans-card-text div {
+  align-items: center;
+  display: flex;
+  gap: calc(8px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-one-plans-card-text p {
+  font-family: 'Graphie';
+  font-size: calc(16px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-one-plans-card-text ul {
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-one-plans-card-text ul li {
+  align-items: center;
+  display: grid;
+  gap: calc(8px * var(--scale-factor));
+  grid-template-columns: calc(16px * var(--scale-factor)) 1fr;
+}
+
+.plans-page-choose-plan-section-step-one-plans-card-text ul li span {
+  align-items: center;
+  background-color: #008061;
+  border-radius: 50%;
+  display: flex;
+  height: calc(16px * var(--scale-factor));
+  justify-content: center;
+  width: calc(16px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-one-plans-card-text ul li span svg {
+  height: calc(12px * var(--scale-factor));
+  width: calc(12px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-one-plans-card-text ul li p {
+  font-family: 'Graphie';
+  font-size: calc(16px * var(--scale-factor));
+  line-height: calc(16px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-one-plans-card-text h3 {
+  font-family: 'Graphie';
+  font-size: calc(40px * var(--scale-factor));
+  font-weight: 600;
+}
+
+.plans-page-choose-plan-section-step-one-plans-card-text h3 span {
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 400;
+}
+
+.plans-page-choose-plan-section-step-one-plans-card-text button {
+  align-items: center;
+  background-color: white;
+  border: calc(2px * var(--scale-factor)) solid black;
+  border-radius: calc(4px * var(--scale-factor));
+  color: black;
+  display: flex;
+  font-weight: 700;
+  gap: calc(8px * var(--scale-factor));
+  height: calc(56px * var(--scale-factor));
+  justify-content: center;
+  transition: 0.2s opacity;
+}
+
+.plans-page-choose-plan-section-step-one-plans-card-text button:disabled {
+  opacity: 0.5;
+}
+
+.plans-page-choose-plan-section-step-one-plans-card-text button svg {
+  display: none;
+  height: calc(16px * var(--scale-factor));
+  justify-conten: center;
+  width: calc(16px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-two-protection {
+  display: flex;
+  gap: calc(24px * var(--scale-factor));
+  justify-content: center;
+}
+
+.plans-page-choose-plan-section-step-two-protection > li {
+  background-color: white;
+  border: calc(1px * var(--scale-factor)) solid #606060;
+  border-radius: calc(15px * var(--scale-factor));
+  box-shadow: 0 382px 107px 0 rgba(0, 0, 0, 0.00), 0 245px 98px 0 rgba(0, 0, 0, 0.01), 0 138px 83px 0 rgba(0, 0, 0, 0.05), 0 61px 61px 0 rgba(0, 0, 0, 0.09), 0 15px 34px 0 rgba(0, 0, 0, 0.10);
+  cursor: pointer;
+  flex: 1 1 auto;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  transition-delay: 0.1s;
+}
+
+.plans-page-choose-plan-section-step-two-protection > li:nth-child(2) {
+  border: calc(1px * var(--scale-factor)) solid #008061;
+  box-shadow: 0 382px 107px 0 rgba(0, 0, 0, 0.00), 0 245px 98px 0 rgba(0, 0, 0, 0.01), 0 138px 83px 0 rgba(0, 0, 0, 0.05), 0 61px 61px 0 rgba(0, 0, 0, 0.09), 0 15px 34px 0 rgba(0, 0, 0, 0.10);
+}
+
+.plans-page-choose-plan-section-step-two-protection > li:hover {
+  transform: scale(1.01);
+}
+
+.plans-page-choose-plan-section-step-two-protection > li a {
+  color: black;
+  display: grid;
+  flex: 1;
+  gap: calc(16px * var(--scale-factor));
+  grid-template-rows: auto auto auto auto auto auto auto 1fr auto auto;
+  height: 100%;
+  padding: calc(24px * var(--scale-factor));
+  text-decoration: none;
+}
+
+.plans-page-choose-plan-section-step-two-protection-card-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.plans-page-choose-plan-section-step-two-protection-card-header-icon {
+  align-items: center;
+  background: linear-gradient(50deg, #008061 30.69%, #06BF3B 88.52%, #0DFF15 100.67%), #F54900;
+  border-radius: 50%;
+  display: flex;
+  height: calc(60px * var(--scale-factor));
+  justify-content: center;
+  width: calc(60px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-two-protection-card-header-icon svg {
+  height: calc(32px * var(--scale-factor));
+  width: calc(32px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-two-protection-card-header-badge {
+  align-items: center;
+  background-color: #008061;
+  border-radius: 50rem;
+  display: flex;
+  gap: calc(8px * var(--scale-factor));
+  justify-content: center;
+  padding: calc(8px * var(--scale-factor)) calc(16px * var(--scale-factor));
+  width: max-content;
+}
+
+.plans-page-choose-plan-section-step-two-protection-card-header-badge svg {
+  height: calc(14px * var(--scale-factor));
+  width: calc(14px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-two-protection-card-header-badge p {
+  color: white;
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 500;
+}
+
+.plans-page-choose-plan-section-step-two-protection li a h3 {
+  font-family: 'Graphie';
+  font-size: calc(32px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(-0.15px * var(--scale-factor));
+  line-height: calc(32px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-two-protection-card-price {
+  display: flex;
+  flex-direction: column;
+  gap: calc(8px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-two-protection-card-price h4 {
+  font-family: 'Graphie';
+  font-size: calc(40px * var(--scale-factor));
+  font-weight: 600;
+  letter-spacing: calc(-0.4px * var(--scale-factor));
+  line-height: calc(46px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-two-protection-card-price h4 span {
+  font-size: calc(18px * var(--scale-factor));
+  line-height: calc(28px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-two-protection-card-price p {
+  color: #99a1af;
+  font-family: 'Graphie';
+  font-size: calc(14px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(-0.2px * var(--scale-factor));
+  line-height: calc(20px * var(--scale-factor));
+  text-decoration-line: line-through;
+}
+
+.plans-page-choose-plan-section-step-two-protection-card-paragraph {
+  font-family: 'Graphie';
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(-0.2px * var(--scale-factor));
+  line-height: calc(20px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-two-protection > li ul {
+  align-content: start;
+  display: grid;
+  gap: calc(16px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-two-protection > li:nth-child(2) ul {
+  grid-template-columns: 1fr 1fr;
+}
+
+.plans-page-choose-plan-section-step-two-protection > li ul li {
+  display: grid;
+  font-size: calc(16px * var(--scale-factor));
+  line-height: calc(16px * var(--scale-factor));
+  gap: calc(8px * var(--scale-factor));
+  grid-template-columns: calc(16px * var(--scale-factor)) 1fr;
+}
+
+.plans-page-choose-plan-section-step-two-protection > li ul li span {
+  align-items: center;
+  background: #008061;
+  border-radius: 50%;
+  display: flex;
+  height: calc(16px * var(--scale-factor));
+  justify-content: center;
+  width: calc(16px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-two-protection > li ul li span svg {
+  height: calc(12px * var(--scale-factor));
+  width: calc(12px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-two-protection-card-warning {
+  background: #fffbeb;
+  border-radius: calc(10px * var(--scale-factor));
+  color: #7b3306;
+  font-family: 'Inter';
+  font-size: calc(12px * var(--scale-factor));
+  padding: calc(16px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-two-protection li a button {
+  align-items: center;
+  background-color: white;
+  border: calc(2px * var(--scale-factor)) solid black;
+  border-radius: calc(4px * var(--scale-factor));
+  color: black;
+  display: flex;
+  font-weight: 700;
+  gap: calc(8px * var(--scale-factor));
+  height: calc(56px * var(--scale-factor));
+  justify-content: center;
+  transition: 0.2s opacity;
+}
+
+.plans-page-choose-plan-section-step-two-protection li a button:disabled {
+  opacity: 0.5;
+}
+
+.plans-page-choose-plan-section-step-two-protection li:nth-child(2) a button {
+  background-color: #008061;
+  border-color: #008061;
+  color: white;
+}
+
+.plans-page-choose-plan-section-step-two-protection li a button svg {
+  display: none;
+  height: calc(16px * var(--scale-factor));
+  width: calc(16px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-two > p {
+  color: #4a5565;
+  font-family: 'Inter';
+  font-size: calc(16px * var(--scale-factor));
+  text-align: center;
+}
+
+.plans-page-choose-plan-section-step-three {
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+  scroll-margin-top: calc(180px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-three h3 {
+  color: #101828;
+  font-family: 'Inter';
+  font-size: calc(32px * var(--scale-factor));
+  font-weight: 700;
+}
+
+.plans-page-choose-plan-section-step-three > p {
+  color: #4a5565;
+  font-family: 'Inter';
+  font-size: calc(16px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-three > p a {
+  color: #008061;
+}
+
+.plans-page-choose-plan-section-step-three-badge {
+  align-items: start;
+  background: #ecfdf5;
+  border-radius: calc(10px * var(--scale-factor));
+  border: calc(1px * var(--scale-factor)) solid #008061;
+  display: grid;
+  gap: calc(8px * var(--scale-factor));
+  grid-template-columns: calc(14px * var(--scale-factor)) 1fr;
+  padding: calc(16px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-three-badge svg {
+  height: calc(14px * var(--scale-factor));
+  width: calc(14px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-three-badge div {
+  display: flex;
+  flex-direction: column;
+  gap: calc(8px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-three-badge div h4 {
+  color: #101828;
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 700;
+  line-height: 1;
+}
+
+.plans-page-choose-plan-section-step-three-badge div p {
+  color: #364153;
+  font-family: 'Inter';
+  font-size: calc(14px * var(--scale-factor));
+  font-weight: 400;
+}
+
+.plans-page-choose-plan-section-step-three-bottom {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-three ul {
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-three ul li {
+  align-items: center;
+  display: grid;
+  gap: calc(8px * var(--scale-factor));
+  grid-template-columns: calc(16px * var(--scale-factor)) 1fr;
+}
+
+.plans-page-choose-plan-section-step-three ul li span {
+  align-items: center;
+  background-color: #008061;
+  border-radius: 50%;
+  display: flex;
+  height: calc(16px * var(--scale-factor));
+  justify-content: center;
+  width: calc(16px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-three ul li span svg {
+  height: calc(12px * var(--scale-factor));
+  width: calc(12px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-three ul li p {
+  font-family: 'Graphie';
+  font-size: calc(16px * var(--scale-factor));
+  line-height: calc(16px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-three-footer {
+  display: flex;
+  flex-direction: column;
+  gap: calc(8px * var(--scale-factor));
+}
+
+.plans-page-choose-plan-section-step-three-footer button {
+  background-color: #008061;
+  border: none;
+  color: white;
+  border-radius: calc(4px * var(--scale-factor));
+  font-weight: 700;
+  height: calc(56px * var(--scale-factor));
+  max-width: calc(306px * var(--scale-factor));
+  transition: 0.2s background-color;
+  width: 100%;
+}
+
+.plans-page-choose-plan-section-step-three-footer button:disabled {
+  background-color: #ccc;
+}
+
+.plans-page-choose-plan-section-step-three-footer p {
+  color: #4a5565;
+  font-family: 'Inter';
+  font-size: calc(16px * var(--scale-factor));
+}
+
+@media (max-width: 1200px) {
+  .plans-page-choose-plan-section {
+    flex-direction: column;
+    gap: calc(40px * var(--scale-factor));
+    max-width: 980px;
+    padding: calc(60px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  }
+
+  .plans-page-choose-plan-section > div:first-child {
+    width: 100%;
+  }
+
+  .plans-page-choose-plan-section .slider-main .img img {
+    width: 100%;
+  }
+
+  .plans-page-choose-plan-section-step-three-bottom {
+    align-items: end;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    left: 0;
+    padding: calc(20px * var(--scale-factor));
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .plans-page-choose-plan-section-step-three-bottom > p {
+    grid-column: -1 / 1;
+    font-size: calc(14px * var(--scale-factor));
+  }
+
+  .plans-page-choose-plan-section-step-three-bottom ul li p {
+    font-size: calc(14px * var(--scale-factor));
+  }
+
+  .plans-page-choose-plan-section-step-three-footer p {
+    display: none;
+  }
+}
+
+@media (max-width: 990px) {
+  .plans-page-choose-plan-section {
+    max-width: 740px;
+  }
+}
+
+@media (max-width: 750px) {
+  .plans-page-choose-plan-section-step-one,
+  .plans-page-choose-plan-section-step-two,
+  .plans-page-choose-plan-section-step-three {
+    scroll-margin-top: calc(40px * var(--scale-factor));
+  }
+
+  .plans-page-choose-plan-section {
+    max-width: calc(750px * var(--scale-factor));
+  }
+
+  .plans-page-choose-plan-section-step-one-heading {
+    flex-direction: column;
+  }
+
+  .plans-page-choose-plan-section-step-one-plans,
+  .plans-page-choose-plan-section-step-two-protection {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .plans-page-choose-plan-section-step-one-plans > li,
+  .plans-page-choose-plan-section-step-two-protection > li {
+    width: 100%;
+  }
+
+  .plans-page-choose-plan-section-step-three-footer button {
+    max-width: 100%;
+  }
+}

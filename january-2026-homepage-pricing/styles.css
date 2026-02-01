@@ -1,0 +1,185 @@
+.homepage-pricing {
+  --scale-factor: 0.9;
+
+  align-items: center;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  gap: calc(64px * var(--scale-factor));
+  padding: calc(100px * var(--scale-factor)) calc(20px * var(--scale-factor));
+}
+
+.homepage-pricing-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+}
+
+.homepage-pricing-header h2 {
+  font-size: calc(40px * var(--scale-factor));
+  font-weight: 700;
+  line-height: calc(40px * var(--scale-factor));
+}
+
+.homepage-pricing-header div {
+  background-color: #008061;
+  border-radius: 50rem;
+  height: calc(4px * var(--scale-factor));
+  width: calc(80px * var(--scale-factor));
+}
+
+.homepage-pricing-header p {
+  font-size: calc(18px * var(--scale-factor));
+  text-align: center;
+}
+
+.homepage-pricing-header button {
+  background: none;
+  border: none;
+  color: #008061;
+  cursor: pointer;
+  font-family: 'Graphie';
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.homepage-pricing-plans {
+  display: flex;
+  gap: calc(24px * var(--scale-factor));
+}
+
+.homepage-pricing-plans > li {
+  background-color: white;
+  border-radius: calc(15px * var(--scale-factor));
+  box-shadow: 0 382px 107px 0 rgba(0, 0, 0, 0.00), 0 245px 98px 0 rgba(0, 0, 0, 0.01), 0 138px 83px 0 rgba(0, 0, 0, 0.05), 0 61px 61px 0 rgba(0, 0, 0, 0.09), 0 15px 34px 0 rgba(0, 0, 0, 0.10);
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  transition-delay: 0.1s;
+  width: calc(436px * var(--scale-factor));
+}
+
+.homepage-pricing-plans > li:hover {
+  transform: scale(1.01);
+}
+
+.homepage-pricing-plans > li a {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+}
+
+.homepage-pricing-plans-card-image {
+  position: relative;
+}
+
+.homepage-pricing-plans-card-image img:first-child {
+  filter: brightness(0.5);
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.homepage-pricing-plans-card-image img:last-child {
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: calc(267px * var(--scale-factor));
+}
+
+.homepage-pricing-plans-card-text {
+  display: grid;
+  flex: 1;
+  gap: calc(16px * var(--scale-factor));
+  grid-template-rows: auto auto 1fr auto auto auto;
+  padding: calc(24px * var(--scale-factor));
+}
+
+.homepage-pricing-plans-card-text div {
+  align-items: center;
+  display: flex;
+  gap: calc(8px * var(--scale-factor));
+}
+
+.homepage-pricing-plans-card-text p {
+  font-family: 'Graphie';
+  font-size: calc(16px * var(--scale-factor));
+}
+
+.homepage-pricing-plans-card-text hr {
+  border: none;
+  border-top: calc(1px * var(--scale-factor)) solid #949494;
+  margin: 0;
+}
+
+.homepage-pricing-plans-card-text ul {
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+}
+
+.homepage-pricing-plans-card-text ul li {
+  align-items: center;
+  display: grid;
+  gap: calc(8px * var(--scale-factor));
+  grid-template-columns: calc(16px * var(--scale-factor)) 1fr;
+}
+
+.homepage-pricing-plans-card-text ul li span {
+  align-items: center;
+  background-color: #008061;
+  border-radius: 50%;
+  display: flex;
+  height: calc(16px * var(--scale-factor));
+  justify-content: center;
+  width: calc(16px * var(--scale-factor));
+}
+
+.homepage-pricing-plans-card-text ul li span svg {
+  height: calc(12px * var(--scale-factor));
+  width: calc(12px * var(--scale-factor));
+}
+
+.homepage-pricing-plans-card-text ul li p {
+  font-family: 'Graphie';
+  font-size: calc(16px * var(--scale-factor));
+  line-height: calc(16px * var(--scale-factor));
+}
+
+.homepage-pricing-plans-card-text h3 {
+  font-family: 'Graphie';
+  font-size: calc(40px * var(--scale-factor));
+  font-weight: 600;
+}
+
+.homepage-pricing-plans-card-text h3 span {
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 400;
+}
+
+.homepage-pricing-plans-card-text button {
+  align-items: center;
+  background-color: white;
+  border: calc(2px * var(--scale-factor)) solid black;
+  border-radius: calc(4px * var(--scale-factor));
+  display: flex;
+  font-weight: 700;
+  height: calc(56px * var(--scale-factor));
+  justify-content: center;
+}
+
+@media (max-width: 850px) {
+  .homepage-pricing-plans {
+    flex-direction: column;
+  }
+
+  .homepage-pricing-plans > li {
+    max-width: calc(600px * var(--scale-factor));
+    width: 100%;
+  }
+}
