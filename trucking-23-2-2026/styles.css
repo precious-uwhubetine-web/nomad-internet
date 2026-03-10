@@ -1,0 +1,2302 @@
+.landing-hero-section {
+  --scale-factor: 0.9;
+
+  align-items: center;
+  display: flex;
+  height: calc(100vh - 100px);
+  justify-content: center;
+  max-height: calc(800px * var(--scale-factor));
+  position: relative;
+  z-index: 1;
+}
+
+.landing-hero-section-bg {
+  filter: brightness(0.5);
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  object-position: 80% center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.landing-hero-section-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+  justify-content: center;
+  padding: calc(20px * var(--scale-factor));
+  position: relative;
+}
+
+.landing-hero-section-content-badge {
+  align-items: center;
+  border-radius: 50rem;
+  background: rgba(0, 117, 87, 0.20);
+  border: calc(1px * var(--scale-factor)) solid rgba(0, 117, 87, 0.80);
+  display: flex;
+  gap: calc(8px * var(--scale-factor));
+  padding: calc(8px * var(--scale-factor)) calc(20px * var(--scale-factor));
+}
+
+.landing-hero-section-content-badge svg {
+  height: calc(24px * var(--scale-factor));
+  width: calc(24px * var(--scale-factor));
+}
+
+.landing-hero-section-content-badge p {
+  color: white;
+  font-family: 'Plus Jakarta Sans';
+  font-size: calc(20px * var(--scale-factor));
+  line-height: 1.3;
+}
+
+.landing-hero-section-content-text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(8px * var(--scale-factor));
+}
+
+.landing-hero-section-content-text h1 {
+  color: white;
+  font-family: "Graphie";
+  font-size: calc(60px * var(--scale-factor));
+  font-weight: 700;
+  line-height: calc(69px * var(--scale-factor));
+  max-width: calc(950px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-hero-section-content-text p {
+  color: white;
+  font-family: "Graphie";
+  font-size: calc(20px * var(--scale-factor));
+  line-height: calc(29px * var(--scale-factor));
+  max-width: calc(750px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-hero-section-content-features {
+  column-gap: calc(24px * var(--scale-factor));
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: calc(16px * var(--scale-factor));
+}
+
+.landing-hero-section-content-features li {
+  align-items: center;
+  color: white;
+  display: flex;
+  font-family: "Graphie";
+  font-size: calc(18px * var(--scale-factor));
+  gap: calc(8px * var(--scale-factor));
+}
+
+.landing-hero-section-content-features li span:first-child {
+  align-items: center;
+  background-color: #008061;
+  border-radius: 50%;
+  display: flex;
+  height: calc(16px * var(--scale-factor));
+  justify-content: center;
+  width: calc(16px * var(--scale-factor));
+}
+
+.landing-hero-section-content-features li span:first-child svg {
+  height: calc(12px * var(--scale-factor));
+  width: calc(12px * var(--scale-factor));
+}
+
+.landing-hero-section-content-actions {
+  align-items: center;
+  display: flex;
+  gap: calc(24px * var(--scale-factor));
+  justify-content: center;
+}
+
+.landing-hero-section-content-actions a {
+  align-items: center;
+  background-color: #008061;
+  border-radius: 50rem;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  font-family: "Forma DJR Banner";
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 400;
+  gap: calc(8px * var(--scale-factor));
+  height: calc(56px * var(--scale-factor));
+  justify-content: center;
+  letter-spacing: calc(0.9px * var(--scale-factor));
+  padding: calc(16px * var(--scale-factor)) calc(24px * var(--scale-factor));
+  text-decoration: none;
+}
+
+.landing-hero-section-content-actions a span {
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  height: calc(24px * var(--scale-factor));
+  justify-content: center;
+  width: calc(24px * var(--scale-factor));
+}
+
+.landing-hero-section-content-actions a span svg {
+  height: calc(12px * var(--scale-factor));
+  width: calc(12px * var(--scale-factor));
+}
+
+.landing-hero-footer-text {
+  align-items: center;
+  color: white;
+  display: flex;
+  font-size: calc(14px * var(--scale-factor));
+  gap: calc(8px * var(--scale-factor));
+}
+
+.landing-hero-footer-text-home-road {
+  display: none;
+}
+
+.landing-hero-footer-text svg {
+  height: calc(16px * var(--scale-factor));
+  width: calc(16px * var(--scale-factor));
+}
+
+.landing-hero-footer-text-mobile {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .landing-top-bar p {
+    font-size: calc(12px * var(--scale-factor));
+  }
+
+  .landing-hero-section-bg {
+    filter: brightness(0.5);
+  }
+
+  .landing-hero-section-content-badge p {
+    font-size: calc(14px * var(--scale-factor));
+  }
+
+  .landing-hero-section-content-text h1 {
+    font-size: calc(36px * var(--scale-factor));
+    line-height: 115%;
+  }
+
+  .landing-hero-section-content-text p {
+    font-size: calc(16px * var(--scale-factor));
+    line-height: 177%;
+  }
+
+  .landing-hero-section-content-features {
+    grid-template-columns: 1fr;
+    justify-content: start;
+    min-width: calc(300px * var(--scale-factor));
+    width: 70%;
+  }
+
+  .landing-hero-section-content-actions {
+    align-self: stretch;
+    flex-direction: column;
+    gap: calc(8px * var(--scale-factor));
+  }
+
+  .landing-hero-section-content-actions a {
+    width: 100%;
+  }
+
+  .landing-hero-footer-text {
+    display: none;
+  }
+
+  .landing-hero-footer-text-mobile {
+    align-items: center;
+    color: white;
+    display: flex;
+    font-size: calc(14px * var(--scale-factor));
+    gap: calc(8px * var(--scale-factor));
+  }
+
+  .landing-hero-footer-text-mobile svg {
+    height: calc(16px * var(--scale-factor));
+    width: calc(16px * var(--scale-factor));
+  }
+}
+
+.landing-features-section {
+  --scale-factor: 1;
+}
+
+.landing-features-section-content ul {
+  align-items: center;
+  display: grid;
+  gap: calc(32px * var(--scale-factor));
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  margin: 0 auto;
+  max-width: calc(1200px * var(--scale-factor));
+  padding: calc(60px * var(--scale-factor)) calc(20px * var(--scale-factor));
+}
+
+.landing-features-section-content ul li {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(12px * var(--scale-factor));
+  height: 100%;
+  text-align: center;
+}
+
+.landing-features-section-content ul li span {
+  align-items: center;
+  background: linear-gradient(50deg, #008061 30.69%, #06BF3B 88.52%, #0DFF15 100.67%), #F54900;;
+  border-radius: 50%;
+  display: flex;
+  height: calc(64px * var(--scale-factor));
+  justify-content: center;
+  padding: calc(16px * var(--scale-factor));
+  width: calc(64px * var(--scale-factor));
+}
+
+.landing-features-section-content ul li span svg {
+  height: calc(28px * var(--scale-factor));
+}
+
+.landing-features-section-content ul li div {
+  display: flex;
+  flex-direction: column;
+  gap: calc(4px * var(--scale-factor));
+}
+
+.landing-features-section-content ul li div h4 {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 500;
+  letter-spacing: calc(0.9px * var(--scale-factor));
+}
+
+.landing-features-section-content ul li div p {
+  color: #4d4d4d;
+  font-family: "Forma DJR Banner";
+  font-size: calc(14px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(0.7px * var(--scale-factor));
+}
+
+.landing-features-section-feature-1-icon,
+.landing-features-section-feature-3-globe-icon {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .landing-features-section-content ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.landing-more-features-section {
+  --scale-factor: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: calc(62px * var(--scale-factor));
+  padding: calc(120px * var(--scale-factor)) calc(20px * var(--scale-factor));
+}
+
+.landing-more-features-section-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  justify-content: center;
+}
+
+.landing-more-features-section-header h2 {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(48px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(2.4px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-more-features-section-header p {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+  max-width: calc(390px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-more-features-section ul {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(24px * var(--scale-factor));
+  justify-content: center;
+  margin: 0 auto;
+  max-width: calc(1200px * var(--scale-factor));
+  width: 100%;
+}
+
+.landing-more-features-section ul li {
+  align-items: center;
+  background-color: #262626;
+  background-image: url(https://cdn.shopify.com/s/files/1/0103/2847/3658/files/trucking-how-nomad-works-card-bg.png);
+  border: calc(3px * var(--scale-factor)) solid #404040;
+  border-radius: calc(14px * var(--scale-factor));
+  display: flex;
+  flex: 1 0 30%;
+  flex-direction: column;
+  gap: calc(48px * var(--scale-factor));
+  padding: calc(24px * var(--scale-factor));
+}
+
+.landing-more-features-section ul li span {
+  align-items: center;
+  background: linear-gradient(50deg, #008061 30.69%, #06BF3B 88.52%, #0DFF15 100.67%);
+  border-radius: calc(10px * var(--scale-factor));
+  display: flex;
+  height: calc(52px * var(--scale-factor));
+  justify-content: center;
+  width: calc(52px * var(--scale-factor));
+}
+
+.landing-more-features-section ul li span svg {
+  height: calc(28px * var(--scale-factor));
+  width: calc(28px * var(--scale-factor));
+}
+
+.landing-more-features-section ul li div {
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+}
+
+.landing-more-features-section ul li div h5 {
+  color: white;
+  font-family: "Forma DJR Banner";
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 700;
+  letter-spacing: calc(0.9px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-more-features-feature-2-icon,
+.landing-more-features-feature-4-globe-icon,
+.landing-more-features-feature-5-globe-icon {
+  display: none;
+}
+
+@media (max-width: 950px) {
+  .landing-more-features-section ul {
+    align-items: stretch;
+    gap: calc(8px * var(--scale-factor));
+  }
+
+  .landing-more-features-section ul li {
+    flex: 1 1 45%;
+    gap: calc(16px * var(--scale-factor));
+    padding: calc(24px * var(--scale-factor)) calc(8px * var(--scale-factor));
+  }
+
+  .landing-more-features-section ul li div {
+    gap: calc(8px * var(--scale-factor));
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-more-features-section-header h2 {
+    font-size: calc(32px * var(--scale-factor));
+  }
+
+  .landing-more-features-section-header p {
+    font-size: calc(16px * var(--scale-factor));
+  }
+}
+
+@media (max-width: 650px) {
+  .landing-more-features-section {
+    padding: calc(60px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  }
+}
+
+.landing-selected-use-section {
+  --scale-factor: 0.8;
+
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  gap: calc(62px * var(--scale-factor));
+  padding: calc(120px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  scroll-margin-top: 60px;
+}
+
+.landing-selected-use-section-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  justify-content: center;
+}
+
+.landing-selected-use-section-header h2 {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(48px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(2.4px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-selected-use-section-header p {
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  letter-spacing: calc(1px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-selected-use-section ul {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(16px * var(--scale-factor));
+  justify-content: center;
+  margin: 0 auto;
+  max-width: calc(1440px * var(--scale-factor));
+  width: 100%;
+}
+
+.landing-selected-use-section ul li {
+  flex: 1 0 20%;
+}
+
+.landing-selected-use-section ul li button {
+  background: linear-gradient(50deg, #008061 30.69%, #06BF3B 88.52%, #0DFF15 100.67%), #262626;
+  border: calc(4px * var(--scale-factor)) solid #008061;
+  border-radius: calc(14px * var(--scale-factor));
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+}
+
+.landing-selected-use-section ul li.landing-selected-use-section-dark button {
+  background: #262626;
+  border: calc(4px * var(--scale-factor)) solid #404040;
+}
+
+.landing-selected-use-section ul li:hover img {
+  transform: scale(1.02);
+}
+
+.landing-selected-use-section ul li.landing-selected-use-section-inactive {
+  filter: grayscale(40%);
+  opacity: 0.5;
+}
+
+.landing-selected-use-section ul li img {
+  object-fit: cover;
+  height: calc(215px * var(--scale-factor));
+  transition: transform 0.3s ease;
+  transition-delay: 0.03s;
+  width: 100%;
+}
+
+.landing-selected-use-section ul li div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  padding: calc(16px * var(--scale-factor));
+}
+
+.landing-selected-use-section ul li h3 {
+  color: white;
+  text-align: center;
+  font-size: calc(18px * var(--scale-factor));
+}
+
+.landing-selected-use-section ul li p {
+  color: white;
+  text-align: center;
+  font-family: "Forma DJR Banner";
+  font-size: calc(14px * var(--scale-factor));
+  letter-spacing: calc(1px * var(--scale-factor));
+}
+
+.landing-selected-use-section ul li a {
+  align-items: center;
+  background: transparent;
+  border: calc(2px * var(--scale-factor)) solid white;
+  border-radius: 50%;
+  display: flex;
+  height: calc(50px * var(--scale-factor));
+  justify-content: center;
+  width: calc(50px * var(--scale-factor));
+}
+
+.landing-selected-use-section-mobile-professionals {
+  display: none;
+}
+
+@media (max-width: 950px) {
+  .landing-selected-use-section ul li {
+    flex: 1 0 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-selected-use-section-header h2 {
+    font-size: calc(32px * var(--scale-factor));
+  }
+
+  .landing-selected-use-section-header p {
+    font-size: calc(16px * var(--scale-factor));
+  }
+}
+
+@media (max-width: 650px) {
+  .landing-selected-use-section {
+    padding: calc(60px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  }
+
+  .landing-selected-use-section ul li {
+    flex: 1 0 100%;
+  }
+}
+
+.landing-how-nomad-works-section {
+  --scale-factor: 0.8;
+
+  display: flex;
+  flex-direction: column;
+  gap: calc(80px * var(--scale-factor));
+  padding: calc(120px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  scroll-margin-top: calc(100px * var(--scale-factor));
+}
+
+.landing-how-nomad-works-section-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  justify-content: center;
+}
+
+.landing-how-nomad-works-section-header h2 {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(48px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(2.4px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-how-nomad-works-section-header p {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+  max-width: calc(456px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-how-nomad-works-steps {
+  align-items: center;
+  display: grid;
+  gap: calc(24px * var(--scale-factor));
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: calc(1440px * var(--scale-factor));
+  width: 100%;
+}
+
+.landing-how-nomad-works-steps li {
+  align-items: center;
+  border-radius: calc(20px * var(--scale-factor));
+  display: grid;
+  gap: calc(24px * var(--scale-factor));
+  grid-template-rows: auto auto auto 1fr;
+  height: 100%;
+  justify-items: center;
+  overflow: hidden;
+  padding: calc(24px * var(--scale-factor));
+  position: relative;
+}
+
+.landing-how-nomad-works-steps li svg {
+  height: calc(226px * var(--scale-factor));
+  left: calc(-24px * var(--scale-factor));
+  position: absolute;
+  top: calc(-24px * var(--scale-factor));
+  width: calc(226px * var(--scale-factor));
+}
+
+.landing-how-nomad-works-steps li span {
+  border: calc(1px * var(--scale-factor)) solid black;
+  border-radius: 50rem;
+  display: flex;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+  padding: calc(8px * var(--scale-factor)) calc(16px * var(--scale-factor));
+}
+
+.landing-how-nomad-works-steps li img {
+  height: calc(188px * var(--scale-factor));
+  object-fit: contain;
+  width: auto;
+}
+
+.landing-how-nomad-works-steps li div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+}
+
+.landing-how-nomad-works-steps li div h3 {
+  font-family: "Forma DJR Banner";
+  font-size: calc(28px * var(--scale-factor));
+  font-weight: 500;
+  letter-spacing: calc(1.4px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-how-nomad-works-steps li div p {
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+  max-width: calc(269px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-how-nomad-works-section > p {
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+  text-align: center;
+}
+
+@media (max-width: 950px) {
+  .landing-how-nomad-works-steps {
+    grid-template-columns: 1fr;
+    max-width: calc(800px * var(--scale-factor));
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-how-nomad-works-section {
+    gap: calc(30px * var(--scale-factor));
+  }
+
+  .landing-how-nomad-works-section-header h2 {
+    font-size: calc(32px * var(--scale-factor));
+  }
+
+  .landing-how-nomad-works-section-header p {
+    font-size: calc(16px * var(--scale-factor));
+  }
+}
+
+.landing-reviews-section {
+  --scale-factor: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: calc(80px * var(--scale-factor));
+  padding: calc(120px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  position: relative;
+  scroll-margin-top: calc(100px * var(--scale-factor));
+  z-index: 1;
+}
+
+.landing-reviews-section-bg {
+  filter: brightness(0.6);
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.landing-reviews-section-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  justify-content: center;
+}
+
+.landing-reviews-section-header h2 {
+  color: white;
+  font-family: "Forma DJR Banner";
+  font-size: calc(48px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(2.4px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-reviews-section-header p {
+  color: white;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+  max-width: calc(390px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-reviews-reviews {
+  display: grid;
+  gap: calc(20px * var(--scale-factor));
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  margin: 0 auto;
+  max-width: calc(1200px * var(--scale-factor));
+}
+
+.landing-reviews-reviews > li {
+  background-color: rgba(245, 245, 245, 0.70);
+  border: calc(3px * var(--scale-factor)) solid white;
+  border-radius: calc(15px * var(--scale-factor));
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+  justify-content: space-between;
+  {% comment %} height: calc(570px * var(--scale-factor)); {% endcomment %}
+  padding: calc(24px * var(--scale-factor));
+}
+
+.landing-reviews-reviews > li h4 {
+  color: black;
+  font-family: "Forma DJR Banner Medium";
+  font-size: calc(20px * var(--scale-factor));
+  letter-spacing: calc(1px * var(--scale-factor));
+}
+
+.landing-reviews-reviews .landing-reviews-reviews-item-mobile {
+  display: none;
+}
+
+.landing-reviews-reviews-item-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.landing-reviews-reviews-item-header img {
+  width: calc(43px * var(--scale-factor));
+}
+
+.landing-reviews-reviews-item-header div:last-child  {
+  align-items: center;
+  display: flex;
+}
+
+.landing-reviews-reviews-item-header div:last-child svg {
+  height: calc(27px * var(--scale-factor));
+  width: calc(27px * var(--scale-factor));
+}
+
+.landing-reviews-reviews-item-text {
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+}
+
+.landing-reviews-reviews-item-text div {
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+}
+
+.landing-reviews-reviews-item-text p {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+}
+
+.landing-reviews-reviews-item-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: calc(8px * var(--scale-factor));
+}
+
+.landing-reviews-reviews-item-highlights li {
+  align-items: center;
+  display: flex;
+  gap: calc(12px * var(--scale-factor));
+  font-family: "Forma DJR Banner";
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+}
+
+.landing-reviews-reviews-item-highlights li svg {
+  width: calc(16px * var(--scale-factor));
+}
+
+.landing-reviews-reviews > li a {
+  align-items: center;
+  color: black;
+  display: flex;
+  font-family: "Forma DJR Banner";
+  font-size: calc(18px * var(--scale-factor));
+  gap: calc(8px * var(--scale-factor));
+}
+
+.landing-reviews-reviews > li a svg {
+  width: calc(20px * var(--scale-factor));
+}
+
+.landing-reviews-reviews-controls {
+  display: none;
+}
+
+@media (max-width: 950px) {
+  .landing-reviews-reviews {
+    gap: calc(16px * var(--scale-factor));
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-reviews-section {
+    gap: calc(32px * var(--scale-factor));
+  }
+
+  .landing-reviews-section-header svg {
+    height: calc(42px * var(--scale-factor));
+    width: calc(42px * var(--scale-factor));
+  }
+
+  .landing-reviews-section-header h2 {
+    font-size: calc(32px * var(--scale-factor));
+  }
+
+  .landing-reviews-section-header p {
+    font-size: calc(16px * var(--scale-factor));
+  }
+
+  .landing-reviews-reviews {
+    display: flex;
+    gap: calc(400px * var(--scale-factor));
+    justify-content: flex-start;
+    overflow-x: hidden;
+    padding: 0 calc(20px * var(--scale-factor));
+    width: 100%;
+  }
+
+  .landing-reviews-reviews > li {
+    flex: 1 0 100%;
+  }
+
+  .landing-reviews-reviews .landing-reviews-reviews-item-mobile {
+    display: flex;
+  }
+
+  .landing-reviews-reviews-controls {
+    align-items: center;
+    display: flex;
+    gap: calc(24px * var(--scale-factor));
+    justify-content: center;
+  }
+
+  .landing-reviews-reviews-controls button {
+    align-items: center;
+    background: none;
+    border: calc(2px * var(--scale-factor)) solid white;
+    border-radius: 50%;
+    display: flex;
+    height: calc(50px * var(--scale-factor));
+    justify-content: center;
+    width: calc(50px * var(--scale-factor));
+  }
+
+  .landing-reviews-reviews-controls button svg {
+    height: calc(24px * var(--scale-factor));
+    width: calc(24px * var(--scale-factor));
+  }
+}
+
+.landing-try-without-risk-section {
+  --scale-factor: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: calc(80px * var(--scale-factor));
+  margin: 0 auto;
+  max-width: calc(1200px * var(--scale-factor));
+  padding: calc(120px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  scroll-margin-top: calc(100px * var(--scale-factor));
+}
+
+.landing-try-without-risk-section-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  justify-content: center;
+}
+
+.landing-try-without-risk-section-header h2 {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(48px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(2.4px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-try-without-risk-section-header p {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+  max-width: calc(456px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-try-without-risk-section ul {
+  align-items: stretch;
+  display: flex;
+  gap: calc(48px * var(--scale-factor));
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.landing-try-without-risk-section ul li {
+  border: calc(1px * var(--scale-factor)) solid #008061;
+  border-radius: calc(15px * var(--scale-factor));
+  display: flex;
+  flex: 1 0 20%;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  padding: calc(16px * var(--scale-factor));
+}
+
+.landing-try-without-risk-section ul li div {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: calc(16px * var(--scale-factor)) 0;
+}
+
+.landing-try-without-risk-section ul li svg {
+  height: calc(113px * var(--scale-factor));
+  width: calc(113px * var(--scale-factor));
+}
+
+.landing-try-without-risk-section ul li h3 {
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  letter-spacing: calc(1px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-try-without-risk-section ul li p {
+  font-family: "Forma DJR Banner";
+  font-size: calc(14px * var(--scale-factor));
+  letter-spacing: calc(0.7px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-try-without-risk-section > p {
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  letter-spacing: calc(0.7px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-try-without-risk-section-card-3-pause-icon,
+.landing-try-without-risk-section-card-4-truck-icon {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .landing-try-without-risk-section {
+    gap: calc(30px * var(--scale-factor));
+  }
+
+  .landing-try-without-risk-section-header h2 {
+    font-size: calc(32px * var(--scale-factor));
+  }
+
+  .landing-try-without-risk-section-header p {
+    font-size: calc(16px * var(--scale-factor));
+  }
+
+  .landing-try-without-risk-section ul {
+    gap: calc(16px * var(--scale-factor));
+  }
+
+  .landing-try-without-risk-section ul li {
+    flex: 1 0 40%;
+  }
+
+  .landing-try-without-risk-section ul li svg {
+    height: calc(90px * var(--scale-factor));
+    width: calc(90px * var(--scale-factor));
+  }
+}
+
+.landing-choose-plan-section {
+  --scale-factor: 1;
+
+  align-items: center;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  gap: calc(62px * var(--scale-factor));
+  padding: calc(120px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  scroll-margin-top: calc(100px * var(--scale-factor));
+}
+
+.landing-choose-plan-section-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  justify-content: center;
+}
+
+.landing-choose-plan-section-header h2 {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(48px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(2.4px * var(--scale-factor));
+  line-height: 1;
+  text-align: center;
+}
+
+.landing-choose-plan-section-header p {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+  max-width: calc(456px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-choose-plan-section-plans > li {
+  background-color: white;
+  border: calc(5px * var(--scale-factor)) solid #e9e9e9;
+  border-radius: calc(30px * var(--scale-factor));
+  cursor: pointer;
+  display: flex;
+  max-width: calc(522px * var(--scale-factor));
+  transition: transform 0.3s ease;
+  transition-delay: 0.1s;
+  width: 100%;
+}
+
+.landing-choose-plan-section-plans > li:hover {
+  transform: scale(1.01);
+}
+
+.landing-choose-plan-section-plans {
+  align-items: center;
+  display: none;
+  gap: calc(16px * var(--scale-factor));
+  justify-content: center;
+  margin: 0 auto;
+  max-width: calc(1400px * var(--scale-factor));
+  width: 100%;
+}
+
+.landing-choose-plan-section-plans-preferred-setup {
+  align-items: stretch;
+  display: flex;
+}
+
+.landing-choose-plan-section-plans > li a {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+  justify-content: space-between;
+  padding: calc(16px * var(--scale-factor));
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  transition-delay: 0.1s;
+  width: 100%;
+}
+
+.landing-choose-plan-section-plans-preferred-setup > li a {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  justify-content: stretch;
+}
+
+
+.landing-choose-plan-section-plans-preferred-setup > li hr {
+  border-top: calc(1px * var(--scale-factor)) solid #e9e9e9;
+  margin: 0;
+}
+
+.landing-choose-plan-section-plans-monthly {
+  background-color: #e5f2ef;
+  border-color: #008061;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.landing-choose-plan-section-plans-monthly a {
+  padding: calc(24px * var(--scale-factor));
+}
+
+.landing-choose-plan-section-plans > li a > div {
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+}
+
+.landing-choose-plan-section-plans > li a div:nth-child(2) div:first-of-type {
+  background-color: #f5f5f5;
+  border-radius: calc(30px * var(--scale-factor));
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  padding: calc(16px * var(--scale-factor));
+}
+
+.landing-choose-plan-section-plans > li a div:nth-child(2) div:last-of-type ul {
+  display: flex;
+  flex-direction: column;
+  list-style: square;
+  margin: 0;
+  padding: 0 calc(16px * var(--scale-factor));
+}
+
+.landing-choose-plan-section-plans > li a div:nth-child(2) div:last-of-type li {
+  display: list-item;
+}
+
+.landing-choose-plan-section-plans > li div h5 {
+  font-family: "Forma DJR Banner Bold";
+  font-size: calc(16px * var(--scale-factor));
+  letter-spacing: calc(0.8px * var(--scale-factor));
+}
+
+.landing-choose-plan-section-plans > li div h4 {
+  font-family: "Forma DJR Banner";
+  font-size: calc(24px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1.6px * var(--scale-factor));
+}
+
+.landing-choose-plan-section-plans > li div h3 {
+  font-family: "Forma DJR Banner";
+  font-size: calc(40px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(2.5px * var(--scale-factor));
+  line-height: 1;
+}
+
+.landing-choose-plan-section-plans > li div h3 span:last-child {
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(0.3px * var(--scale-factor));
+}
+
+.landing-choose-plan-section-plans > li div p {
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(0.8px * var(--scale-factor));
+}
+
+.landing-choose-plan-section-plans > li h5 {
+  font-family: "Graphie";
+  font-size: calc(16px * var(--scale-factor));
+}
+
+.landing-choose-plan-section-plans > li a div:nth-child(2) div:first-of-type ul {
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  list-style: none;
+  margin: 0;
+}
+
+.landing-choose-plan-section-plans > li ul li {
+  align-items: center;
+  display: flex;
+  gap: calc(12px * var(--scale-factor));
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+}
+
+.landing-choose-plan-section-plans > li ul li span {
+  align-items: center;
+  background-color: rgba(74, 124, 158, 0.20);
+  border-radius: 50%;
+  display: flex;
+  height: calc(20px * var(--scale-factor));
+  justify-content: center;
+  width: calc(20px * var(--scale-factor));
+}
+
+.landing-choose-plan-section-plans > li ul li span svg {
+  height: calc(14px * var(--scale-factor));
+  width: calc(14px * var(--scale-factor));
+}
+
+.landing-choose-plan-section-plans > li button {
+  align-items: center;
+  border-radius: 50rem;
+  cursor: pointer;
+  display: flex;
+  font-family: "Forma DJR Banner";
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 400;
+  gap: calc(8px * var(--scale-factor));
+  height: calc(56px * var(--scale-factor));
+  justify-content: center;
+  letter-spacing: calc(0.9px * var(--scale-factor));
+  padding: calc(14px * var(--scale-factor));
+  text-decoration: none;
+}
+
+.landing-choose-plan-section-plans > li button span:last-child {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  height: calc(24px * var(--scale-factor));
+  justify-content: center;
+  width: calc(24px * var(--scale-factor));
+}
+
+.landing-choose-plan-section-plans-regular > li button span:last-child {
+  background-color: white;
+}
+
+.landing-choose-plan-section-plans > li button span:last-child svg {
+  height: calc(12px * var(--scale-factor));
+  width: calc(12px * var(--scale-factor));
+}
+
+.landing-choose-plan-section-plans-preferred-setup > li button {
+  background-color: white;
+  border: calc(1px * var(--scale-factor)) solid black;
+}
+
+.landing-choose-plan-section-plans-preferred-setup > li button span {
+  background-color: black;
+}
+
+.landing-choose-plan-section-plans-monthly button {
+  background-color: white;
+  border: calc(1px * var(--scale-factor)) solid black;
+}
+
+.landing-choose-plan-section-plans-regular .landing-choose-plan-section-plans-monthly button span:last-child {
+  background-color: black;
+}
+
+.landing-choose-plan-section-plans-yearly button {
+  background-color: #008061;
+  border: none;
+  color: white;
+}
+
+.landing-choose-plan-section-plans-yearly button span:last-child {
+  background-color: white;
+}
+
+.landing-choose-plan-section-footer-text {
+  display: none;
+  font-family: 'Forma DJR Banner';
+  font-size: calc(20px * var(--scale-factor));
+  letter-spacing: calc(1px * var(--scale-factor));
+  max-width: calc(840px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-choose-plan-section-plans-badge {
+  align-self: flex-start;
+  align-items: center;
+  border-radius: 50rem;
+  background: #008061;
+  box-shadow: 0 403px 113px 0 rgba(23, 138, 0, 0.00), 0 258px 103px 0 rgba(23, 138, 0, 0.01), 0 145px 87px 0 rgba(23, 138, 0, 0.05), 0 64px 64px 0 rgba(23, 138, 0, 0.09), 0 16px 35px 0 rgba(23, 138, 0, 0.10);
+  color: white;
+  display: flex;
+  font-family: "Plus Jakarta Sans";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 500;
+  gap: calc(8px * var(--scale-factor));
+  margin-bottom: calc(8px * var(--scale-factor));
+  overflow: hidden;
+  padding: calc(8px * var(--scale-factor)) calc(16px * var(--scale-factor));
+  position: relative;
+}
+
+.landing-choose-plan-section-plans-badge svg:nth-of-type(1) {
+  height: calc(68px * var(--scale-factor));
+  left: calc(29px * var(--scale-factor));
+  mix-blend-mode: plus-lighter;
+  position: absolute;
+  top: calc(-16px * var(--scale-factor));
+  width: calc(94px * var(--scale-factor));
+}
+
+.landing-choose-plan-section-plans-badge svg:nth-of-type(2) {
+  height: calc(16px * var(--scale-factor));
+  width: calc(16px * var(--scale-factor));
+}
+
+@media (max-width: 1200px) {
+  .landing-choose-plan-section-plans-preferred-setup {
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .landing-choose-plan-section-plans-preferred-setup > li {
+    max-width: calc(400px * var(--scale-factor));
+  }
+}
+
+@media (max-width: 850px) {
+  .landing-choose-plan-section-plans-preferred-setup {
+    flex-direction: column;
+  }
+
+  .landing-choose-plan-section-plans > li {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .landing-choose-plan-section {
+    gap: calc(32px * var(--scale-factor));
+  }
+
+  .landing-choose-plan-section-header h2 {
+    font-size: calc(32px * var(--scale-factor));
+  }
+
+  .landing-choose-plan-section-header p {
+    font-size: calc(16px * var(--scale-factor));
+  }
+
+  .landing-choose-plan-section-plans {
+    flex-direction: column;
+  }
+
+  .landing-choose-plan-section-plans > li a {
+    gap: calc(32px * var(--scale-factor));
+    padding: calc(16px * var(--scale-factor));
+  }
+
+  .landing-choose-plan-section-plans > li a div h4 {
+    font-size: calc(24px * var(--scale-factor));
+  }
+
+  .landing-choose-plan-section-plans > li a div h3 {
+    font-size: calc(42px * var(--scale-factor));
+  }
+}
+
+@media (max-width: 650px) {
+  .landing-choose-plan-section {
+    padding: calc(60px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  }
+}
+
+.landing-how-nomad-supports-section {
+  --scale-factor: 0.8;
+
+  display: flex;
+  flex-direction: column;
+  gap: calc(80px * var(--scale-factor));
+  margin: 0 auto;
+  max-width: calc(1440px * var(--scale-factor));
+  padding: calc(120px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  scroll-margin-top: calc(100px * var(--scale-factor));
+}
+
+.landing-how-nomad-supports-section-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  justify-content: center;
+}
+
+.landing-how-nomad-supports-section-header h2 {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(48px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(2.4px * var(--scale-factor));
+  line-height: 1.2;
+  max-width: calc(600px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-how-nomad-supports-section > ul {
+  align-items: stretch;
+  display: flex;
+  gap: calc(48px * var(--scale-factor));
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.landing-how-nomad-supports-section > ul > li {
+  background: #f5f5f5;
+  border-radius: calc(20px * var(--scale-factor));
+  display: grid;
+  gap: calc(64px * var(--scale-factor));
+  grid-template-columns: 1fr 1fr;
+  padding: calc(24px * var(--scale-factor));
+  width: 100%;
+}
+
+.landing-how-nomad-supports-section > ul > li:nth-child(odd) img {
+  order: 1;
+}
+
+.landing-how-nomad-supports-section > ul > li img {
+  height: calc(328px * var(--scale-factor));
+  object-fit: cover;
+  width: 100%;
+}
+
+.landing-how-nomad-supports-section > ul > li div {
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  justify-content: center;
+}
+
+.landing-how-nomad-supports-section > ul > li div h3 {
+  font-family: "Forma DJR Banner Medium";
+  font-size: calc(24px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1.2px * var(--scale-factor));
+}
+
+.landing-how-nomad-supports-section > ul > li div p {
+  font-family: "Forma DJR Banner";
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(0.6px * var(--scale-factor));
+}
+
+.landing-how-nomad-supports-section > ul > li div p:first-of-type {
+  padding: 0 calc(4qpx * var(--scale-factor)) calc(10px * var(--scale-factor)) 0;
+}
+
+.landing-how-nomad-supports-section > ul > li div ul {
+  display: flex;
+  flex-direction: column;
+  gap: calc(8px * var(--scale-factor));
+}
+
+.landing-how-nomad-supports-section > ul > li div ul li {
+  align-items: center;
+  display: flex;
+  font-size: calc(16px * var(--scale-factor));
+  gap: calc(12px * var(--scale-factor));
+}
+
+.landing-how-nomad-supports-section > ul > li div ul li svg {
+  height: calc(16px * var(--scale-factor));
+  width: calc(16px * var(--scale-factor));
+}
+
+@media (max-width: 650px) {
+  .landing-how-nomad-supports-section {
+    gap: calc(30px * var(--scale-factor));
+    padding: calc(60px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  }
+
+  .landing-how-nomad-supports-section-header h2 {
+    font-size: calc(32px * var(--scale-factor));
+  }
+
+  .landing-how-nomad-supports-section > ul {
+    gap: calc(16px * var(--scale-factor));
+  }
+
+  .landing-how-nomad-supports-section > ul > li {
+    gap: calc(32px * var(--scale-factor));
+  }
+
+  .landing-how-nomad-supports-section > ul > li {
+    grid-template-columns: 1fr;
+  }
+
+  .landing-how-nomad-supports-section > ul > li img {
+    border-radius: calc(8px * var(--scale-factor));
+    height: calc(178px * var(--scale-factor));
+    order: 1;
+  }
+}
+
+.landing-no-surprises-section {
+  --scale-factor: 1;
+
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  gap: calc(80px * var(--scale-factor));
+  padding: calc(120px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  scroll-margin-top: calc(100px * var(--scale-factor));
+}
+
+.landing-no-surprises-section-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  justify-content: center;
+}
+
+.landing-no-surprises-section-header h2 {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(48px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(2.4px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-no-surprises-section-header p {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+  max-width: calc(650px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-no-surprises-section ul {
+  align-items: stretch;
+  display: flex;
+  gap: calc(48px * var(--scale-factor));
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: calc(1200px * var(--scale-factor));
+}
+
+.landing-no-surprises-section ul li {
+  border-radius: calc(15px * var(--scale-factor));
+  display: flex;
+  flex: 1 0 20%;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  padding: calc(16px * var(--scale-factor));
+}
+
+.landing-no-surprises-section ul li div {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.landing-no-surprises-section ul li svg {
+  height: calc(32px * var(--scale-factor));
+  width: calc(32px * var(--scale-factor));
+}
+
+.landing-no-surprises-section ul li h3 {
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  letter-spacing: calc(1px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-no-surprises-section ul li p {
+  font-family: "Forma DJR Banner";
+  font-size: calc(14px * var(--scale-factor));
+  letter-spacing: calc(0.7px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-no-surprises-section > p {
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  letter-spacing: calc(0.7px * var(--scale-factor));
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .landing-no-surprises-section {
+    gap: calc(60px * var(--scale-factor));
+  }
+
+  .landing-no-surprises-section-header h2 {
+    font-size: calc(32px * var(--scale-factor));
+  }
+
+  .landing-no-surprises-section-header p {
+    font-size: calc(16px * var(--scale-factor));
+  }
+
+  .landing-no-surprises-section ul {
+    gap: calc(16px * var(--scale-factor));
+  }
+
+  .landing-no-surprises-section ul li {
+    flex: 1 0 40%;
+  }
+}
+
+@media (max-width: 550px) {
+  .landing-no-surprises-section ul {
+    gap: calc(32px * var(--scale-factor));
+  }
+
+  .landing-no-surprises-section ul li {
+    border: none;
+    flex: 1 0 100%;
+    padding: 0;
+  }
+}
+
+.landing-featured-section {
+  --scale-factor: 1;
+
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: calc(60px * var(--scale-factor));
+  padding: calc(120px * var(--scale-factor)) calc(56px * var(--scale-factor));
+  position: relative;
+  scroll-margin-top: calc(100px * var(--scale-factor));
+}
+
+.landing-featured-section > button {
+  align-items: center;
+  background: none;
+  border: calc(1px * var(--scale-factor)) solid black;
+  border-radius: 50%;
+  display: flex;
+  height: calc(32px * var(--scale-factor));
+  justify-content: center;
+  position: absolute;
+  width: calc(32px * var(--scale-factor));
+  z-index: 1;
+}
+
+.landing-featured-section-scroll-left {
+  left: calc(8px * var(--scale-factor));
+  top: 50%;
+}
+
+.landing-featured-section-scroll-right {
+  right: calc(8px * var(--scale-factor));
+  top: 50%;
+}
+
+.landing-featured-section-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  justify-content: center;
+}
+
+.landing-featured-section-header h2 {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(48px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(2.4px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-featured-section ul {
+  display: flex;
+  gap: calc(20px * var(--scale-factor));
+  overflow-x: auto;
+  scrollbar-width: none;
+  width: 100%;
+}
+
+.landing-featured-section ul li {
+  border-radius: calc(16px * var(--scale-factor));
+  display: grid;
+  flex: 0 0 100%;
+  grid-template-rows: 1fr auto;
+  max-width: calc(800px * var(--scale-factor));
+  overflow: hidden;
+}
+
+.landing-featured-section-item-top {
+  background-color: #f5f5f5;
+  display: grid;
+  gap: calc(16px * var(--scale-factor));
+  grid-template-columns: 1fr auto auto;
+  padding: calc(32px * var(--scale-factor));
+}
+
+.landing-featured-section-item-top h3 {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(28px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1.4px * var(--scale-factor));
+  line-height: 1.2;
+}
+
+.landing-featured-section-item-top-text {
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  max-width: calc(450px * var(--scale-factor));
+}
+
+.landing-featured-section-item-top-text p {
+  font-family: "Forma DJR Banner";
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(0.8px * var(--scale-factor));
+}
+
+.landing-featured-section-item-top-text-review {
+  align-items: center;
+  display: flex;
+  gap: calc(8px * var(--scale-factor));
+}
+
+.landing-featured-section-item-top-text-review span {
+  align-items: center;
+  background-color: black;
+  border-radius: calc(3px * var(--scale-factor));
+  display: flex;
+  height: calc(12px * var(--scale-factor));
+  justify-content: center;
+  width: calc(12px * var(--scale-factor));
+}
+
+.landing-featured-section-item-top-text-review img,
+.landing-featured-section-item-top-text-review svg {
+  height: calc(8px * var(--scale-factor));
+  width: calc(8px * var(--scale-factor));
+}
+
+.landing-featured-section ul li > img {
+  height: calc(420px * var(--scale-factor));
+  object-fit: cover;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .landing-featured-section {
+    gap: calc(60px * var(--scale-factor));
+  }
+
+  .landing-featured-section-header h2 {
+    font-size: calc(32px * var(--scale-factor));
+  }
+
+  .landing-featured-section-item-top {
+    grid-template-columns: calc(20px * var(--scale-factor)) auto;
+  }
+
+  .landing-featured-section-item-top h3 {
+    grid-column: -1 / 1;
+  }
+}
+
+@media (max-width: 550px) {
+  .landing-featured-section ul li > img {
+    height: calc(180px * var(--scale-factor));
+  }
+}
+
+.landing-faq-section {
+  --scale-factor: 1;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(62px * var(--scale-factor));
+  padding: calc(120px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  scroll-margin-top: calc(100px * var(--scale-factor));
+}
+
+.landing-faq-section-header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  justify-content: center;
+}
+
+.landing-faq-section-header h2 {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(48px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(2.4px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-faq-section-header p {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+  max-width: calc(456px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-faq-section ul {
+  --scale-factor: 1;
+
+  display: flex;
+  flex-direction: column;
+  gap: calc(16px * var(--scale-factor));
+  max-width: calc(896px * var(--scale-factor));
+}
+
+.landing-faq-section ul li {
+  background-color: white;
+  border: calc(1px * var(--scale-factor)) solid #e5e7eb;
+  border-radius: calc(14px * var(--scale-factor));
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  overflow: hidden;
+  transition: padding 0.2s, gap 0.2s;
+}
+
+.landing-faq-section ul li.landing-faq-section-question-5 {
+  display: none;
+}
+
+.landing-faq-section ul .landing-faq-section-question-active {
+  gap: calc(16px * var(--scale-factor));
+  padding-bottom: calc(24px * var(--scale-factor));
+}
+
+.landing-faq-section-question-header {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: calc(24px * var(--scale-factor));
+}
+
+.landing-faq-section-question-active .landing-faq-section-question-header {
+  background-color: #008062;
+}
+
+.landing-faq-section-question-header h5 {
+  color: black;
+  font-family: "Forma DJR Banner";
+  font-size: calc(24px * var(--scale-factor));
+  font-weight: 500;
+  letter-spacing: calc(1.2px * var(--scale-factor));
+}
+
+.landing-faq-section-question-active .landing-faq-section-question-header h5 {
+  color: white;
+}
+
+.landing-faq-section-question-header span {
+  display: flex;
+}
+
+.landing-faq-section-question-header svg {
+  transition: 0.2s transform;
+  width: calc(16px * var(--scale-factor));
+}
+
+.landing-faq-section-question-header svg path {
+  transition: color 0.2s;
+}
+
+.landing-faq-section-question-active .landing-faq-section-question-header svg path {
+  stroke: white;
+}
+
+.landing-faq-section-question-answer {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.8s;
+}
+
+.landing-faq-section-question-answer p {
+  color: #a1a1a1;
+  font-family: "Forma DJR Banner";
+  font-size: calc(16px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+  overflow: hidden;
+  padding: 0 calc(24px * var(--scale-factor));
+}
+
+@media (max-width: 768px) {
+  .landing-faq-section-header h2 {
+    font-size: calc(32px * var(--scale-factor));
+  }
+
+  .landing-faq-in-your-truck-section-header p {
+    font-size: calc(16px * var(--scale-factor));
+  }
+
+  .landing-faq-section ul .landing-faq-section-question-active {
+    gap: calc(16px * var(--scale-factor));
+    padding-bottom: calc(16px * var(--scale-factor));
+  }
+
+  .landing-faq-section-question-header {
+    gap: calc(16px * var(--scale-factor));
+    padding: calc(16px * var(--scale-factor));
+  }
+
+  .landing-faq-section-question-header h5 {
+    font-size: calc(18px * var(--scale-factor));
+    letter-spacing: calc(0.9px * var(--scale-factor));
+  }
+
+  .landing-faq-section-question-header p {
+    font-size: calc(16px * var(--scale-factor));
+    letter-spacing: calc(0.8px * var(--scale-factor));
+  }
+}
+
+
+@media (max-width: 650px) {
+  .landing-faq-section {
+    padding: calc(60px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  }
+}
+
+.landing-stay-connected-section {
+  --scale-factor: 1;
+
+  background-color: white;
+  padding: calc(100px * var(--scale-factor)) calc(20px * var(--scale-factor));
+}
+
+.landing-stay-connected-section-card {
+  align-items: center;
+  background-color: black;
+  background-image: url(https://cdn.shopify.com/s/files/1/0103/2847/3658/files/landing-how-nomad-works-card-bg.png);
+  border: calc(5px * var(--scale-factor)) solid #535353;;
+  border-radius: calc(30px * var(--scale-factor));
+  margin: 0 auto;
+  max-width: calc(1200px * var(--scale-factor));
+  padding: calc(48px * var(--scale-factor)) 0 calc(48px * var(--scale-factor)) calc(48px * var(--scale-factor));
+  position: relative;
+  overflow: hidden;
+}
+
+.landing-stay-connected-section-card-top-ellipse {
+  background: rgba(0, 133, 101, 0.80);
+  border-radius: 857px;
+  filter: blur(100px);
+  position: absolute;
+  width: calc(857px * var(--scale-factor));
+  height: calc(378px * var(--scale-factor));
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -85%);
+}
+
+.landing-stay-connected-section-card-main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(32px * var(--scale-factor));
+  position: relative;
+}
+
+.landing-stay-connected-section-card-main-text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+}
+
+.landing-stay-connected-section-card-main-text h3 {
+  color: white;
+  font-family: "Forma DJR Banner";
+  font-size: calc(44px * var(--scale-factor));
+  letter-spacing: calc(2.8px * var(--scale-factor));
+  line-height: 115%;
+  text-align: center;
+}
+
+.landing-stay-connected-section-card-main-text p {
+  color: white;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  font-weight: 400;
+  letter-spacing: calc(1px * var(--scale-factor));
+  max-width: calc(600px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-stay-connected-section-card-main-actions a {
+  align-items: center;
+  background-color: #008061;
+  border-radius: 50rem;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  font-family: "Forma DJR Banner";
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 400;
+  gap: calc(8px * var(--scale-factor));
+  height: calc(56px * var(--scale-factor));
+  justify-content: center;
+  letter-spacing: calc(0.9px * var(--scale-factor));
+  padding: calc(16px * var(--scale-factor)) calc(24px * var(--scale-factor));
+  text-decoration: none;
+}
+
+.landing-stay-connected-section-card-main-actions a span:last-child {
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  height: calc(24px * var(--scale-factor));
+  justify-content: center;
+  width: calc(24px * var(--scale-factor));
+}
+
+.landing-stay-connected-section-card-main-actions a span:last-child svg {
+  height: calc(12px * var(--scale-factor));
+  width: calc(12px * var(--scale-factor));
+}
+
+.landing-stay-connected-section-card-main-features {
+  align-items: center;
+  display: flex;
+  gap: calc(42px * var(--scale-factor));
+}
+
+.landing-stay-connected-section-card-main-features li {
+  align-items: center;
+  color: white;
+  display: flex;
+  font-family: "Forma DJR Banner";
+  font-size: calc(20px * var(--scale-factor));
+  gap: calc(12px * var(--scale-factor));
+  letter-spacing: calc(1px * var(--scale-factor));
+}
+
+.landing-stay-connected-section-card-main-features li svg {
+  height: calc(16px * var(--scale-factor));
+  width: calc(16px * var(--scale-factor));
+}
+
+@media (max-width: 768px) {
+  .landing-stay-connected-section-card {
+    flex-direction: column;
+    padding: calc(32px * var(--scale-factor)) calc(16px * var(--scale-factor));
+  }
+
+  .landing-stay-connected-section-card-top-ellipse {
+    transform: translate(-50%, -20%);
+  }
+
+  .landing-stay-connected-section-card-main-text h3 {
+    font-size: calc(32px * var(--scale-factor));
+  }
+
+  .landing-stay-connected-section-card-main-text p {
+    font-size: calc(16px * var(--scale-factor));
+    max-width: 100%;
+  }
+
+  .landing-stay-connected-section-card-main-actions {
+    width: 100%;
+  }
+
+  .landing-stay-connected-section-card-main-features {
+    flex-direction: column;
+    gap: calc(24px * var(--scale-factor));
+  }
+}
+
+@media (max-width: 650px) {
+  .landing-stay-connected-section {
+    padding: calc(60px * var(--scale-factor)) calc(20px * var(--scale-factor));
+  }
+
+  .landing-stay-connected-section-card-main-actions a {
+    font-size: calc(14px * var(--scale-factor));
+  }
+}
+
+.landing-page-change-plan-popup-container {
+  --scale-factor: 1;
+
+  align-items: center;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  padding: 0 calc(20px * var(--scale-factor));
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.landing-page-change-plan-popup-main {
+  background-color: white;
+  border-radius: calc(20px * var(--scale-factor));
+  display: none;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+  max-height: 90vh;
+  max-width: calc(600px * var(--scale-factor));
+  overflow: auto;
+  padding: calc(24px * var(--scale-factor)) calc(32px * var(--scale-factor));
+  position: relative;
+  scrollbar-width: none;
+  width: 100%;
+}
+
+.landing-page-change-plan-popup-main-header {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 36px 1fr 36px;
+  justify-items: center;
+}
+
+.landing-page-change-plan-popup-main-header img {
+  width: calc(109px * var(--scale-factor));
+}
+
+.landing-page-change-plan-popup-main-header button {
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  height: calc(36px * var(--scale-factor));
+  justify-content: center;
+  justify-self: end;
+  transition: transform 0.1s ease;
+  width: calc(36px * var(--scale-factor));
+}
+
+.landing-page-change-plan-popup-main-header button svg {
+  height: calc(20px * var(--scale-factor));
+  width: calc(20px * var(--scale-factor));
+}
+
+.landing-page-change-plan-popup-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: calc(24px * var(--scale-factor));
+  justify-content: center;
+}
+
+.landing-page-change-plan-popup-selection h4 {
+  font-family: 'Forma DJR Banner';
+  font-size: calc(20px * var(--scale-factor));
+  line-height: 1.1;
+  text-align: center;
+}
+
+.landing-page-change-plan-popup-selection h2 {
+  font-family: 'Graphie';
+  font-size: calc(24px * var(--scale-factor));
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.landing-page-change-plan-popup-content > p {
+  font-family: 'Forma DJR Banner';
+  font-size: calc(16px * var(--scale-factor));
+  letter-spacing: calc(0.7px * var(--scale-factor));
+  line-height: 1.2;
+  max-width: calc(420px * var(--scale-factor));
+  text-align: center;
+}
+
+.landing-page-change-plan-popup-content > p span {
+  font-family: 'Graphie';
+  font-weight: 700;
+  letter-spacing: calc(0.1px * var(--scale-factor));
+}
+
+.landing-page-change-plan-popup-buttons {
+  align-items: center;
+  display: flex;
+  gap: calc(16px * var(--scale-factor));
+  width: 100%;
+}
+
+.landing-page-change-plan-popup-buttons button {
+  align-items: center;
+  background-color: white;;
+  border: calc(1px * var(--scale-factor)) solid black;
+  border-radius: 50rem;
+  color: black;
+  cursor: pointer;
+  display: flex;
+  font-family: "Forma DJR Banner";
+  font-size: calc(18px * var(--scale-factor));
+  font-weight: 400;
+  gap: calc(8px * var(--scale-factor));
+  height: calc(56px * var(--scale-factor));
+  justify-content: center;
+  letter-spacing: calc(0.9px * var(--scale-factor));
+  padding: calc(16px * var(--scale-factor)) calc(24px * var(--scale-factor));
+  width: 100%;
+}
+
+.landing-page-change-plan-popup-buttons button:nth-child(2) {
+  background-color: #008061;
+  border: none;
+  color: white;
+}
+
+.landing-page-change-plan-popup-buttons button span {
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  height: calc(24px * var(--scale-factor));
+  justify-content: center;
+  width: calc(24px * var(--scale-factor));
+}
+
+.landing-page-change-plan-popup-buttons button span svg {
+  height: calc(12px * var(--scale-factor));
+  width: calc(12px * var(--scale-factor));
+}
